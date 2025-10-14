@@ -173,7 +173,7 @@ export const Home = () => {
 {/* ............................................. Section Four ............................................. */}
       <div className="container-fluid home-section-fourth-container">
         <div className="home-section-fourth-firstinner-container">
-          <h2>Testimonial</h2>
+          <h2>Testimonials</h2>
           <TestimonialCardslider/>
         </div>
       </div>
