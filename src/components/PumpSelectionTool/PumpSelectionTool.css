@@ -1,0 +1,41 @@
+
+.Pump_Selction_Tool_Container {
+  font-family: var(--second-font);
+  text-align: center;
+  max-width: 900px;
+  margin: 20px auto;
+  padding: 20px;
+  border: 1px solid #eee;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+  border-radius: 8px;
+  background-color: #fff;
+}
+
+h1, h2, h3 {
+  color: #333;
+  font-family: var(--main-font);
+}
+.Pump_selection_Reset_Button {
+  background-color: var(--title-red-color); 
+  color: #fff;
+  border: none;
+  padding: 10px 22px;
+  border-radius: 3px;
+  font-size: 15px;
+  font-weight: 400;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  font-family: var(--main-font);
+  box-shadow: 0 2px 6px var(--title-red-color); 
+}
+
+.Pump_selection_Reset_Button:hover {
+  color: var(--title-red-color);
+  background-color: var(--container-color); 
+  border: 1px solid var(--title-red-color);
+  transform: translateY(-2px);
+}
+
+
+
+
