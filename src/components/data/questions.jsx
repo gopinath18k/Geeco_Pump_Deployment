@@ -179,7 +179,7 @@ export const pumpSelectionQuestions = [
   section: 'domesticUse_borewell',
   options: [
     { id: 'surface_borewell', label: 'Surface', nextSection: 'domesticUse_borewell_surface' },
-    { id: 'submerged_borewell', label: 'Inside the borewell (Submersible)', nextSection: 'domesticUse_borewell_submerged' },
+    { id: 'Submersible_Borewell', label: 'Inside the borewell (Submersible)', nextSection: 'domesticUse_borewell_submersible' },
   ],
 },
 
@@ -194,6 +194,8 @@ export const pumpSelectionQuestions = [
     { id: '3phase_bw_sur', label: '3 Phase', nextSection: 'domesticUse_borewell_surface_3phase' },
   ],
 },
+
+// --- Surface Borewell Single Phase Questions ---
 
 {
   id: 'domesticUse_borewell_surface_depth',
@@ -225,46 +227,116 @@ export const pumpSelectionQuestions = [
   max: 450,
 },
 
-// --- Inside Borewell (Submersible) ---
+// --- Surface Borewell Three Phase Questions ---
 
+{
+  id: 'domesticUse_borewell_surface_depth',
+  question: 'What is the total depth you want to draw water from the borewell? (in meters)',
+  section: 'domesticUse_borewell_surface_3phase',
+  type: 'input',
+  unit: 'meters',
+  min: 1,
+  max: 50,
+},
 
-// {
-//   id: 'domesticUse_borewell_submerged_size',
-//   question: 'What is the size of your borewell? (3”, 4”, or 6”)',
-//   section: 'domesticUse_borewell_submerged',
-//   options: [
-//     { id: '3inch', label: '3 Inch', nextSection: 'domesticUse_borewell_submerged_phase' },
-//     { id: '4inch', label: '4 Inch', nextSection: 'domesticUse_borewell_submerged_phase' },
-//     { id: '6inch', label: '6 Inch', nextSection: 'domesticUse_borewell_submerged_phase' },
-//   ],
-// },
-// {
-//   id: 'domesticUse_borewell_submerged_phase',
-//   question: 'Do you need a 1 phase or 3 phase design? (Single phase recommended for Household and Domestic applications)',
-//   section: 'domesticUse_borewell_submerged',
-//   options: [
-//     { id: '1phase_sub', label: '1 Phase', nextSection: 'domesticUse_borewell_submerged_1phase' },
-//     { id: '3phase_sub', label: '3 Phase', nextSection: 'domesticUse_borewell_submerged_3phase' },
-//   ],
-// },
-// {
-//   id: 'domesticUse_borewell_submerged_head',
-//   question: 'What is the total head you want to pump the water in meters? (Total head = Depth of Bore pump installation + height of the overhead tank)',
-//   section: 'domesticUse_borewell_submerged_1phase',
-//   type: 'input',
-//   unit: 'meters',
-//   min: 1,
-//   max: 100,
-// },
-// {
-//   id: 'domesticUse_borewell_submerged_discharge',
-//   question: 'Any desired LPM? (in liters)',
-//   section: 'domesticUse_borewell_submerged_1phase',
-//   type: 'input',
-//   unit: 'LPM',
-//   min: 1,
-//   max: 450,
-// },
+{
+  id: 'domesticUse_borewell_surface_head',
+  question: 'What is the total head you want to pump the water in meters?',
+  section: 'domesticUse_borewell_surface_3phase',
+  type: 'input',
+  unit: 'meters',
+  min: 1,
+  max: 50,
+},
+
+{
+  id: 'domesticUse_borewell_surface_discharge',
+  question: 'Any desired LPM? (in liters)',
+  section: 'domesticUse_borewell_surface_3phase',
+  type: 'input',
+  unit: 'LPM',
+  min: 1,
+  max: 450,
+},
+
+// --- Submersible Borewell Questions ---
+
+{
+  id: 'domesticUse_borewell_submersible_phase',
+  question: 'Do you need a  1phase or a 3phase design? (Single phase recommended for Household and domestic applications)',
+  section: 'domesticUse_borewell_submersible',
+  options: [
+    { id: '1phase_b_sub', label: '1 Phase', nextSection: 'domesticUse_borewell_submersible_1phase' },
+    { id: '3phase_b_sub', label: '3 Phase', nextSection: 'domesticUse_borewell_submersible_3phase' },
+  ],
+},
+
+// --- Surface Borewell Single Phase Questions ---
+
+{
+    id: 'domesticUse_borewell_submersible_borewellSize',
+    question: 'What is the size of your bore well?',
+    section: 'domesticUse_borewell_submersible_1phase',
+    options: [
+      { id: '3inch_b_sub', label: '3"' },
+      { id: '4inch_b_sub', label: '4"' },
+      { id: '6inch_b_sub', label: '6"' },
+    ],
+  },
+
+{
+  id: 'domesticUse_borewell_submersible_head',
+  question: 'What is the total head you want to pump the water in meters? ( Total head= Depth of Bore pump installation + height of the over head tank)',
+  section: 'domesticUse_borewell_submersible_1phase',
+  type: 'input',
+  unit: 'meters',
+  min: 1,
+  max: 250,
+},
+
+{
+  id: 'domesticUse_borewell_submersible_discharge',
+  question: 'Any desired LPM? (in liters)',
+  section: 'domesticUse_borewell_submersible_1phase',
+  type: 'input',
+  unit: 'LPM',
+  min: 1,
+  max: 450,
+},
+
+// --- Surface Borewell Three Phase Questions ---
+
+{
+    id: 'domesticUse_borewell_submersible_borewellSize',
+    question: 'What is the size of your bore well?',
+    section: 'domesticUse_borewell_submersible_3phase',
+    options: [
+      { id: '3inch_b_sub', label: '3"' },
+      { id: '4inch_b_sub', label: '4"' },
+      { id: '6inch_b_sub', label: '6"' },
+    ],
+  },
+
+{
+  id: 'domesticUse_borewell_submersible_head',
+  question: 'What is the total head you want to pump the water in meters? ( Total head= Depth of Bore pump installation + height of the over head tank)',
+  section: 'domesticUse_borewell_submersible_3phase',
+  type: 'input',
+  unit: 'meters',
+  min: 1,
+  max: 250,
+},
+
+{
+  id: 'domesticUse_borewell_submersible_discharge',
+  question: 'Any desired LPM? (in liters)',
+  section: 'domesticUse_borewell_submersible_3phase',
+  type: 'input',
+  unit: 'LPM',
+  min: 1,
+  max: 450,
+},
+ 
 
   
 

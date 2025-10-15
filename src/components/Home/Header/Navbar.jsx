@@ -40,7 +40,7 @@ export const Navbar = () => {
                 <div className="Navbar__contacts col-4">
                     <div className="Navbar_contactdetails">
                         <IoIosCall className='Navbar_callIcon'/>
-                        <a href="ToNumber" className="Navbar__contactNumberdetails">9876541230</a>
+                        <a href="ToNumber" className="Navbar__contactNumberdetails">987 654 12 30</a>
                     </div>
                     <div className="Navbar_contactdetails">
                         <IoIosMail className='Navbar_MailIcon'/>

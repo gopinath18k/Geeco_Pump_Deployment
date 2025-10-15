@@ -113,7 +113,7 @@ function PumpSelectionTool() {
 
       // Domestic Question Borewell //
 
-    // --- Domestic Question Borewell Surface ---
+    // --- Domestic Question Borewell Surface --- //
     
     if (answers.domesticUse_borewell_installLocation) {
       tempPumps = tempPumps.filter(
@@ -132,6 +132,7 @@ function PumpSelectionTool() {
         pump => depthValue >= pump.depthMin && depthValue <= pump.depthMax
       );
     }
+     
     if (answers.domesticUse_borewell_surface_head) {
       const headValue = parseFloat(answers.domesticUse_borewell_surface_head);
       tempPumps = tempPumps.filter(
@@ -145,6 +146,38 @@ function PumpSelectionTool() {
         pump => dischargeValue >= pump.lpmMin && dischargeValue <= pump.lpmMax
       );
     }
+
+
+    // --- Domestic Question Borewell Submersible --- //
+
+    
+
+    if (answers.domesticUse_borewell_submersible_borewellSize) {
+      tempPumps = tempPumps.filter(
+        pump => pump.borewellSize.includes(answers.domesticUse_borewell_submersible_borewellSize)
+      );
+    }
+     
+    if (answers.domesticUse_borewell_submersible_phase) {
+      tempPumps = tempPumps.filter(
+        pump => pump.phase === answers.domesticUse_borewell_submersible_phase
+      );
+    }
+
+    if (answers.domesticUse_borewell_submersible_head) {
+      const headValue = parseFloat(answers.domesticUse_borewell_submersible_head);
+      tempPumps = tempPumps.filter(
+        pump => headValue >= pump.totalHeadMin && headValue <= pump.totalHeadMax
+      );
+    }
+
+    if (answers.domesticUse_borewell_submersible_discharge) {
+      const dischargeValue = parseFloat(answers.domesticUse_borewell_submersible_discharge);
+      tempPumps = tempPumps.filter(
+        pump => dischargeValue >= pump.lpmMin && dischargeValue <= pump.lpmMax
+      );
+    }
+
 
 
 
