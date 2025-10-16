@@ -1,24 +1,27 @@
 // src/PumpSelectionTool.jsx
-import React, { useState, useEffect, useCallback } from 'react';
-import './PumpSelectionTool.css';
-import { pumpSelectionQuestions } from './../data/questions.jsx';
-import { pumps } from './../data/products.jsx';
-import SelectionTool from './../PumpSelectionTool/SelectionTool.jsx';
-import ProductList from './../PumpSelectionTool/ProductList.jsx';
+import React, { useState, useEffect, useCallback, useRef } from "react";
+import "./PumpSelectionTool.css";
+import { pumpSelectionQuestions } from "./../data/questions.jsx";
+import { pumps } from "./../data/products.jsx";
+import SelectionTool from "./../PumpSelectionTool/SelectionTool.jsx";
+import ProductList from "./../PumpSelectionTool/ProductList.jsx";
+import { motion, AnimatePresence } from "framer-motion";
 
 function PumpSelectionTool() {
   const [currentStep, setCurrentStep] = useState(0);
   const [answers, setAnswers] = useState({});
   const [filteredPumps, setFilteredPumps] = useState([]);
-  const [currentQuestionFlow, setCurrentQuestionFlow] = useState([pumpSelectionQuestions[0]]);
+  const [currentQuestionFlow, setCurrentQuestionFlow] = useState([
+    pumpSelectionQuestions[0],
+  ]);
   const [allAnswered, setAllAnswered] = useState(false);
+  const questionRefs = useRef([]);
+  const [visibleQuestions, setVisibleQuestions] = useState([0]);
 
-  // Filter pumps after all questions answered
   const filterProducts = useCallback(() => {
     let tempPumps = [...pumps];
 
-
-    // Domestic Question //
+     // Domestic Question //
 
     if (answers.applicationType) {
       tempPumps = tempPumps.filter(pump => pump.application === answers.applicationType);
@@ -178,71 +181,179 @@ function PumpSelectionTool() {
       );
     }
 
+    //--------- Agriculture Section Question -------------//
 
+    if (answers.agricultureUse_waterSource) {
+      tempPumps = tempPumps.filter(pump => pump.waterSource === answers.agricultureUse_waterSource);
+    }
+    if (answers.agricultureUse_openwell_powersource) {
+      tempPumps = tempPumps.filter(
+        pump => pump.phase === answers.agricultureUse_openwell_powersource
+      );
+    }
+    if (answers.agricultureUse_openwell_installLocation) {
+      tempPumps = tempPumps.filter(
+        pump => pump.installLocation === answers.agricultureUse_openwell_installLocation
+      );
+    }
+     if (answers.agricultureUse_openwell_surface_irrigation_head) {
+      const headValue = parseFloat(answers.agricultureUse_openwell_surface_irrigation_head);
+      tempPumps = tempPumps.filter(
+        pump => headValue >= pump.totalHeadMin && headValue <= pump.totalHeadMax
+      );
+    }
 
-
+    if (answers.agricultureUse_openwell_surface_irrigation_discharge) {
+      const dischargeValue = parseFloat(answers.agricultureUse_openwell_surface_irrigation_discharge);
+      tempPumps = tempPumps.filter(
+        pump => dischargeValue >= pump.dischargeMin && dischargeValue <= pump.dischargeMax
+      );
+    }
+    if (answers.agricultureUse_openwell_surface_irrigation_borewellSize) {
+      tempPumps = tempPumps.filter(
+        pump => pump.deliverySize?.includes(answers.agricultureUse_openwell_surface_irrigation_borewellSize)
+      );
+    }
 
     setFilteredPumps(tempPumps);
   }, [answers]);
 
   useEffect(() => {
-    if (allAnswered) {
-      filterProducts();
-    }
+    if (allAnswered) filterProducts();
   }, [answers, filterProducts, allAnswered]);
 
+  // ---------------------- HANDLE ANSWER ----------------------
   const handleAnswer = (questionId, answer, nextSectionId) => {
-    setAnswers(prev => ({ ...prev, [questionId]: answer }));
+  setAnswers((prev) => ({ ...prev, [questionId]: answer }));
 
-    if (nextSectionId) {
-      const nextQuestions = pumpSelectionQuestions.filter(q => q.section === nextSectionId);
-      setCurrentQuestionFlow(prev => [...prev.slice(0, currentStep + 1), ...nextQuestions]);
-      setCurrentStep(prev => prev + 1);
-    } else if (currentStep < currentQuestionFlow.length - 1) {
-      setCurrentStep(prev => prev + 1);
-    } else {
-      setAllAnswered(true);
-    }
-  };
+  if (nextSectionId) {
+    // Add next section questions
+    const nextQuestions = pumpSelectionQuestions.filter(
+      (q) => q.section === nextSectionId
+    );
+    setCurrentQuestionFlow((prev) => [
+      ...prev.slice(0, currentStep + 1),
+      ...nextQuestions,
+    ]);
+    setCurrentStep((prev) => prev + 1);
+    setVisibleQuestions((prev) => [...prev, prev.length]);
+  } else if (currentStep < currentQuestionFlow.length - 1) {
+    // Move to the next question in the current flow
+    setCurrentStep((prev) => prev + 1);
+  } else {
+    // Only after finishing the last question
+    setAllAnswered(true);
+  }
+};
 
+
+  // ---------------------- AUTO-SCROLL ----------------------
+  useEffect(() => {
+    const timer = setTimeout(() => {
+      if (questionRefs.current[currentStep]) {
+        questionRefs.current[currentStep].scrollIntoView({
+          behavior: "smooth",
+          block: "center",
+        });
+      }
+    }, 600); // delay scroll until fade-in completes
+    return () => clearTimeout(timer);
+  }, [currentStep]);
+
+  // ---------------------- OBSERVE VISIBILITY (Scroll Up/Down) ----------------------
+  useEffect(() => {
+    const observer = new IntersectionObserver(
+      (entries) => {
+        entries.forEach((entry) => {
+          const index = Number(entry.target.dataset.index);
+          if (entry.isIntersecting) {
+            // When visible, fade in
+            setVisibleQuestions((prev) =>
+              prev.includes(index) ? prev : [...prev, index]
+            );
+          } else {
+            // When out of view (scroll up), fade out
+            setVisibleQuestions((prev) => prev.filter((i) => i !== index));
+          }
+        });
+      },
+      { threshold: 0.3 }
+    );
+
+    questionRefs.current.forEach((el) => {
+      if (el) observer.observe(el);
+    });
+
+    return () => observer.disconnect();
+  }, [currentQuestionFlow]);
+
+  // ---------------------- GO BACK ----------------------
   const goToPreviousStep = () => {
-    if (currentStep > 0) {
-      setCurrentStep(prev => prev - 1);
-    }
+    if (currentStep > 0) setCurrentStep((prev) => prev - 1);
   };
 
+  // ---------------------- RESET ----------------------
   const resetSelection = () => {
     setAnswers({});
     setCurrentStep(0);
     setCurrentQuestionFlow([pumpSelectionQuestions[0]]);
     setFilteredPumps([]);
     setAllAnswered(false);
+    setVisibleQuestions([0]);
   };
 
-  const currentQ = currentQuestionFlow[currentStep];
+  // ---------------------- ANIMATION VARIANTS ----------------------
+  const fadeVariant = {
+    hidden: { opacity: 0, y: 30 },
+    visible: { opacity: 1, y: 0, transition: { duration: 0.7 } },
+    exit: { opacity: 0, y: -20, transition: { duration: 0.5 } },
+  };
 
+  // ---------------------- RENDER ----------------------
   return (
     <div className="Pump_Selction_Tool_Container">
       <h1>Pump Selector Tool</h1>
-      <button className='Pump_selection_Reset_Button' onClick={resetSelection}>Reset Selection</button>
+      <button className="Pump_selection_Reset_Button" onClick={resetSelection}>
+        Reset Selection
+      </button>
 
-      {currentQ && !allAnswered ? (
-        <SelectionTool
-          question={currentQ}
-          onAnswer={handleAnswer}
-          currentAnswer={answers[currentQ.id]}
-          goToPreviousStep={goToPreviousStep}
-          canGoBack={currentStep > 0}
-        />
+      {!allAnswered ? (
+        <div className="questions-container">
+          <AnimatePresence mode="wait">
+            {currentQuestionFlow.map((question, index) => (
+              <motion.div
+                key={question.id}
+                variants={fadeVariant}
+                initial="hidden"
+                animate={visibleQuestions.includes(index) ? "visible" : "hidden"}
+                exit="exit"
+                ref={(el) => (questionRefs.current[index] = el)}
+                data-index={index}
+              >
+                <SelectionTool
+                  question={question}
+                  onAnswer={handleAnswer}
+                  currentAnswer={answers[question.id]}
+                  goToPreviousStep={goToPreviousStep}
+                  canGoBack={index > 0}
+                />
+              </motion.div>
+            ))}
+          </AnimatePresence>
+        </div>
       ) : (
-        <div>
+        <motion.div
+          initial={{ opacity: 0, y: 30 }}
+          animate={{ opacity: 1, y: 0 }}
+          transition={{ duration: 0.8 }}
+        >
           <h2>Selection Complete!</h2>
           {filteredPumps.length === 0 ? (
             <p>No pumps match your criteria. Try adjusting your selections.</p>
           ) : (
             <ProductList pumps={filteredPumps} />
           )}
-        </div>
+        </motion.div>
       )}
     </div>
   );

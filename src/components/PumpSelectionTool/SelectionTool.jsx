@@ -1,5 +1,6 @@
 // src/components/SelectionTool.jsx
 import React, { useState, useEffect } from "react";
+import { motion } from "framer-motion";
 import "./SelectionTool.css";
 
 function SelectionTool({ question, onAnswer, currentAnswer, goToPreviousStep, canGoBack }) {
@@ -14,8 +15,7 @@ function SelectionTool({ question, onAnswer, currentAnswer, goToPreviousStep, ca
   };
 
   const handleRangeChange = (e) => {
-    const value = e.target.value;
-    setInputValue(value);
+    setInputValue(e.target.value);
   };
 
   const handleNextClick = () => {
@@ -28,12 +28,18 @@ function SelectionTool({ question, onAnswer, currentAnswer, goToPreviousStep, ca
 
   const isRangeQuestion =
     question.id.toLowerCase().includes("head") ||
-    question.id.toLowerCase().includes("discharge")||
+    question.id.toLowerCase().includes("discharge") ||
     question.id.toLowerCase().includes("depth");
 
   return (
-    <div className="selection-tool">
+    <motion.div
+      className="selection-tool"
+      initial={{ opacity: 0, y: 20 }}
+      animate={{ opacity: 1, y: 0 }}
+      transition={{ duration: 0.6, ease: "easeOut" }}
+    >
       <h2 className="question-title">{question.question.split("-")[0]}</h2>
+
       <p className="question-subtext">
         {question.question.includes("HEAD")
           ? "Do you know how high you will need to pump water?"
@@ -63,9 +69,7 @@ function SelectionTool({ question, onAnswer, currentAnswer, goToPreviousStep, ca
           <div className="range-value">
             <strong>{inputValue || question.min} {question.unit}</strong>
           </div>
-          <button className="next-btn" onClick={handleNextClick}>
-            Next →
-          </button>
+          <button className="next-btn" onClick={handleNextClick}>Next →</button>
         </div>
       ) : question.type === "input" ? (
         <div>
@@ -78,28 +82,27 @@ function SelectionTool({ question, onAnswer, currentAnswer, goToPreviousStep, ca
             placeholder={`Enter value (${question.min}-${question.max} ${question.unit})`}
           />
           <button className="Next-button" onClick={handleNextClick}>Next</button>
-          
         </div>
       ) : (
         <div className="options">
           {question.options.map((option) => (
-            <button
+            <motion.button
               key={option.id}
               className={`option-button ${currentAnswer === option.id ? "selected" : ""}`}
               onClick={() => handleOptionChange(option.id, option.nextSection)}
+              whileHover={{ scale: 1.05 }}
+              whileTap={{ scale: 0.95 }}
             >
               {option.label}
-            </button>
+            </motion.button>
           ))}
         </div>
       )}
 
       {canGoBack && (
-        <button className="back-button" onClick={goToPreviousStep}>
-          Back
-        </button>
+        <button className="back-button" onClick={goToPreviousStep}>Back</button>
       )}
-    </div>
+    </motion.div>
   );
 }
 

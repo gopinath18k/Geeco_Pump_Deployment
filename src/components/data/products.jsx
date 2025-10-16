@@ -2,6 +2,9 @@ import Pump from "../../assets/Agriculture/Sub-V4-pump.webp"
 
 
 export const pumps = [
+
+
+  // ----DOMESTIC PUMP PRODUCTS -----------//
   // Sump/Tank -> Surface Pumps
   {
     id: 'DOM_ST_S_001',
@@ -158,4 +161,41 @@ export const pumps = [
     imageUrl: Pump,
     description: 'Compact 3-inch 1 Phase submersible pump for narrow borewells.',
   },
+
+
+
+  // ----AGRICULTURE PUMP PRODUCTS -----------//
+
+  {
+    id: 'AGR_BW_SUB_001',
+    name: 'Agri Submersible Bore 4"',
+    application: 'agricultural',
+    waterSource: 'openwell',
+    installLocation: 'surface_irrigation',
+    phase: '1phase_b_sub',
+    totalHeadMin: 10,
+    totalHeadMax: 100,
+    dischargeMin: 60,
+    dischargeMax: 180,
+    deliverySize: ['1inch_sur_ir', '1.5inch_sur_ir'],
+    imageUrl: Pump,
+    description: 'Submersible borewell pump for agricultural irrigation.',
+  },
+  {
+    id: 'AGR_BW_SUB_0011',
+    name: 'Agri Submersible Bore 4"',
+    application: 'agricultural',
+    waterSource: 'openwell',
+    phase: '3phase_b_sub',
+    installLocation: 'surface_irrigation',
+    totalHeadMin: 100,
+    totalHeadMax: 200,
+    dischargeMin: 100,
+    dischargeMax: 180,
+    deliverySize: ['2inch_sur_ir', '2.5inch_sur_ir'],
+    imageUrl: Pump,
+    description: 'Submersible borewell pump for agricultural irrigation.',
+  },
+
+
 ];

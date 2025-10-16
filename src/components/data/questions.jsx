@@ -337,8 +337,69 @@ export const pumpSelectionQuestions = [
   max: 450,
 },
  
-
+//------------- AGRICULTURE QUESTION SECTION ----------------//
   
+ {
+    id: 'agricultureUse_waterSource',
+    question: 'What is the Water Source?',
+    section: 'agriculturalUse', // This question belongs to the 'agricultureUse' flow
+    options: [
+      { id: 'openwell', label: 'Openwell', nextSection: 'agricultureUse_openwell' },
+      { id: 'borewell', label: 'Borewell', nextSection: 'agricultureUse_borewell' },
+      { id: 'canalriverbed', label: 'Canal RiverBed', nextSection: 'agricultureUse_canalriverbed' },
+    ],
+  },
 
+  {
+  id: 'agricultureUse_openwell_powersource',
+  question: 'What kind of power source is available?',
+  section: 'agricultureUse_openwell',
+  options: [
+    { id: '1phase_b_sub', label: '1 Phase', nextSection: 'agricultureUse_openwell_1phase' },
+    { id: '3phase_b_sub', label: '3 Phase', nextSection: 'agricultureUse_openwell_3phase' },
+  ],
+},
+
+  {
+    id: 'agricultureUse_openwell_installLocation',
+    question: 'Type of Irrigation - Surface irrigation (Flooding, Water channels etc…), Sprinkler, Drip.',
+    section: 'agricultureUse_openwell_1phase',
+    options: [
+      { id: 'surface_irrigation', label: 'Surface Irrigation', nextSection: 'agricultureUse_openwell_surface_irrigation' },
+      { id: 'sprinkler', label: 'Sprinkler', nextSection: 'agricultureUse_openwell_sprinkler' },
+      { id: 'drip_irrigation', label: 'Drip Irrigation', nextSection: 'agricultureUse_openwell_drip_irrigation' },
+    ],
+  },
+  
+  {
+    id: 'agricultureUse_openwell_surface_irrigation_head',
+    question: 'What is the total head required (in mts)',
+    section: 'agricultureUse_openwell_surface_irrigation',
+    type: 'input',
+    unit: 'meters',
+    min: 1,
+    max: 250,
+  },
+
+  {
+    id: 'agricultureUse_openwell_surface_irrigation_discharge',
+    question: 'What is the discharge required?',
+    section: 'agricultureUse_openwell_surface_irrigation',
+    type: 'input',
+    unit: 'LPM',
+    min: 1,
+    max: 450,
+  },
+  {
+      id: 'agricultureUse_openwell_surface_irrigation_borewellSize',
+      question: 'What is the desired Delivery size?',
+      section: 'agricultureUse_openwell_surface_irrigation',
+      options: [
+        { id: '1inch_sur_ir', label: '1"' },
+        { id: '1.5inch_sur_ir', label: '1.5"' },
+        { id: '2inch_sur_ir', label: '2"' },
+        { id: '2.5inch_sur_ir', label: '2.5"' },
+      ],
+    },
 
 ];
