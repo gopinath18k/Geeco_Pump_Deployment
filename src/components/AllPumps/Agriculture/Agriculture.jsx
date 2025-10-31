@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 import "./Agriculture.css"; 
 import Sub_V4_Tuff_Bullet from "../../../assets/Agriculture/Sub-V4-pump.webp"
+import V4_Envy_Pump from "../../../assets/Agriculture/V4-Envy-Pump.webp"
 import images1 from "../../../assets/Sub V4 pump.webp"
 import AgricultureBanner from "../../../assets/Agrimage.webp"
 import { Link } from "react-router-dom";
@@ -27,7 +28,7 @@ export const Agriculture = () => {
           sizes: {
             "4' (100MM)": [
               { name: "V4 Tuff,Bullet Pumps", img: Sub_V4_Tuff_Bullet, link: "/agriculture-pump/borewell_v4_pumps" },
-              { name: "V3 Sleek Model", img: images1 }
+              { name: "V4 Envy Pump", img: V4_Envy_Pump, link: "/agriculture-pump/V4_Envy_Pump" }
             ],
             "6' (150MM)": [
               { name: "V6 Heavy Model", img: images1 },

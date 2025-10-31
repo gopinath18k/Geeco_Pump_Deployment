@@ -165,6 +165,7 @@ export const pumps = [
 
 
   // ----AGRICULTURE PUMP PRODUCTS -----------//
+           // ----OPENWELL -----------//
 
   {
     id: 'AGR_BW_SUB_001',
@@ -188,6 +189,7 @@ export const pumps = [
     waterSource: 'openwell',
     phase: '3phase_b_sub',
     installLocation: 'surface_irrigation',
+    installLocationtype:['borewell','surface'],
     totalHeadMin: 100,
     totalHeadMax: 200,
     dischargeMin: 100,
@@ -196,6 +198,65 @@ export const pumps = [
     imageUrl: Pump,
     description: 'Submersible borewell pump for agricultural irrigation.',
   },
+
+  // ----BOREWELL -----------//
+  // ----SUBMERSIBLE -----------//
+
+  {
+    id: 'AGR_OP_SUB_0011',
+    name: 'Agri Submersible Borewell SUR_IR SUB"',
+    application: 'agricultural',
+    waterSource: 'borewell',
+    phase: '1phase_b_sub',
+    installLocation: 'surface_irrigation',
+    installLocationtype:'submersible',
+    totalHeadMin: 100,
+    totalHeadMax: 200,
+    dischargeMin: 100,
+    dischargeMax: 180,
+    deliverySize: ['1inch_sur_ir', '1.5inch_sur_ir'],
+    imageUrl: Pump,
+    description: 'Submersible borewell pump for agricultural irrigation.',
+  },
+
+
+  // ----SURFACE-----------//
+
+  {
+    id: 'AGR_OP_SUR_0011',
+    name: 'Agri Submersible Borewell SUR_IR SUF"',
+    application: 'agricultural',
+    waterSource: 'borewell',
+    phase: '1phase_b_sur',
+    installLocation: 'surface_irrigation',
+    installLocationtype:'surface',
+    totalHeadMin: 100,
+    totalHeadMax: 200,
+    dischargeMin: 100,
+    dischargeMax: 180,
+    depthMin: 100, 
+    depthMax: 250,
+    deliverySize: ['1inch_sur_ir', '1.5inch_sur_ir'],
+    imageUrl: Pump,
+    description: 'Submersible borewell pump for agricultural irrigation.',
+  },
+
+  // ------- Canalriverbed -----------//
+
+  {
+    id: 'AGR_OP_SUR_0011',
+    name: 'Agri Submersible  CR"',
+    application: 'agricultural',
+    waterSource: 'canalriverbed',
+    totalHeadMin: 100,
+    totalHeadMax: 200,
+    dischargeMin: 100,
+    dischargeMax: 180,
+    deliverySize: ['1inch_sur_ir', '1.5inch_sur_ir'],
+    imageUrl: Pump,
+    description: 'Submersible borewell pump for agricultural irrigation.',
+  },
+
 
 
 ];

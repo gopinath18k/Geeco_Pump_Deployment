@@ -12,6 +12,7 @@ import Footer from "./components/Home/Footer/Footer";
 import { BorewellV4Pumps } from "./components/AllPumps/Agriculture/Borewell_V4_Pump/Borewell_V4_Pump";
 import { V4TuffPump } from "./components/AllPumps/Agriculture/Borewell_V4_Pump/V4_Tuff_Pump/V4_Tuff_Pump";
 import { V4BulletPump } from "./components/AllPumps/Agriculture/Borewell_V4_Pump/V4_Bullet_Pump/V4_Bullet_Pump";
+import { V4EnvyPump } from "./components/AllPumps/Agriculture/Borewell_V4_Pump/Borewell_V4_Envy_Pump/V4_Envy_Pump";
 
 
 function App() {
@@ -29,6 +30,7 @@ function App() {
         <Route path='/agriculture-pump/borewell_v4_pumps' element={<BorewellV4Pumps/>}></Route>
         <Route path='/agriculture-pump/borewell_v4_pumps/v4_tuff_pump' element={<V4TuffPump/>}></Route>
         <Route path='/agriculture-pump/borewell_v4_pumps/v4_bullet_pump' element={<V4BulletPump/>}></Route>
+        <Route path='/agriculture-pump/V4_Envy_Pump' element={<V4EnvyPump/>}></Route>
       </Routes>
       <Footer/>
     </BrowserRouter>

@@ -181,7 +181,7 @@ function PumpSelectionTool() {
       );
     }
 
-    //--------- Agriculture Section Question -------------//
+    //--------- Agriculture Openwell Section Question -------------//
 
     if (answers.agricultureUse_waterSource) {
       tempPumps = tempPumps.filter(pump => pump.waterSource === answers.agricultureUse_waterSource);
@@ -215,36 +215,156 @@ function PumpSelectionTool() {
       );
     }
 
-    setFilteredPumps(tempPumps);
+    //--------- Agriculture Borewell Section Question -------------//
+
+    // Submersible //
+
+    if (answers.agricultureUse_borewell_installLocation) {
+      tempPumps = tempPumps.filter(
+        pump => pump.installLocation === answers.agricultureUse_borewell_installLocation
+      );
+    }
+    if (answers.agricultureUse_borewell_installLocation_type) {
+      tempPumps = tempPumps.filter(
+        pump => pump.installLocationtype === answers.agricultureUse_borewell_installLocation_type
+      );
+    }
+  
+    if (answers.agricultureUse_borewell_submersible_borewellSize) {
+      tempPumps = tempPumps.filter(
+        pump => pump.deliverySize?.includes(answers.agricultureUse_borewell_submersible_borewellSize)
+      );
+    }
+    if (answers.agricultureUse_borewell_submersible_powersource) {
+      tempPumps = tempPumps.filter(
+        pump => pump.phase === answers.agricultureUse_borewell_submersible_powersource
+      );
+    }
+    if (answers.agricultureUse_openwell_installLocation) {
+      tempPumps = tempPumps.filter(
+        pump => pump.installLocation === answers.agricultureUse_openwell_installLocation
+      );
+    }
+    if (answers.agricultureUse_borewell_submersible_head) {
+      const headValue = parseFloat(answers.agricultureUse_borewell_submersible_head);
+      tempPumps = tempPumps.filter(
+        pump => headValue >= pump.totalHeadMin && headValue <= pump.totalHeadMax
+      );
+    }
+    if (answers.agricultureUse_borewell_submersible_discharge) {
+      const dischargeValue = parseFloat(answers.agricultureUse_borewell_submersible_discharge);
+      tempPumps = tempPumps.filter(
+        pump => dischargeValue >= pump.dischargeMin && dischargeValue <= pump.dischargeMax
+      );
+    }
+
+    // Surface //
+    
+    if (answers.agricultureUse_borewell_surface_powersource) {
+      tempPumps = tempPumps.filter(
+        pump => pump.phase === answers.agricultureUse_borewell_surface_powersource
+      );
+    }
+    if (answers.agricultureUse_borewell_surface_depth) {
+      const depthValue = parseFloat(answers.agricultureUse_borewell_surface_depth);
+      tempPumps = tempPumps.filter(
+        pump => depthValue >= pump.depthMin && depthValue <= pump.depthMax
+      );
+    }
+    if (answers.agricultureUse_borewell_surface_head) {
+      const headValue = parseFloat(answers.agricultureUse_borewell_surface_head);
+      tempPumps = tempPumps.filter(
+        pump => headValue >= pump.totalHeadMin && headValue <= pump.totalHeadMax
+      );
+    }
+    if (answers.agricultureUse_borewell_surface_discharge) {
+      const dischargeValue = parseFloat(answers.agricultureUse_borewell_surface_discharge);
+      tempPumps = tempPumps.filter(
+        pump => dischargeValue >= pump.dischargeMin && dischargeValue <= pump.dischargeMax
+      );
+    }
+    
+    
+
+     setFilteredPumps(tempPumps);
   }, [answers]);
 
   useEffect(() => {
     if (allAnswered) filterProducts();
   }, [answers, filterProducts, allAnswered]);
 
-  // ---------------------- HANDLE ANSWER ----------------------
-  const handleAnswer = (questionId, answer, nextSectionId) => {
-  setAnswers((prev) => ({ ...prev, [questionId]: answer }));
-
-  if (nextSectionId) {
-    // Add next section questions
-    const nextQuestions = pumpSelectionQuestions.filter(
-      (q) => q.section === nextSectionId
-    );
-    setCurrentQuestionFlow((prev) => [
-      ...prev.slice(0, currentStep + 1),
-      ...nextQuestions,
-    ]);
-    setCurrentStep((prev) => prev + 1);
-    setVisibleQuestions((prev) => [...prev, prev.length]);
-  } else if (currentStep < currentQuestionFlow.length - 1) {
-    // Move to the next question in the current flow
-    setCurrentStep((prev) => prev + 1);
-  } else {
-    // Only after finishing the last question
-    setAllAnswered(true);
-  }
+// ---------------------- HELPER FUNCTION ----------------------
+const isAllQuestionsAnswered = () => {
+  return currentQuestionFlow.every(
+    (q) => answers[q.id] !== undefined && answers[q.id] !== ""
+  );
 };
+
+// ---------------------- HANDLE ANSWER ----------------------
+const handleAnswer = (questionId, answer, nextSectionId) => {
+  setAnswers((prev) => {
+    const newAnswers = { ...prev, [questionId]: answer };
+
+    const currentIndex = currentQuestionFlow.findIndex(
+      (q) => q.id === questionId
+    );
+
+    if (nextSectionId) {
+      const nextQuestions = pumpSelectionQuestions.filter(
+        (q) => q.section === nextSectionId
+      );
+
+      setCurrentQuestionFlow((prevFlow) => {
+        const updatedFlow = [...prevFlow.slice(0, currentIndex + 1)];
+        const existingIds = new Set(updatedFlow.map((q) => q.id));
+
+        nextQuestions.forEach((q) => {
+          if (!existingIds.has(q.id)) {
+            updatedFlow.push(q);
+          }
+        });
+
+        return updatedFlow;
+      });
+
+      setCurrentStep(currentIndex + 1);
+      setVisibleQuestions((prev) => [...new Set([...prev, currentIndex + 1])]);
+
+      setTimeout(() => {
+        const nextElement = questionRefs.current[currentIndex + 1];
+        if (nextElement) {
+          nextElement.scrollIntoView({ behavior: "smooth", block: "center" });
+        }
+      }, 600);
+    } else {
+      // check if all questions are answered
+      const allAnsweredNow = currentQuestionFlow.every(
+        (q) => newAnswers[q.id] !== undefined && newAnswers[q.id] !== ""
+      );
+
+      if (allAnsweredNow) {
+        setAllAnswered(true);
+      } else {
+        // move to next unanswered question
+        const nextUnansweredIndex = currentQuestionFlow.findIndex(
+          (q) => newAnswers[q.id] === undefined || newAnswers[q.id] === ""
+        );
+        if (nextUnansweredIndex !== -1) {
+          setCurrentStep(nextUnansweredIndex);
+          setTimeout(() => {
+            const nextEl = questionRefs.current[nextUnansweredIndex];
+            if (nextEl) {
+              nextEl.scrollIntoView({ behavior: "smooth", block: "center" });
+            }
+          }, 400);
+        }
+      }
+    }
+
+    return newAnswers;
+  });
+};
+
 
 
   // ---------------------- AUTO-SCROLL ----------------------
@@ -256,23 +376,21 @@ function PumpSelectionTool() {
           block: "center",
         });
       }
-    }, 600); // delay scroll until fade-in completes
+    }, 600);
     return () => clearTimeout(timer);
   }, [currentStep]);
 
-  // ---------------------- OBSERVE VISIBILITY (Scroll Up/Down) ----------------------
+  // ---------------------- OBSERVE VISIBILITY ----------------------
   useEffect(() => {
     const observer = new IntersectionObserver(
       (entries) => {
         entries.forEach((entry) => {
           const index = Number(entry.target.dataset.index);
           if (entry.isIntersecting) {
-            // When visible, fade in
             setVisibleQuestions((prev) =>
               prev.includes(index) ? prev : [...prev, index]
             );
           } else {
-            // When out of view (scroll up), fade out
             setVisibleQuestions((prev) => prev.filter((i) => i !== index));
           }
         });
@@ -289,10 +407,18 @@ function PumpSelectionTool() {
 
   // ---------------------- GO BACK ----------------------
   const goToPreviousStep = () => {
-    if (currentStep > 0) setCurrentStep((prev) => prev - 1);
+    if (currentStep > 0) {
+      setCurrentStep((prev) => prev - 1);
+      setTimeout(() => {
+        const prevEl = questionRefs.current[currentStep - 1];
+        if (prevEl) {
+          prevEl.scrollIntoView({ behavior: "smooth", block: "center" });
+        }
+      }, 400);
+    }
   };
 
-  // ---------------------- RESET ----------------------
+  // ---------------------- RESET ---------------------- //
   const resetSelection = () => {
     setAnswers({});
     setCurrentStep(0);
@@ -302,7 +428,7 @@ function PumpSelectionTool() {
     setVisibleQuestions([0]);
   };
 
-  // ---------------------- ANIMATION VARIANTS ----------------------
+  // ---------------------- ANIMATION VARIANTS ---------------------- //
   const fadeVariant = {
     hidden: { opacity: 0, y: 30 },
     visible: { opacity: 1, y: 0, transition: { duration: 0.7 } },
@@ -318,14 +444,21 @@ function PumpSelectionTool() {
       </button>
 
       {!allAnswered ? (
-        <div className="questions-container">
+        <div
+          className="questions-container"
+          style={{
+            scrollBehavior: "smooth", 
+          }}
+        >
           <AnimatePresence mode="wait">
             {currentQuestionFlow.map((question, index) => (
               <motion.div
                 key={question.id}
                 variants={fadeVariant}
                 initial="hidden"
-                animate={visibleQuestions.includes(index) ? "visible" : "hidden"}
+                animate={
+                  visibleQuestions.includes(index) ? "visible" : "hidden"
+                }
                 exit="exit"
                 ref={(el) => (questionRefs.current[index] = el)}
                 data-index={index}
@@ -351,7 +484,7 @@ function PumpSelectionTool() {
           {filteredPumps.length === 0 ? (
             <p>No pumps match your criteria. Try adjusting your selections.</p>
           ) : (
-            <ProductList pumps={filteredPumps} />
+            <ProductList pumps={filteredPumps}/>
           )}
         </motion.div>
       )}
