@@ -24,6 +24,10 @@ import { AgriDolpinBelugaOpenwellPumps } from "./components/AllPumps/Agriculture
 import { AgriDolpinOpenwellPumps } from "./components/AllPumps/Agriculture/Openwell_Pump/Horizontal_Pump/Dolpin_Beluga_Openwell_Pump/Dolpin_Horizontal_Openwell_Pump/Agri_Dolpin_Openwell_Pump";
 import { AgriBelugaOpenwellPumps } from "./components/AllPumps/Agriculture/Openwell_Pump/Horizontal_Pump/Dolpin_Beluga_Openwell_Pump/Beluga_Horizontal_Openwell_Pump/Agri_Beluga_Horizontal_Openwell_Pump";
 import { AgriJumboOpenwellPumps } from "./components/AllPumps/Agriculture/Openwell_Pump/Horizontal_Pump/Jumbo_Openwell_Pump/Agri_Jumbo_Openwell_Pump";
+import { AgriSsMsVerticalPumps } from "./components/AllPumps/Agriculture/Openwell_Pump/Vertical_Pump/SS&MS_Vertical_Openwell_Pump/Agri_SSMS_Vertical_Pump";
+import { AgriSsOpenwellVerticalPumps } from "./components/AllPumps/Agriculture/Openwell_Pump/Vertical_Pump/SS&MS_Vertical_Openwell_Pump/SS_Vertical_Openwell_Pump/Agri_SS_Vertical_Openwell_Pump";
+import { AgriMsOpenwellVerticalPumps } from "./components/AllPumps/Agriculture/Openwell_Pump/Vertical_Pump/SS&MS_Vertical_Openwell_Pump/MS_Vertical_Openwell_Pump/Agri_MS_Vertical_Openwell_Pump";
+import { AgriJumboVerticalOpenwellPumps } from "./components/AllPumps/Agriculture/Openwell_Pump/Vertical_Pump/Jumbo_Vertical_Openwell_Pump/Agri_Jumbo_Vertical_Openwell_Pump";
 
 
 
@@ -55,6 +59,11 @@ function App() {
         <Route path='/agriculture-pump/Agriculture-Dolphin&Beluga-Horizontal-Openwell-Pump/Agriculture-Dolphin-Horizontal-Openwell-Pump' element={<AgriDolpinOpenwellPumps/>}></Route>
         <Route path='/agriculture-pump/Agriculture-Dolphin&Beluga-Horizontal-Openwell-Pump/Agriculture-Beluga-Horizontal-Openwell-Pump' element={<AgriBelugaOpenwellPumps/>}></Route>
         <Route path='/agriculture-pump/Agriculture-Jumbo-Horizontal-Openwell-Pump' element={<AgriJumboOpenwellPumps/>}></Route>
+        <Route path='/agriculture-pump/Agriculture-SS&MS-Vertical-Openwell-Pump' element={<AgriSsMsVerticalPumps/>}></Route>
+        <Route path='/agriculture-pump/Agriculture-SS&MS-Vertical-Openwell-Pump/Agriculture-SS-Vertical-Openwell-Pump' element={<AgriSsOpenwellVerticalPumps/>}></Route>
+        <Route path='/agriculture-pump/Agriculture-SS&MS-Vertical-Openwell-Pump/Agriculture-MS-Vertical-Openwell-Pump' element={<AgriMsOpenwellVerticalPumps/>}></Route>
+        <Route path='/agriculture-pump/Agriculture-Jumbo-Vertical-Openwell-Pump' element={<AgriJumboVerticalOpenwellPumps/>}></Route>
+
       </Routes>
       <Footer/>
     </BrowserRouter>

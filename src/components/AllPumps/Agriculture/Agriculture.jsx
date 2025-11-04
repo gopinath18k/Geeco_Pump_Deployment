@@ -6,8 +6,9 @@ import V6_Premium_Pump from "../../../assets/Agriculture/V6-Premium-Pump.webp"
 import Agri_ZOW_Pump from "../../../assets/Agriculture/ZOW-Pump.webp"
 import Agri_SSMS_Openwell_Pump from "../../../assets/Agriculture/SS&MS-OpenWell-Pump.webp"
 import Agri_DolphinBeluga_Pump from "../../../assets/Agriculture/Dolphin&Beluga-Pump.webp"
+import Agri_SSMS_Vertical_Pump from "../../../assets/Agriculture/SS_MS-Vertical-Pump.webp"
+import Agri_Jumbo_Vertical_Pump from "../../../assets/Agriculture/Jumbo-Vertical-Pump.webp"
 import Agri_Jumbo_Horizontal_Pump from "../../../assets/Agriculture/Jumbo-Pump.webp"
-import images1 from "../../../assets/Sub V4 pump.webp"
 import AgricultureBanner from "../../../assets/Agrimage.webp"
 import { Link } from "react-router-dom";
 
@@ -52,7 +53,8 @@ export const Agriculture = () => {
               
             ],
             "VERTICAL OPENWELL": [
-              { name: "V4 Amphibian", img: images1 },
+              { name: "SS & MS Vertical Openwell Pumps", img: Agri_SSMS_Vertical_Pump, link: "/agriculture-pump/Agriculture-SS&MS-Vertical-Openwell-Pump" },
+              { name: "Jumbo Vertical Openwell Pump", img: Agri_Jumbo_Vertical_Pump, link: "/agriculture-pump/Agriculture-Jumbo-Vertical-Openwell-Pump" },
             ],
           },
         },
