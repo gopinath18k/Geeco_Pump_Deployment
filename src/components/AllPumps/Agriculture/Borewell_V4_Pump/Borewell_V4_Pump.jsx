@@ -64,7 +64,7 @@ export const BorewellV4Pumps = () => {
                 <h3>4" (100MM) Sumbmersible Pumps</h3>
 
                 <div className="Borewell_V4_Pump_Category_Container">
-                    <Link to="/agriculture-pump/borewell_v4_pumps/v4_tuff_pump" className="Borewell_V4_Pump_Inner_Container col-12 col-sm-5 col-md-5 col-lg-4 col-xl-3" onClick={() => window.scrollTo(0, 0)}>
+                    <Link to="/agriculture-pump/borewell-v4-pumps/v4-tuff-pump" className="Borewell_V4_Pump_Inner_Container col-12 col-sm-5 col-md-5 col-lg-4 col-xl-3" onClick={() => window.scrollTo(0, 0)}>
                          
                             <img src={Borewell_V4_Tuff_Bullet} alt="Borewell_V4_Pump Model One" className='Borewell_V4_Pump_Model_Image'/>
                             <div className="Borewell_V4_Pump_Model_Content">
@@ -148,7 +148,7 @@ export const BorewellV4Pumps = () => {
                             </div>
                         
                     </Link>
-                    <Link to="/agriculture-pump/borewell_v4_pumps/v4_bullet_pump" className="Borewell_V4_Pump_Inner_Container col-12 col-sm-5 col-md-5 col-lg-4 col-xl-3" onClick={() => window.scrollTo(0, 0)}>
+                    <Link to="/agriculture-pump/borewell-v4-pumps/v4-bullet-pump" className="Borewell_V4_Pump_Inner_Container col-12 col-sm-5 col-md-5 col-lg-4 col-xl-3" onClick={() => window.scrollTo(0, 0)}>
                         <img src={Borewell_V4_Tuff_Bullet} alt="Borewell_V4_Pump Model One" className='Borewell_V4_Pump_Model_Image'/>
                         <div className="Borewell_V4_Pump_Model_Content">
                             <div className="Borewell_V4_Pump_Title_container Borewell_V4_Pump_border">

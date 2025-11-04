@@ -79,8 +79,8 @@ export const V4BulletPump = () => {
                     </div>
                     <div className="Related_Pump_Section col-12 col-md-6  col-md-6 col-lg-6 col-xl-6">
                         <h4>Related Pumps</h4>
-                        <Link to="/agriculture-pump/borewell_v4_pumps/v4_tuff_pump" onClick={() => window.scrollTo(0, 0)}><p>1.4" Tuff (100mm) Pumps</p></Link>
-                        <Link to="" onClick={() => window.scrollTo(0, 0)}><p>2.6’ (150mm) Pumps</p></Link>
+                        <Link to="/agriculture-pump/borewell-v4-pumps/v4-tuff-pump" onClick={() => window.scrollTo(0, 0)}><p>1.4" Tuff (100mm) Pumps</p></Link>
+                        <Link to="/agriculture-pump/V6-Premium-Pump" onClick={() => window.scrollTo(0, 0)}><p>2.6’ (150mm) Pumps</p></Link>
                     </div>
                 </div>
                 

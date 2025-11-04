@@ -13,6 +13,19 @@ import { BorewellV4Pumps } from "./components/AllPumps/Agriculture/Borewell_V4_P
 import { V4TuffPump } from "./components/AllPumps/Agriculture/Borewell_V4_Pump/V4_Tuff_Pump/V4_Tuff_Pump";
 import { V4BulletPump } from "./components/AllPumps/Agriculture/Borewell_V4_Pump/V4_Bullet_Pump/V4_Bullet_Pump";
 import { V4EnvyPump } from "./components/AllPumps/Agriculture/Borewell_V4_Pump/Borewell_V4_Envy_Pump/V4_Envy_Pump";
+import { V6PremiumPump } from "./components/AllPumps/Agriculture/Borewell_V4_Pump/Borewell_V6_Pump/Borewell_V6_Premium_Pump/V6_Premium_Pump";
+import { V6VincPump } from "./components/AllPumps/Agriculture/Borewell_V4_Pump/Borewell_V6_Pump/Borewell_V6_Vinc_Pump/V6_Vinc_Pump";
+import { V6ActivePump } from "./components/AllPumps/Agriculture/Borewell_V4_Pump/Borewell_V6_Pump/Borewell_V6_Active_Pump/V6_Active_Pump";
+import { AgricultureZOWOpenwellPump } from "./components/AllPumps/Agriculture/Openwell_Pump/Horizontal_Pump/ZOW_Pump/ZOW_Pump";
+import { AgriSsMsOpenwellPumps } from "./components/AllPumps/Agriculture/Openwell_Pump/Horizontal_Pump/SS&MS_Openwell_Pump/SS_MS_Openwell_Pump";
+import { AgriSsOpenwellPumps } from "./components/AllPumps/Agriculture/Openwell_Pump/Horizontal_Pump/SS&MS_Openwell_Pump/SS_Horizontal_Openwell_Pump/Agri_SS_Horizontal_Openwell_Pump";
+import { AgriMsOpenwellPumps } from "./components/AllPumps/Agriculture/Openwell_Pump/Horizontal_Pump/SS&MS_Openwell_Pump/MS_Horizontal_Openwell_Pump/Agri_MS_Horizontal_Openwell_Pump";
+import { AgriDolpinBelugaOpenwellPumps } from "./components/AllPumps/Agriculture/Openwell_Pump/Horizontal_Pump/Dolpin_Beluga_Openwell_Pump/Agri_Dolpin_Beluga_Openwell_Pump";
+import { AgriDolpinOpenwellPumps } from "./components/AllPumps/Agriculture/Openwell_Pump/Horizontal_Pump/Dolpin_Beluga_Openwell_Pump/Dolpin_Horizontal_Openwell_Pump/Agri_Dolpin_Openwell_Pump";
+import { AgriBelugaOpenwellPumps } from "./components/AllPumps/Agriculture/Openwell_Pump/Horizontal_Pump/Dolpin_Beluga_Openwell_Pump/Beluga_Horizontal_Openwell_Pump/Agri_Beluga_Horizontal_Openwell_Pump";
+import { AgriJumboOpenwellPumps } from "./components/AllPumps/Agriculture/Openwell_Pump/Horizontal_Pump/Jumbo_Openwell_Pump/Agri_Jumbo_Openwell_Pump";
+
+
 
 
 function App() {
@@ -27,10 +40,21 @@ function App() {
         <Route path='/warranty-registration' element={<RegisterPump/>}></Route>
         <Route path='/registered-pumps' element={<RegisteredPumps/>}></Route>
         <Route path='/agriculture-pump-categories' element={<Agriculture/>}></Route>
-        <Route path='/agriculture-pump/borewell_v4_pumps' element={<BorewellV4Pumps/>}></Route>
-        <Route path='/agriculture-pump/borewell_v4_pumps/v4_tuff_pump' element={<V4TuffPump/>}></Route>
-        <Route path='/agriculture-pump/borewell_v4_pumps/v4_bullet_pump' element={<V4BulletPump/>}></Route>
-        <Route path='/agriculture-pump/V4_Envy_Pump' element={<V4EnvyPump/>}></Route>
+        <Route path='/agriculture-pump/borewell-v4-pumps' element={<BorewellV4Pumps/>}></Route>
+        <Route path='/agriculture-pump/borewell-v4-pumps/v4-tuff-pump' element={<V4TuffPump/>}></Route>
+        <Route path='/agriculture-pump/borewell-v4-pumps/v4-bullet-pump' element={<V4BulletPump/>}></Route>
+        <Route path='/agriculture-pump/V4-Envy-Pump' element={<V4EnvyPump/>}></Route>
+        <Route path='/agriculture-pump/V6-Premium-Pump' element={<V6PremiumPump/>}></Route>
+        <Route path='/agriculture-pump/V6-Vinc-Pump' element={<V6VincPump/>}></Route>
+        <Route path='/agriculture-pump/V6-Active-Pump' element={<V6ActivePump/>}></Route>
+        <Route path='/agriculture-pump/Agriculture-ZOW-Horizontal-Openwell-Pump' element={<AgricultureZOWOpenwellPump/>}></Route>
+        <Route path='/agriculture-pump/Agriculture-SS&MS-Horizontal-Openwell-Pump' element={<AgriSsMsOpenwellPumps/>}></Route>
+        <Route path='/agriculture-pump/Agriculture-SS&MS-Horizontal-Openwell-Pump/SS-Horizontal-Openwell-Pump' element={<AgriSsOpenwellPumps/>}></Route>
+        <Route path='/agriculture-pump/Agriculture-SS&MS-Horizontal-Openwell-Pump/MS-Horizontal-Openwell-Pump' element={<AgriMsOpenwellPumps/>}></Route>
+        <Route path='/agriculture-pump/Agriculture-Dolphin&Beluga-Horizontal-Openwell-Pump' element={<AgriDolpinBelugaOpenwellPumps/>}></Route>
+        <Route path='/agriculture-pump/Agriculture-Dolphin&Beluga-Horizontal-Openwell-Pump/Agriculture-Dolphin-Horizontal-Openwell-Pump' element={<AgriDolpinOpenwellPumps/>}></Route>
+        <Route path='/agriculture-pump/Agriculture-Dolphin&Beluga-Horizontal-Openwell-Pump/Agriculture-Beluga-Horizontal-Openwell-Pump' element={<AgriBelugaOpenwellPumps/>}></Route>
+        <Route path='/agriculture-pump/Agriculture-Jumbo-Horizontal-Openwell-Pump' element={<AgriJumboOpenwellPumps/>}></Route>
       </Routes>
       <Footer/>
     </BrowserRouter>
