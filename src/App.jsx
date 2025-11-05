@@ -28,6 +28,20 @@ import { AgriSsMsVerticalPumps } from "./components/AllPumps/Agriculture/Openwel
 import { AgriSsOpenwellVerticalPumps } from "./components/AllPumps/Agriculture/Openwell_Pump/Vertical_Pump/SS&MS_Vertical_Openwell_Pump/SS_Vertical_Openwell_Pump/Agri_SS_Vertical_Openwell_Pump";
 import { AgriMsOpenwellVerticalPumps } from "./components/AllPumps/Agriculture/Openwell_Pump/Vertical_Pump/SS&MS_Vertical_Openwell_Pump/MS_Vertical_Openwell_Pump/Agri_MS_Vertical_Openwell_Pump";
 import { AgriJumboVerticalOpenwellPumps } from "./components/AllPumps/Agriculture/Openwell_Pump/Vertical_Pump/Jumbo_Vertical_Openwell_Pump/Agri_Jumbo_Vertical_Openwell_Pump";
+import { AgriSSMSAmphibianPumps } from "./components/AllPumps/Agriculture/Amphibian_Pump/Agri_SSMS_Amphibian_Pump";
+import { AgriSSAmphibianPumps } from "./components/AllPumps/Agriculture/Amphibian_Pump/Agri_SS_Amphibian_Pump/Agri_SS_Amphibian_Pump";
+import { AgriMSAmphibianPumps } from "./components/AllPumps/Agriculture/Amphibian_Pump/Agri_MS_Amphibian_Pump/Agri_MS_Amphibian_Pump";
+import { AgriJumboAmphibianPumps } from "./components/AllPumps/Agriculture/Amphibian_Pump/Agri_Jumbo_Amphibian_Pump/Agri_Jumbo_Amphibian_Pump";
+import { AgriMiniMonoblockPumps } from "./components/AllPumps/Agriculture/Self_Priming_Monoblock_Pump/Agri_Mini_Monoblocks_Pump/Agri_Mini_Monoblocks_Pump";
+import { AgriGMSPumps } from "./components/AllPumps/Agriculture/Self_Priming_Monoblock_Pump/Agri_GMS_Pump/Agri_GMS_Pump";
+import { AgriGMHPumps } from "./components/AllPumps/Agriculture/Self_Priming_Monoblock_Pump/Agri_GHM_Pump/Agri_GMH_Pump";
+import { AgriHighPressureMultistagePumps } from "./components/AllPumps/Agriculture/High_Pressure_Pump/Agri_High_Pressure_Multistage_Pump";
+import { AgriMonoCompressorPumps } from "./components/AllPumps/Agriculture/Compressor_Pump/Mono_Compressor_Pump/Agri_Mono_Compressor_Pump";
+import { AgriDoubleCylinderCompressorPumps } from "./components/AllPumps/Agriculture/Compressor_Pump/Belt_Compressor_Pump/Double_Compressor_Pump/Agri_Double_Compressor_Pump";
+import { AgriSingleCylinderCompressorPumps } from "./components/AllPumps/Agriculture/Compressor_Pump/Belt_Compressor_Pump/Single_Compressor_Pump/Agri_Single_Compressor_Pump";
+import { AgriSinglePhaseELH } from "./components/AllPumps/Agriculture/Control_Panel/Agri_Single_Phase_Panel/Agri_Single_Phase_ELH_Panel";
+import { AgriThreePhaseGNCOne } from "./components/AllPumps/Agriculture/Control_Panel/Agri_Three_Phase_Panel/Agri_Three_Phase_GNC_Panel_One/Agri_Three_Phase_GNC_Panel_One";
+import { AgriThreePhaseGNCTwo } from "./components/AllPumps/Agriculture/Control_Panel/Agri_Three_Phase_Panel/Agri_Three_Phase_GNC_Panel_Two/Agri_Three_Phase_GNC_Panel_Two";
 
 
 
@@ -63,7 +77,20 @@ function App() {
         <Route path='/agriculture-pump/Agriculture-SS&MS-Vertical-Openwell-Pump/Agriculture-SS-Vertical-Openwell-Pump' element={<AgriSsOpenwellVerticalPumps/>}></Route>
         <Route path='/agriculture-pump/Agriculture-SS&MS-Vertical-Openwell-Pump/Agriculture-MS-Vertical-Openwell-Pump' element={<AgriMsOpenwellVerticalPumps/>}></Route>
         <Route path='/agriculture-pump/Agriculture-Jumbo-Vertical-Openwell-Pump' element={<AgriJumboVerticalOpenwellPumps/>}></Route>
-
+        <Route path='/agriculture-pump/Agriculture-SS&MS-Amphibian-Pump' element={<AgriSSMSAmphibianPumps/>}></Route>
+        <Route path='/agriculture-pump/Agriculture-SS&MS-Amphibian-Pump/Agriculture-SS-Amphibian-Pump' element={<AgriSSAmphibianPumps/>}></Route>
+        <Route path='/agriculture-pump/Agriculture-SS&MS-Amphibian-Pump/Agriculture-MS-Amphibian-Pump' element={<AgriMSAmphibianPumps/>}></Route>
+        <Route path='/agriculture-pump/Agriculture-Jumbo-Horizontal-Amphibian-Pump' element={<AgriJumboAmphibianPumps/>}></Route>
+        <Route path='/agriculture-pump/Agriculture-Self-Priming-Monoblock-Mini-Monoblocks-Pump' element={<AgriMiniMonoblockPumps/>}></Route>
+        <Route path='/agriculture-pump/Agriculture-Self-Priming-Monoblock-GMS-Pump' element={<AgriGMSPumps/>}></Route>
+        <Route path='/agriculture-pump/Agriculture-Self-Priming-Monoblock-GMH-Pump' element={<AgriGMHPumps/>}></Route>
+        <Route path='/agriculture-pump/Agriculture-High-Pressure-Vertical-Multistage-Pump' element={<AgriHighPressureMultistagePumps/>}></Route>
+        <Route path='/agriculture-pump/Agriculture-Mono-Compressor-Pump' element={<AgriMonoCompressorPumps/>}></Route>
+        <Route path='/agriculture-pump/Agriculture-Double-Cylinder-Compressor-Pump' element={<AgriDoubleCylinderCompressorPumps/>}></Route>
+        <Route path='/agriculture-pump/Agriculture-Single-Cylinder-Compressor-Pump' element={<AgriSingleCylinderCompressorPumps/>}></Route>
+        <Route path='/agriculture-pump/Agriculture-Single-Phase-ELH' element={<AgriSinglePhaseELH/>}></Route>
+        <Route path='/agriculture-pump/Agriculture-Three-Phase-GNC-Panel-One' element={<AgriThreePhaseGNCOne/>}></Route>
+        <Route path='/agriculture-pump/Agriculture-Three-Phase-GNC-Panel-Two' element={<AgriThreePhaseGNCTwo/>}></Route>
       </Routes>
       <Footer/>
     </BrowserRouter>
