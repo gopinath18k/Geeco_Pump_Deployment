@@ -1,4 +1,4 @@
-.Agri_Openwell_Vertical_Ms_Pump_Main_Conatiner {
+.Dom_V3_Sleek_Pump_Main_Conatiner {
     margin: 0;
     padding: 0;
     width: 100%;
@@ -9,7 +9,7 @@ Link{
 }
 
 /* Banner container */
-.Agri_Openwell_Vertical_Ms_Pump_Banner_container {
+.Dom_V3_Sleek_Pump_Banner_container {
     width: 100%;
     height: 60vh;
     display: flex;
@@ -25,21 +25,21 @@ Link{
 }
 
 /* Pump image */
-.Agri_Openwell_Vertical_Ms_Pump_Banner_image {
+.Dom_V3_Sleek_Pump_Banner_image {
     width: 10%;               
     display: flex;
     justify-content: center;
     align-items: center;
 }
 
-.Agri_Openwell_Vertical_Ms_Pump_images {
+.Dom_V3_Sleek_Pump_images {
     width: 100%;
     height: auto;
     display: block;
 }
 
 /* Banner content */
-.Agri_Openwell_Vertical_Ms_Pump_Banner_Content {
+.Dom_V3_Sleek_Pump_Banner_Content {
     display: flex;
     flex-direction: column;
     justify-content: center;   
@@ -47,7 +47,7 @@ Link{
     color: var(--banner-text-color);
 }
 
-.Agri_Openwell_Vertical_Ms_Pump_Banner_Content p {
+.Dom_V3_Sleek_Pump_Banner_Content p {
     font-size: 20px;
     font-family: var(--second-font);
     font-weight: 500;
@@ -55,14 +55,14 @@ Link{
     margin: 5px 0;
 }
 
-.Agri_Openwell_Vertical_Ms_Pump_Banner_Content h2 {
+.Dom_V3_Sleek_Pump_Banner_Content h2 {
     font-size: 45px;
     font-family: var(--second-font);
     font-weight: 500;
     color: black;
     margin: 5px 0;
 }
-.Agri_Openwell_Vertical_Ms_Pump_Banner_Content h3 {
+.Dom_V3_Sleek_Pump_Banner_Content h3 {
     font-size: 35px;
     font-family: var(--second-font);
     font-weight: 200;
@@ -70,7 +70,7 @@ Link{
     margin: 5px 0;
 }
 
-.Agri_Openwell_Vertical_Ms_Pump_Range_Container_one{
+.Dom_V3_Sleek_Pump_Range_Container_one{
     background-color: #E1E1E1;
     display: flex;
     flex-direction: row;
@@ -79,7 +79,7 @@ Link{
     margin-top: 50px;
     
 }
-.Agri_Openwell_Vertical_Ms_Pump_Range_Container_Two{
+.Dom_V3_Sleek_Pump_Range_Container_Two{
     background-color: #E1E1E1;
     display: flex;
     flex-direction: row;
@@ -104,7 +104,7 @@ Link{
     justify-content: center;
 
 }
-.Agri_Openwell_Vertical_Ms_Pump_Descriptions{
+.Dom_V3_Sleek_Pump_Descriptions{
     width: 100%;
     padding: 0;
     display: flex;
@@ -112,11 +112,11 @@ Link{
     justify-content: center;
     margin-top: 30px;
 }
-.Agri_Openwell_Vertical_Ms_Pump_text_conatiner{
+.Dom_V3_Sleek_Pump_text_conatiner{
     width: 90%;
     gap: 10px;
 }
-.Agri_Openwell_Vertical_Ms_Pump_text_conatiner p{
+.Dom_V3_Sleek_Pump_text_conatiner p{
     font-size: 16px;
     font-family: var(--second-font);
     color: var(--text-para-color);
@@ -124,7 +124,7 @@ Link{
     text-align: justify;
     letter-spacing: 0.5px;
 }
-.Agri_Openwell_Vertical_Ms_Pump_text_conatiner h3{
+.Dom_V3_Sleek_Pump_text_conatiner h3{
     font-size: 22px;
     font-family: var(--main-font);
     color: var(--text-para-color);
@@ -138,7 +138,7 @@ Link{
 
 /* // ------Form-------- // */
 
-.Agri_Openwell_Vertical_Ms_Pump_Form_section{
+.Dom_V3_Sleek_Pump_Form_section{
     display: flex;
     flex-wrap: wrap;
     align-items: start;
@@ -164,18 +164,18 @@ Link{
     font-weight: 500;
     text-align: center;
 }
-.Agri_Openwell_Vertical_Ms_Pump_Contact_Form{
+.Dom_V3_Sleek_Pump_Contact_Form{
     display: flex;
     flex-direction: column;
     gap: 15px;
 }
-.Agri_Openwell_Vertical_Ms_Pump_Contact_Form input{
+.Dom_V3_Sleek_Pump_Contact_Form input{
     width: 100%;
     border: white;
     border-radius: 3px;
     padding: 5px;
 }
-.Agri_Openwell_Vertical_Ms_Pump_Submit{
+.Dom_V3_Sleek_Pump_Submit{
     width: 40%;
     background-color: var(--bg-color);
     border: none;
@@ -187,7 +187,7 @@ Link{
     cursor: pointer;
     transition: all 0.5s ease;
 }
-.Agri_Openwell_Vertical_Ms_Pump_Submit:hover{
+.Dom_V3_Sleek_Pump_Submit:hover{
     background-color: white;
     color: red;
     font-weight: 600;
@@ -201,7 +201,7 @@ input::placeholder{
     font-weight: 400;
     opacity: 0.5;  
 }
-.Agri_Openwell_Vertical_Ms_Pump_Contact_Form input:focus {
+.Dom_V3_Sleek_Pump_Contact_Form input:focus {
     outline: none;
     border: 1px solid red;
     background-color: #fff; 
@@ -222,15 +222,6 @@ input::placeholder{
     font-weight: 400;
     text-align: start;
 }
-.Related_Pump_Section a {
-  text-decoration: none;
-  color: inherit; 
-}
-
-.Related_Pump_Section a:hover {
-  text-decoration: none;
-}
-
 
 
 
@@ -240,19 +231,19 @@ input::placeholder{
 
     /* Banner_ Section */
 
-    .Agri_Openwell_Vertical_Ms_Pump_Banner_container {
+    .Dom_V3_Sleek_Pump_Banner_container {
         height: 35vh;
     }
-    .Agri_Openwell_Vertical_Ms_Pump_Banner_image {
+    .Dom_V3_Sleek_Pump_Banner_image {
         width: 40%; 
     } 
-    .Agri_Openwell_Vertical_Ms_Pump_Banner_Content h2 {
+    .Dom_V3_Sleek_Pump_Banner_Content h2 {
         font-size: 18px;
     }
-    .Agri_Openwell_Vertical_Ms_Pump_Banner_Content h3 {
+    .Dom_V3_Sleek_Pump_Banner_Content h3 {
         font-size: 16px;
     }
-    .Agri_Openwell_Vertical_Ms_Pump_Banner_Content p {
+    .Dom_V3_Sleek_Pump_Banner_Content p {
         font-size: 14px;
     }
 
@@ -264,14 +255,14 @@ input::placeholder{
     .Pump_Range_container{
         padding: 5px;
     }
-    .Agri_Openwell_Vertical_Ms_Pump_Range_Container_one{
+    .Dom_V3_Sleek_Pump_Range_Container_one{
         margin-top: 20px;
     }
-    .Agri_Openwell_Vertical_Ms_Pump_text_conatiner p{
+    .Dom_V3_Sleek_Pump_text_conatiner p{
         font-size: 14px;
         letter-spacing: 0.2px;
     }
-    .Agri_Openwell_Vertical_Ms_Pump_text_conatiner h3{
+    .Dom_V3_Sleek_Pump_text_conatiner h3{
         font-size: 18px;
     }
 
@@ -283,14 +274,14 @@ input::placeholder{
     .Pump_Range_container{
         padding: 5px;
     }
-    .Agri_Openwell_Vertical_Ms_Pump_Range_Container_one{
+    .Dom_V3_Sleek_Pump_Range_Container_one{
         margin-top: 20px;
     }
-    .Agri_Openwell_Vertical_Ms_Pump_text_conatiner p{
+    .Dom_V3_Sleek_Pump_text_conatiner p{
         font-size: 14px;
         letter-spacing: 0.2px;
     }
-    .Agri_Openwell_Vertical_Ms_Pump_text_conatiner h3{
+    .Dom_V3_Sleek_Pump_text_conatiner h3{
         font-size: 18px;
     }
 
@@ -313,7 +304,7 @@ input::placeholder{
     .Pump_Form_Contact h3{
         font-size: 18px;
     }
-    .Agri_Openwell_Vertical_Ms_Pump_Pump_Submit{
+    .Dom_V3_Sleek_Pump_Submit{
         font-size: 15px;
     } 
 
@@ -333,19 +324,19 @@ input::placeholder{
 
     /* Banner_ Section */
 
-    .Agri_Openwell_Vertical_Ms_Pump_Banner_container {
+    .Dom_V3_Sleek_Pump_Banner_container {
         height: 60vh;
     }
-    .Agri_Openwell_Vertical_Ms_Pump_Banner_image {
+    .Dom_V3_Sleek_Pump_Banner_image {
         width: 25%; 
     } 
-    .Agri_Openwell_Vertical_Ms_Pump_Banner_Content h2 {
+    .Dom_V3_Sleek_Pump_Banner_Content h2 {
         font-size: 20px;
     }
-    .Agri_Openwell_Vertical_Ms_Pump_Banner_Content h3 {
+    .Dom_V3_Sleek_Pump_Banner_Content h3 {
         font-size: 18px;
     }
-    .Agri_Openwell_Vertical_Ms_Pump_Banner_Content p {
+    .Dom_V3_Sleek_Pump_Banner_Content p {
         font-size: 15px;
     }
 
@@ -357,14 +348,14 @@ input::placeholder{
     .Pump_Range_container{
         padding: 5px;
     }
-    .Agri_Openwell_Vertical_Ms_Pump_Range_Container_one{
+    .Dom_V3_Sleek_Pump_Range_Container_one{
         margin-top: 20px;
     }
-    .Agri_Openwell_Vertical_Ms_Pump_text_conatiner p{
+    .Dom_V3_Sleek_Pump_text_conatiner p{
         font-size: 14px;
         letter-spacing: 0.2px;
     }
-    .Agri_Openwell_Vertical_Ms_Pump_text_conatiner h3{
+    .Dom_V3_Sleek_Pump_text_conatiner h3{
         font-size: 18px;
     }
 
@@ -387,7 +378,7 @@ input::placeholder{
     .Pump_Form_Contact h3{
         font-size: 18px;
     }
-    .Agri_Openwell_Vertical_Ms_Pump_Submit{
+    .Dom_V3_Sleek_Pump_Submit{
         font-size: 15px;
     } 
 
@@ -409,19 +400,19 @@ input::placeholder{
 
     /* Banner_ Section */
 
-    .Agri_Openwell_Vertical_Ms_Pump_Banner_container {
+    .Dom_V3_Sleek_Pump_Banner_container {
         height: 65vh;
     }
-    .Agri_Openwell_Vertical_Ms_Pump_Banner_image {
+    .Dom_V3_Sleek_Pump_Banner_image {
         width: 25%; 
     } 
-    .Agri_Openwell_Vertical_Ms_Pump_Banner_Content h2 {
+    .Dom_V3_Sleek_Pump_Banner_Content h2 {
         font-size: 20px;
     }
-    .Agri_Openwell_Vertical_Ms_Pump_Banner_Content h3 {
+    .Dom_V3_Sleek_Pump_Banner_Content h3 {
         font-size: 18px;
     }
-    .Agri_Openwell_Vertical_Ms_Pump_Banner_Content p {
+    .Dom_V3_Sleek_Pump_Banner_Content p {
         font-size: 15px;
     }
 
@@ -443,7 +434,7 @@ input::placeholder{
     .Pump_Form_Contact h3{
         font-size: 18px;
     }
-    .Agri_Openwell_Vertical_Ms_Pump_Submit{
+    .Dom_V3_Sleek_Pump_Submit{
         font-size: 15px;
     } 
 
@@ -464,19 +455,19 @@ input::placeholder{
 
     /* Banner_ Section */
 
-    .Agri_Openwell_Vertical_Ms_Pump_Banner_container {
+    .Dom_V3_Sleek_Pump_Banner_container {
         height: 80vh;
     }
-    .Agri_Openwell_Vertical_Ms_Pump_Banner_image {
+    .Dom_V3_Sleek_Pump_Banner_image {
         width: 15%; 
     }
-    .Agri_Openwell_Vertical_Ms_Pump_Banner_Content h2 {
+    .Dom_V3_Sleek_Pump_Banner_Content h2 {
         font-size: 25px;
     }
-    .Agri_Openwell_Vertical_Ms_Pump_Banner_Content h3 {
+    .Dom_V3_Sleek_Pump_Banner_Content h3 {
         font-size: 22px;
     }
-    .Agri_Openwell_Vertical_Ms_Pump_Banner_Content p {
+    .Dom_V3_Sleek_Pump_Banner_Content p {
         font-size: 16px;
     }
 
@@ -499,7 +490,7 @@ input::placeholder{
     .Pump_Form_Contact h3{
         font-size: 18px;
     }
-    .Agri_Openwell_Vertical_Ms_Pump_Submit{
+    .Dom_V3_Sleek_Pump_Submit{
         font-size: 15px;
     }
 
@@ -520,29 +511,29 @@ input::placeholder{
 
     /* Banner_ Section */
 
-    .Agri_Openwell_Vertical_Ms_Pump_Banner_container {
+    .Dom_V3_Sleek_Pump_Banner_container {
         height: 70vh;
     }
-    .Agri_Openwell_Vertical_Ms_Pump_Banner_image {
+    .Dom_V3_Sleek_Pump_Banner_image {
         width: 15%; 
     }
-    .Agri_Openwell_Vertical_Ms_Pump_Banner_Content h2 {
+    .Dom_V3_Sleek_Pump_Banner_Content h2 {
         font-size: 35px;
     }
-    .Agri_Openwell_Vertical_Ms_Pump_Banner_Content h3 {
+    .Dom_V3_Sleek_Pump_Banner_Content h3 {
         font-size: 25px;
     }
-    .Agri_Openwell_Vertical_Ms_Pump_Banner_Content p {
+    .Dom_V3_Sleek_Pump_Banner_Content p {
         font-size: 16px;
     }
 
     /* Pump_Details_ Section */
 
-    .Agri_Openwell_Vertical_Ms_Pump_text_conatiner p{
+    .Dom_V3_Sleek_Pump_text_conatiner p{
         font-size: 15px;
         letter-spacing: 0.2px;
     }
-    .Agri_Openwell_Vertical_Ms_Pump_text_conatiner h3{
+    .Dom_V3_Sleek_Pump_text_conatiner h3{
         font-size: 20px;
     }
 
@@ -569,7 +560,7 @@ input::placeholder{
         font-weight: 500;
         text-align: center;
     }
-    .Agri_Openwell_Vertical_Ms_Pump_Submit{
+    .Dom_V3_Sleek_Pump_Submit{
         font-size: 15px;
     }
 
@@ -590,20 +581,20 @@ input::placeholder{
 
     /* Banner_ Section */
 
-    .Agri_Openwell_Vertical_Ms_Pump_Banner_container {
+    .Dom_V3_Sleek_Pump_Banner_container {
         height: 75vh;
     }
-    .Agri_Openwell_Vertical_Ms_Pump_Banner_image {
-        width: 9%; 
+    .Dom_V3_Sleek_Pump_Banner_image {
+        width: 12%; 
     }
    
-    .Agri_Openwell_Vertical_Ms_Pump_Banner_Content h2 {
+    .Dom_V3_Sleek_Pump_Banner_Content h2 {
         font-size: 40px;
     }
-    .Agri_Openwell_Vertical_Ms_Pump_Banner_Content h3 {
+    .Dom_V3_Sleek_Pump_Banner_Content h3 {
         font-size: 30px;
     }
-    .Agri_Openwell_Vertical_Ms_Pump_Banner_Content p {
+    .Dom_V3_Sleek_Pump_Banner_Content p {
         font-size: 18px;
     }
     

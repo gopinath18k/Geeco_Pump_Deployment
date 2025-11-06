@@ -42,6 +42,19 @@ import { AgriSingleCylinderCompressorPumps } from "./components/AllPumps/Agricul
 import { AgriSinglePhaseELH } from "./components/AllPumps/Agriculture/Control_Panel/Agri_Single_Phase_Panel/Agri_Single_Phase_ELH_Panel";
 import { AgriThreePhaseGNCOne } from "./components/AllPumps/Agriculture/Control_Panel/Agri_Three_Phase_Panel/Agri_Three_Phase_GNC_Panel_One/Agri_Three_Phase_GNC_Panel_One";
 import { AgriThreePhaseGNCTwo } from "./components/AllPumps/Agriculture/Control_Panel/Agri_Three_Phase_Panel/Agri_Three_Phase_GNC_Panel_Two/Agri_Three_Phase_GNC_Panel_Two";
+import { Domestic } from "./components/AllPumps/Domestic/Domestic";
+import { DomV3SleekPump } from "./components/AllPumps/Domestic/Borewell_Pump/V3_Sleek_Model/Dom_V3_Sleek_Model_Pump";
+import { DomV4LittleSubPump } from "./components/AllPumps/Domestic/Borewell_Pump/V4_Pumps/Dom_V4_LittleSub_Pump/Dom_V4_LittleSub_Pump";
+import { DomesticV4FTSPump } from "./components/AllPumps/Domestic/Borewell_Pump/V4_Pumps/Dom_V4_FTS_Pump/Dom_V4_FTS_Pump";
+import { DomV4FlojetPump } from "./components/AllPumps/Domestic/Borewell_Pump/V4_Pumps/Dom_V4_FTS_Pump/Dom_V4_Flojet_Pump/Dom_V4_Flojet_Pump";
+import { DomV4FloraPump } from "./components/AllPumps/Domestic/Borewell_Pump/V4_Pumps/Dom_V4_FTS_Pump/Dom_V4_Flora_Pump/Dom_V4_Flora_Pump";
+import { DomV4SakthiPump } from "./components/AllPumps/Domestic/Borewell_Pump/V4_Pumps/Dom_V4_FTS_Pump/Dom_V4_Sakthi_Pump/Dom_V4_Sakthi_Pump";
+import { DomV4TaurusPump } from "./components/AllPumps/Domestic/Borewell_Pump/V4_Pumps/Dom_V4_FTS_Pump/Dom_V4_Taurus_Pump/Dom_V4_Taurus_Pump";
+import { DomesticSSHorizontalPump } from "./components/AllPumps/Domestic/Openwell_Pump/SS_Horizontal_Openwell/SS_Horizontal_Openwell";
+import { DomVividPump } from "./components/AllPumps/Domestic/Openwell_Pump/SS_Horizontal_Openwell/Domestic_Vivid_Pump/Domestic_Vivid_Pump";
+import { DomZipPump } from "./components/AllPumps/Domestic/Openwell_Pump/SS_Horizontal_Openwell/Domestic_Zip_Pump/Domestic_Zip_Pump";
+import { DomZowPump } from "./components/AllPumps/Domestic/Openwell_Pump/SS_Horizontal_Openwell/Domestic_Zow_Pump/Domestic_Zow_Pump";
+import { DomVerticalGSVPump } from "./components/AllPumps/Domestic/Openwell_Pump/SS_Vertical_Openwell/SS_Vertical_GSV_Pump";
 
 
 
@@ -57,6 +70,9 @@ function App() {
         <Route path='/pump-selection-tool' element={<PumpSelectionTool/>}></Route>
         <Route path='/warranty-registration' element={<RegisterPump/>}></Route>
         <Route path='/registered-pumps' element={<RegisteredPumps/>}></Route>
+
+        {/* AGRICULTURE CATEGORY SECTION */}
+
         <Route path='/agriculture-pump-categories' element={<Agriculture/>}></Route>
         <Route path='/agriculture-pump/borewell-v4-pumps' element={<BorewellV4Pumps/>}></Route>
         <Route path='/agriculture-pump/borewell-v4-pumps/v4-tuff-pump' element={<V4TuffPump/>}></Route>
@@ -91,6 +107,23 @@ function App() {
         <Route path='/agriculture-pump/Agriculture-Single-Phase-ELH' element={<AgriSinglePhaseELH/>}></Route>
         <Route path='/agriculture-pump/Agriculture-Three-Phase-GNC-Panel-One' element={<AgriThreePhaseGNCOne/>}></Route>
         <Route path='/agriculture-pump/Agriculture-Three-Phase-GNC-Panel-Two' element={<AgriThreePhaseGNCTwo/>}></Route>
+
+        {/* DOMESTIC CATEGORY SECTION */}
+
+        <Route path='/domestic-pump-categories' element={<Domestic/>}></Route>
+        <Route path='/domestic-pump/borewell-v3-sleek-pump' element={<DomV3SleekPump/>}></Route>
+        <Route path='/domestic-pump/v4-littlesub-pump' element={<DomV4LittleSubPump/>}></Route>
+        <Route path='/domestic-pump/v4-flojet-flora-taurus-sakthi-pumps' element={<DomesticV4FTSPump/>}></Route>
+        <Route path='/domestic-pump/borewell-v4-flojet-pump' element={<DomV4FlojetPump/>}></Route>
+        <Route path='/domestic-pump/borewell-v4-flora-pump' element={<DomV4FloraPump/>}></Route>
+        <Route path='/domestic-pump/borewell-v4-sakthi-pump' element={<DomV4SakthiPump/>}></Route>
+        <Route path='/domestic-pump/borewell-v4-taurus-pump' element={<DomV4TaurusPump/>}></Route>
+        <Route path='/domestic-pump/ss-horizontal-openwell-pumps' element={<DomesticSSHorizontalPump/>}></Route>
+        <Route path='/domestic-pump/ss-horizontal-openwell-pumps/vivid-pump' element={<DomVividPump/>}></Route>
+        <Route path='/domestic-pump/ss-horizontal-openwell-pumps/zip-pump' element={<DomZipPump/>}></Route>
+        <Route path='/domestic-pump/ss-horizontal-openwell-pumps/zow-pump' element={<DomZowPump/>}></Route>
+        <Route path='/domestic-pump/ss-vertical-gsv-openwell-pumps' element={<DomVerticalGSVPump/>}></Route>
+
       </Routes>
       <Footer/>
     </BrowserRouter>

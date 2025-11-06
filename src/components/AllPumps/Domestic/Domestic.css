@@ -1,10 +1,10 @@
-.pumps-container {
+.domestic-container {
   margin: 0;
   padding: 0;
 }
 
 /* ---------- Banner Section ---------- */
-.Agriculutre_Banner_container {
+.domestic-banner-container {
   background-image: url("../../../assets/agri.webp");
   height: 60vh;
   background-repeat: no-repeat;
@@ -17,7 +17,7 @@
   padding: 20px;
 }
 
-.Agriculte_Banner_Content {
+.domestic-banner-content {
   width: 50%;
   display: flex;
   flex-direction: column;
@@ -25,40 +25,40 @@
   padding-left: 80px;
 }
 
-.Agriculte_Banner_Content p {
+.domestic-banner-content p {
   font-size: 16px;
   font-family: var(--second-font);
   font-weight: 300;
   color: var(--banner-text-color);
 }
 
-.Agriculte_Banner_Content h2 {
+.domestic-banner-content h2 {
   font-size: 40px;
   font-family: var(--main-font);
   font-weight: 500;
   color: var(--banner-text-color);
 }
 
-.Agriculture_Banner_image {
+.domestic-banner-image {
   width: 50%;
   display: flex;
   justify-content: center;
 }
 
-.Agriculture_images {
+.domestic-image {
   width: 55%;
   max-width: 400px;
 }
 
 /* ---------- Content Section ---------- */
-.pumps-content {
+.domestic-content {
   display: flex;
   gap: 20px;
   padding: 20px 80px;
   flex-wrap: wrap;
 }
 
-.agriculture_main_heading {
+.domestic-main-heading {
   font-family: var(--main-font);
   font-size: 30px;
   color: #515151;
@@ -68,13 +68,13 @@
 }
 
 /* ---------- Category Section ---------- */
-.categories {
+.domestic-categories {
   width: 300px;
   border: 1px solid #ccc;
   flex-shrink: 0;
 }
 
-.category-item {
+.domestic-category-item {
   font-family: var(--second-font);
   font-size: 14px;
   color: #515151;
@@ -87,22 +87,22 @@
   transition: all 0.3s ease;
 }
 
-.category-item:hover {
+.domestic-category-item:hover {
   background: #ffeaea;
 }
 
-.category-item.active {
+.domestic-category-item.active {
   background: #ff0000;
   color: #f0f0f0;
 }
 
 /* ---------- Pump Details ---------- */
-.pump-details {
+.domestic-pump-details {
   flex: 1;
   min-width: 250px;
 }
 
-.size-tabs {
+.domestic-size-tabs {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
@@ -110,7 +110,7 @@
   gap: 0px;
 }
 
-.size-tab {
+.domestic-size-tab {
   padding: 10px 25px;
   border: 1px solid #ccc;
   cursor: pointer;
@@ -120,20 +120,20 @@
   font-weight: 600;
 }
 
-.size-tab.active {
+.domestic-size-tab.active {
   background: red;
   color: white;
 }
 
 /* ---------- Pump Cards ---------- */
-.pump-images {
+.domestic-pump-images {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
   gap: 20px;
 }
 
-.pump-card {
+.domestic-pump-card {
   border: 1px solid #ddd;
   text-align: center;
   padding: 0;
@@ -144,19 +144,19 @@
   transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
-.pump-card:hover {
+.domestic-pump-card:hover {
   transform: translateY(-5px);
   box-shadow: 0 4px 10px rgba(0,0,0,0.1);
 }
 
-.pump-card img {
+.domestic-pump-card img {
   width: 100%;
-  height: 180px; /* Increased height */
+  height: 180px;
   object-fit: contain;
   background-color: #f8f8f8;
 }
 
-.pump_content_conatiner {
+.domestic-pump-content {
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -166,12 +166,12 @@
   border-top: 1px solid #ddd;
 }
 
-.pump-card-link {
+.domestic-pump-card-link {
   text-decoration: none;
   color: inherit;
 }
 
-.pump_name,
+.domestic-pump-name,
 small {
   font-family: var(--second-font);
   font-weight: 600;
@@ -182,90 +182,83 @@ small {
 }
 
 /* ---------- Responsive Design ---------- */
-
-/* Tablets (768px - 1024px) */
 @media (max-width: 1024px) {
-  .Agriculutre_Banner_container {
+  .domestic-banner-container {
     flex-direction: column;
     text-align: center;
     height: auto;
     padding: 40px 20px;
   }
 
-  .Agriculte_Banner_Content {
+  .domestic-banner-content {
     width: 100%;
     padding-left: 0;
     align-items: center;
   }
 
-  .Agriculture_Banner_image {
+  .domestic-banner-image {
     width: 100%;
     justify-content: center;
   }
 
-  .Agriculture_images {
+  .domestic-image {
     width: 70%;
     max-width: 300px;
   }
 
-  .pumps-content {
+  .domestic-content {
     flex-direction: column;
     padding: 20px 40px;
   }
 
-  .categories {
+  .domestic-categories {
     width: 100%;
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
   }
 
-  .category-item {
+  .domestic-category-item {
     flex: 1 1 45%;
     border: 1px solid #ccc;
     margin: 5px;
   }
 
-  .pump-images {
-    justify-content: center;
-  }
-
-  .pump-card img {
+  .domestic-pump-card img {
     height: 160px;
   }
 }
 
-/* Mobile (max-width: 767px) */
 @media (max-width: 767px) {
-  .Agriculutre_Banner_container {
+  .domestic-banner-container {
     flex-direction: column;
     height: auto;
     padding: 30px 15px;
   }
 
-  .Agriculte_Banner_Content h2 {
+  .domestic-banner-content h2 {
     font-size: 28px;
   }
 
-  .Agriculte_Banner_Content p {
+  .domestic-banner-content p {
     font-size: 14px;
   }
 
-  .Agriculture_images {
+  .domestic-image {
     width: 85%;
   }
 
-  .pumps-content {
+  .domestic-content {
     flex-direction: column;
     padding: 20px;
   }
 
-  .categories {
+  .domestic-categories {
     width: 100%;
     border: none;
   }
 
-  .category-item {
+  .domestic-category-item {
     font-size: 13px;
     padding: 8px;
     border: 1px solid #ccc;
@@ -273,55 +266,49 @@ small {
     margin: 4px;
   }
 
-  .size-tabs {
+  .domestic-size-tabs {
     flex-wrap: wrap;
     gap: 5px;
   }
 
-  .size-tab {
+  .domestic-size-tab {
     padding: 8px 15px;
     font-size: 13px;
   }
 
-  .pump-images {
-    flex-direction: column;
-    align-items: center;
-  }
-
-  .pump-card {
+  .domestic-pump-card {
     width: 90%;
     max-width: 280px;
   }
 
-  .pump-card img {
-    height: 150px; /* Adjusted for mobile */
+  .domestic-pump-card img {
+    height: 150px;
   }
 
-  .agriculture_main_heading {
+  .domestic-main-heading {
     font-size: 24px;
   }
 }
 
-/* Very Small Devices (max-width: 400px) */
 @media (max-width: 400px) {
-  .Agriculte_Banner_Content h2 {
+  .domestic-banner-content h2 {
     font-size: 22px;
   }
 
-  .category-item {
+  .domestic-category-item {
     font-size: 12px;
   }
 
-  .size-tab {
+  .domestic-size-tab {
     padding: 6px 10px;
     font-size: 12px;
   }
 
-  .pump-card {
+  .domestic-pump-card {
     width: 100%;
   }
 
-  .pump-card img {
+  .domestic-pump-card img {
     height: 130px;
   }
 }
