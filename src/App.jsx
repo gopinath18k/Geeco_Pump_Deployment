@@ -55,6 +55,36 @@ import { DomVividPump } from "./components/AllPumps/Domestic/Openwell_Pump/SS_Ho
 import { DomZipPump } from "./components/AllPumps/Domestic/Openwell_Pump/SS_Horizontal_Openwell/Domestic_Zip_Pump/Domestic_Zip_Pump";
 import { DomZowPump } from "./components/AllPumps/Domestic/Openwell_Pump/SS_Horizontal_Openwell/Domestic_Zow_Pump/Domestic_Zow_Pump";
 import { DomVerticalGSVPump } from "./components/AllPumps/Domestic/Openwell_Pump/SS_Vertical_Openwell/SS_Vertical_GSV_Pump";
+import { DomScmPump } from "./components/AllPumps/Domestic/Monoblock_Pump/Dom_SCM_Pump";
+import { DomesticHeroPump } from "./components/AllPumps/Domestic/Self_Priming_Monoblock/Mini_Monoblocks/Domestic_Hero_Pump/Domestic_Hero_Pump";
+import { DomesticHeroPlusPump } from "./components/AllPumps/Domestic/Self_Priming_Monoblock/Mini_Monoblocks/Domestic_Hero_Plus_Pump/Domestic_Hero_Plus_Pump";
+import { DomesticSmartPump } from "./components/AllPumps/Domestic/Self_Priming_Monoblock/Mini_Monoblocks/Domestic_Smart_Pump/Domestic_Smart_Pump";
+import { DomesticLittleKingPump } from "./components/AllPumps/Domestic/Self_Priming_Monoblock/Mini_Monoblocks/Domestic_LittleKing_Pump/Domestic_LittleKing_Pump";
+import { DomesticLittleKingPlusPump } from "./components/AllPumps/Domestic/Self_Priming_Monoblock/Mini_Monoblocks/Domestic_LittleKing_Plus_Pump/Domestic_LittleKing_Plus_Pump";
+import { DomesticGeecoValePump } from "./components/AllPumps/Domestic/Self_Priming_Monoblock/Mini_Monoblocks/Domestic_Geeco_Vale_Pump/Domestic_Geeco_Vale_Pump";
+import { DomesticGMS2Pump } from "./components/AllPumps/Domestic/Self_Priming_Monoblock/Slowspeed_Monoblock/Domestic_GMS2_Pump/Domestic_GMS2_Pump";
+import { DomesticGMS2ProPump } from "./components/AllPumps/Domestic/Self_Priming_Monoblock/Slowspeed_Monoblock/Domestic_GMS2_Pro_Pump/Domestic_GMS2_Pro_Pump";
+import { DomesticGMS3Pump } from "./components/AllPumps/Domestic/Self_Priming_Monoblock/Slowspeed_Monoblock/Domestic_GMS3_Pump/Domestic_GMS3_Pump";
+import { DomesticGMHSilverPump } from "./components/AllPumps/Domestic/Self_Priming_Monoblock/Slowspeed_Monoblock/Domestic_GMH_Silver_Pump/Domestic_GMH_Silver_Pump";
+import { DomesticJetKingPump } from "./components/AllPumps/Domestic/Jet_Pumps/Jet_King_Pump/Dom_Jet_King_Pump";
+import { DomesticJetBMPump } from "./components/AllPumps/Domestic/Jet_Pumps/Jet_Pumps_BM/Dom_Jet_Pumps_BM";
+import { DomesticPressureBoosterPump } from "./components/AllPumps/Domestic/High_Pressure_Pump/Horizontal_Multistage/Domestic_Pressure_Booster-Pump";
+import { DomesticROPump } from "./components/AllPumps/Domestic/High_Pressure_Pump/Vertical_Multistage/Domestic_RO_Pump";
+import { DomesticDewateringPump } from "./components/AllPumps/Domestic/Waste_Water_Pump/Domestic_Dewatering_Pump";
+import { DomesticMCBPanel } from "./components/AllPumps/Domestic/Control_Panels/Single_Phase_Panels/Domestic_MCB_Panel/Domestic_MCB_Panel";
+import { DomesticSWIFTPanel } from "./components/AllPumps/Domestic/Control_Panels/Single_Phase_Panels/Domestic_SWIFT_Panel/Domestic_SWIFT_Panel";
+import { DomesticELHPanel } from "./components/AllPumps/Domestic/Control_Panels/Single_Phase_Panels/Domestic_ELH_Panel/Domestic_ELH_Panel";
+import { DomesticELHAutoPanel } from "./components/AllPumps/Domestic/Control_Panels/Single_Phase_Panels/Domestic_ELH_Auto_Panel/Domestic_ELH_Auto_Panel";
+import { DomesticELHFullAutoPanel } from "./components/AllPumps/Domestic/Control_Panels/Single_Phase_Panels/Domestic_ELH_Full_Auto_Panel/Domestic_ELH_Full_Auto_Panel";
+import { DomesticGNCPanel } from "./components/AllPumps/Domestic/Control_Panels/Three_Phase_Panel/Domestic_Three_GNC_Panel";
+import { Commercial } from "./components/AllPumps/Commercial/Commercial";
+import { ComTuffBulletPump } from "./components/AllPumps/Commercial/Borewell_Pump/Borewell_V4_Pump/V4_Tuff_Bullet_Pumps/Com_V4_Tuff_Bullet_Pumps";
+import { ComV4TuffPump } from "./components/AllPumps/Commercial/Borewell_Pump/Borewell_V4_Pump/V4_Tuff_Bullet_Pumps/Com_V4_Tuff_Pump/Com_V4_Tuff_Pump";
+import { ComV4BulletPump } from "./components/AllPumps/Commercial/Borewell_Pump/Borewell_V4_Pump/V4_Tuff_Bullet_Pumps/Com_V4_Bullet_Pump/Com_V4_Bullet_Pump";
+import { ComV4SakthiPump } from "./components/AllPumps/Commercial/Borewell_Pump/Borewell_V4_Pump/V4_Sakthi_Pump/Com_V4_Sakthi_Pump";
+import { ComV6PremiumPump } from "./components/AllPumps/Commercial/Borewell_Pump/Borewell_V6_Pump/Com_V6_Premium_Pump/Com_V6_Premium_Pump";
+import { ComV6VincPump } from "./components/AllPumps/Commercial/Borewell_Pump/Borewell_V6_Pump/Com_V6_Vinc_Pump/Com_V6_Vinc_Pump";
+import { ComV6ActivePump } from "./components/AllPumps/Commercial/Borewell_Pump/Borewell_V6_Pump/Com_V6_Active_Pump/Com_V6_Active_Pump";
 
 
 
@@ -123,6 +153,39 @@ function App() {
         <Route path='/domestic-pump/ss-horizontal-openwell-pumps/zip-pump' element={<DomZipPump/>}></Route>
         <Route path='/domestic-pump/ss-horizontal-openwell-pumps/zow-pump' element={<DomZowPump/>}></Route>
         <Route path='/domestic-pump/ss-vertical-gsv-openwell-pumps' element={<DomVerticalGSVPump/>}></Route>
+        <Route path='/domestic-pump/centrifugal-monoblock-scm-pump' element={<DomScmPump/>}></Route>
+        <Route path='/domestic-pump/self-priming-monoblock/hero-pump' element={<DomesticHeroPump/>}></Route>
+        <Route path='/domestic-pump/self-priming-monoblock/hero-plus-pump' element={<DomesticHeroPlusPump/>}></Route>
+        <Route path='/domestic-pump/self-priming-monoblock/smart-pump' element={<DomesticSmartPump/>}></Route>
+        <Route path='/domestic-pump/self-priming-monoblock/littleking-pump' element={<DomesticLittleKingPump/>}></Route>
+        <Route path='/domestic-pump/self-priming-monoblock/littleking-plus-pump' element={<DomesticLittleKingPlusPump/>}></Route>
+        <Route path='/domestic-pump/self-priming-monoblock/geeco-vale-pump' element={<DomesticGeecoValePump/>}></Route>
+        <Route path='/domestic-pump/self-priming-monoblock/gms2-pump' element={<DomesticGMS2Pump/>}></Route>
+        <Route path='/domestic-pump/self-priming-monoblock/gms2-pro-pump' element={<DomesticGMS2ProPump/>}></Route>
+        <Route path='/domestic-pump/self-priming-monoblock/gms3-pump' element={<DomesticGMS3Pump/>}></Route>
+        <Route path='/domestic-pump/self-priming-monoblock/gmh-silver-pump' element={<DomesticGMHSilverPump/>}></Route>
+        <Route path='/domestic-pump/jet-pumps/shallow-well-jet-king-pump' element={<DomesticJetKingPump/>}></Route>
+        <Route path='/domestic-pump/jet-pumps/jet-pump-bm' element={<DomesticJetBMPump/>}></Route>
+        <Route path='/domestic-pump/high-pressure/horizontal-multistage/domestic-pressure-booster-pump' element={<DomesticPressureBoosterPump/>}></Route>
+        <Route path='/domestic-pump/high-pressure/vertical-multistage/domestic-ro-pump' element={<DomesticROPump/>}></Route>
+        <Route path='/domestic-pump/waste-water-pump/dewatering-pump' element={<DomesticDewateringPump/>}></Route>
+        <Route path='/domestic-pump/control-panels/single-phase-panels/mcb-panel' element={<DomesticMCBPanel/>}></Route>
+        <Route path='/domestic-pump/control-panels/single-phase-panels/swift-panel' element={<DomesticSWIFTPanel/>}></Route>
+        <Route path='/domestic-pump/control-panels/single-phase-panels/elh-panel' element={<DomesticELHPanel/>}></Route>
+        <Route path='/domestic-pump/control-panels/single-phase-panels/elh-auto-panel' element={<DomesticELHAutoPanel/>}></Route>
+        <Route path='/domestic-pump/control-panels/single-phase-panels/elh-full-auto-panel' element={<DomesticELHFullAutoPanel/>}></Route>
+        <Route path='/domestic-pump/control-panels/three-phase-panel/gnc-panel-1' element={<DomesticGNCPanel/>}></Route>
+
+      {/* DOMESTIC CATEGORY SECTION */}
+
+        <Route path='/commercial-pump-categories' element={<Commercial/>}></Route>
+        <Route path='/commercial-pump/borewell-submersible/v4-tuff-bullet-pumps' element={<ComTuffBulletPump/>}></Route>
+        <Route path='/commercial-pump/borewell-submersible/v4-tuff-bullet-pumps/v4-tuff-pump' element={<ComV4TuffPump/>}></Route>
+        <Route path='/commercial-pump/borewell-submersible/v4-tuff-bullet-pumps/v4-bullet-pump' element={<ComV4BulletPump/>}></Route>
+        <Route path='/commercial-pump/borewell-submersible/v4-sakthi-pump' element={<ComV4SakthiPump/>}></Route>
+        <Route path='/commercial-pump/borewell-submersible/v6-premium-pump' element={<ComV6PremiumPump/>}></Route>
+        <Route path='/commercial-pump/borewell-submersible/v6-vinc-pump' element={<ComV6VincPump/>}></Route>
+        <Route path='/commercial-pump/borewell-submersible/v6-active-pump' element={<ComV6ActivePump/>}></Route>
 
       </Routes>
       <Footer/>

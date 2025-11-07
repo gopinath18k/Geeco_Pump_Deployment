@@ -1,19 +1,22 @@
-.Dom_V4_FTS_Pump_Main_Conatiner {
+.Domestic_Dewatering_Pump_Main_Conatiner {
     margin: 0;
     padding: 0;
     width: 100%;
     border-top: 2px solid red;
 }
+Link{
+    text-decoration: none;
+}
 
 /* Banner container */
-.Dom_V4_FTS_Pump_Banner_container {
+.Domestic_Dewatering_Pump_Banner_container {
     width: 100%;
     height: 60vh;
     display: flex;
     align-items: center;       
     justify-content: center;   
     gap: 40px;                 
-    background-image: url("../../../../assets/Agriculture/V3 Banner.webp"); 
+    background-image: url("../../../../../assets/Agriculture/V3 Banner.webp"); /* You might want to update this image path to a V4 specific one */
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
@@ -22,21 +25,21 @@
 }
 
 /* Pump image */
-.Dom_V4_FTS_Pump_Banner_image {
+.Domestic_Dewatering_Pump_Banner_image {
     width: 10%;               
     display: flex;
     justify-content: center;
     align-items: center;
 }
 
-.Dom_V4_FTS_Pump_images {
+.Domestic_Dewatering_Pump_images {
     width: 100%;
     height: auto;
     display: block;
 }
 
 /* Banner content */
-.Dom_V4_FTS_Pump_Banner_Content {
+.Domestic_Dewatering_Pump_Banner_Content {
     display: flex;
     flex-direction: column;
     justify-content: center;   
@@ -44,7 +47,7 @@
     color: var(--banner-text-color);
 }
 
-.Dom_V4_FTS_Pump_Banner_Content p {
+.Domestic_Dewatering_Pump_Banner_Content p {
     font-size: 20px;
     font-family: var(--second-font);
     font-weight: 500;
@@ -52,14 +55,14 @@
     margin: 5px 0;
 }
 
-.Dom_V4_FTS_Pump_Banner_Content h2 {
+.Domestic_Dewatering_Pump_Banner_Content h2 {
     font-size: 45px;
     font-family: var(--second-font);
     font-weight: 500;
     color: black;
     margin: 5px 0;
 }
-.Dom_V4_FTS_Pump_Banner_Content h3 {
+.Domestic_Dewatering_Pump_Banner_Content h3 {
     font-size: 35px;
     font-family: var(--second-font);
     font-weight: 200;
@@ -67,7 +70,7 @@
     margin: 5px 0;
 }
 
-.Dom_V4_FTS_Pump_Range_Container_one{
+.Domestic_Dewatering_Pump_Range_Container_one{
     background-color: #E1E1E1;
     display: flex;
     flex-direction: row;
@@ -76,7 +79,7 @@
     margin-top: 50px;
     
 }
-.Dom_V4_FTS_Pump_Range_Container_Two{
+.Domestic_Dewatering_Pump_Range_Container_Two{
     background-color: #E1E1E1;
     display: flex;
     flex-direction: row;
@@ -101,7 +104,7 @@
     justify-content: center;
 
 }
-.Dom_V4_FTS_Pump_Descriptions{
+.Domestic_Dewatering_Pump_Descriptions{
     width: 100%;
     padding: 0;
     display: flex;
@@ -109,11 +112,11 @@
     justify-content: center;
     margin-top: 30px;
 }
-.Dom_V4_FTS_Pump_text_conatiner{
+.Domestic_Dewatering_Pump_text_conatiner{
     width: 90%;
     gap: 10px;
 }
-.Dom_V4_FTS_Pump_text_conatiner p{
+.Domestic_Dewatering_Pump_text_conatiner p{
     font-size: 16px;
     font-family: var(--second-font);
     color: var(--text-para-color);
@@ -121,7 +124,7 @@
     text-align: justify;
     letter-spacing: 0.5px;
 }
-.Dom_V4_FTS_Pump_text_conatiner h3{
+.Domestic_Dewatering_Pump_text_conatiner h3{
     font-size: 22px;
     font-family: var(--main-font);
     color: var(--text-para-color);
@@ -130,91 +133,12 @@
 
 
 
-/* -------Pump Category------ */
 
-.Dom_V4_FTS_Pump_Category_Container{
-    display: flex;
-    flex-wrap: wrap;
-    gap: 20px;
-}
-.Dom_V4_FTS_Pump_Inner_Container{
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    padding: 0;
-    background-color: #FAFAFA;
-    border: 1px solid #929292;
-}
-.Dom_V4_FTS_Pump_Inner_Container,
-.Dom_V4_FTS_Pump_Inner_Container:link,
-.Dom_V4_FTS_Pump_Inner_Container:visited,
-.Dom_V4_FTS_Pump_Inner_Container:hover,
-.Dom_V4_FTS_Pump_Inner_Container:active {
-  text-decoration: none;
-  color: inherit;
-}
-
-
-.Dom_V4_FTS_Pump_Model_Image{
-    width: 25%;
-}
-.Dom_V4_FTS_Pump_Title_container{
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    justify-content: space-between;
-    
-}
-.Dom_V4_FTS_Pump_Title_container p{
-    font-family: var(--second-font);
-    font-size: 14px;
-    font-weight: 600;
-    color: black;
-    margin-bottom: 0px;
-    padding: 5px 10px;
-    
-}
-.GeecoLogo_image{
-    width: 30%;
-    padding: 5px 10px;
-}
-
-
-.Dom_V4_FTS_Pump_Inner_content,
-.Dom_V4_FTS_Pump_Inner_contents{
-    padding: 0;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-}
-.Dom_V4_FTS_Pump_Inner_content p,
-.Dom_V4_FTS_Pump_Inner_contents p{
-    margin-bottom: 0px;
-    padding: 5px 5px;
-    font-family: var(--second-font);
-    font-size: 14px;
-    font-weight: 500;
-    color: var(--text-para-color);
-    text-align: center;
-}
-.Dom_V4_FTS_Pump_border{
-    border-top: 1px solid #929292;
-}
-.Dom_V4_FTS_Pump_border_One,.Dom_V4_FTS_Pump_border_two,.Dom_V4_FTS_Pump_border_three,
-.Dom_V4_FTS_Pump_border_four,.Dom_V4_FTS_Pump_border_five,.Dom_V4_FTS_Pump_border_six,
-.Dom_V4_FTS_Pump_border_seven{
-    border-top: 1px solid #929292;   
-}
-
-.Dom_V4_FTS_Pump_Inner_content{
-    border-right: 1px solid #929292;
-}
 
 
 /* // ------Form-------- // */
 
-.Dom_V4_FTS_Pump_Form_section{
+.Domestic_Dewatering_Pump_Form_section{
     display: flex;
     flex-wrap: wrap;
     align-items: start;
@@ -240,18 +164,18 @@
     font-weight: 500;
     text-align: center;
 }
-.Dom_V4_FTS_Pump_Contact_Form{
+.Domestic_Dewatering_Pump_Contact_Form{
     display: flex;
     flex-direction: column;
     gap: 15px;
 }
-.Dom_V4_FTS_Pump_Contact_Form input{
+.Domestic_Dewatering_Pump_Contact_Form input{
     width: 100%;
     border: white;
     border-radius: 3px;
     padding: 5px;
 }
-.Dom_V4_FTS_Pump_Submit{
+.Domestic_Dewatering_Pump_Submit{
     width: 40%;
     background-color: var(--bg-color);
     border: none;
@@ -263,7 +187,7 @@
     cursor: pointer;
     transition: all 0.5s ease;
 }
-.Dom_V4_FTS_Pump_Submit:hover{
+.Domestic_Dewatering_Pump_Submit:hover{
     background-color: white;
     color: red;
     font-weight: 600;
@@ -277,7 +201,7 @@ input::placeholder{
     font-weight: 400;
     opacity: 0.5;  
 }
-.Dom_V4_FTS_Pump_Contact_Form input:focus {
+.Domestic_Dewatering_Pump_Contact_Form input:focus {
     outline: none;
     border: 1px solid red;
     background-color: #fff; 
@@ -307,19 +231,19 @@ input::placeholder{
 
     /* Banner_ Section */
 
-    .Dom_V4_FTS_Pump_Banner_container {
+    .Domestic_Dewatering_Pump_Banner_container {
         height: 35vh;
     }
-    .Dom_V4_FTS_Pump_Banner_image {
+    .Domestic_Dewatering_Pump_Banner_image {
         width: 40%; 
     } 
-    .Dom_V4_FTS_Pump_Banner_Content h2 {
+    .Domestic_Dewatering_Pump_Banner_Content h2 {
         font-size: 18px;
     }
-    .Dom_V4_FTS_Pump_Banner_Content h3 {
+    .Domestic_Dewatering_Pump_Banner_Content h3 {
         font-size: 16px;
     }
-    .Dom_V4_FTS_Pump_Banner_Content p {
+    .Domestic_Dewatering_Pump_Banner_Content p {
         font-size: 14px;
     }
 
@@ -331,14 +255,14 @@ input::placeholder{
     .Pump_Range_container{
         padding: 5px;
     }
-    .Dom_V4_FTS_Pump_Range_Container_one{
+    .Domestic_Dewatering_Pump_Range_Container_one{
         margin-top: 20px;
     }
-    .Dom_V4_FTS_Pump_text_conatiner p{
+    .Domestic_Dewatering_Pump_text_conatiner p{
         font-size: 14px;
         letter-spacing: 0.2px;
     }
-    .Dom_V4_FTS_Pump_text_conatiner h3{
+    .Domestic_Dewatering_Pump_text_conatiner h3{
         font-size: 18px;
     }
 
@@ -350,28 +274,18 @@ input::placeholder{
     .Pump_Range_container{
         padding: 5px;
     }
-    .Dom_V4_FTS_Pump_Range_Container_one{
+    .Domestic_Dewatering_Pump_Range_Container_one{
         margin-top: 20px;
     }
-    .Dom_V4_FTS_Pump_text_conatiner p{
+    .Domestic_Dewatering_Pump_text_conatiner p{
         font-size: 14px;
         letter-spacing: 0.2px;
     }
-    .Dom_V4_FTS_Pump_text_conatiner h3{
+    .Domestic_Dewatering_Pump_text_conatiner h3{
         font-size: 18px;
     }
 
-    /* Pump_Category_Image_ Section */
-
-    .Dom_V4_FTS_Pump_Model_Image{
-        width: 35%;
-        padding: 10px 0px;
-    }
-
-    .Dom_V4_FTS_Pump_Inner_content p,
-    .Dom_V4_FTS_Pump_Inner_contents p{
-        font-size: 14px;
-    }
+    
 
     /* Pump_Form_ Section */
     
@@ -390,15 +304,12 @@ input::placeholder{
     .Pump_Form_Contact h3{
         font-size: 18px;
     }
-    .Dom_V4_FTS_Pump_Submit{
+    .Domestic_Dewatering_Pump_Submit{
         font-size: 15px;
-    }
+    } 
 
     /* Related_Pump_ Section */
 
-   .Dom_V4_FTS_Pump_Form_section{
-        gap: 20px;
-   }
     .Related_Pump_Section h4{
         font-size: 18px;
         margin-top: 20px;
@@ -413,19 +324,19 @@ input::placeholder{
 
     /* Banner_ Section */
 
-    .Dom_V4_FTS_Pump_Banner_container {
+    .Domestic_Dewatering_Pump_Banner_container {
         height: 60vh;
     }
-    .Dom_V4_FTS_Pump_Banner_image {
+    .Domestic_Dewatering_Pump_Banner_image {
         width: 25%; 
     } 
-    .Dom_V4_FTS_Pump_Banner_Content h2 {
+    .Domestic_Dewatering_Pump_Banner_Content h2 {
         font-size: 20px;
     }
-    .Dom_V4_FTS_Pump_Banner_Content h3 {
+    .Domestic_Dewatering_Pump_Banner_Content h3 {
         font-size: 18px;
     }
-    .Dom_V4_FTS_Pump_Banner_Content p {
+    .Domestic_Dewatering_Pump_Banner_Content p {
         font-size: 15px;
     }
 
@@ -437,47 +348,18 @@ input::placeholder{
     .Pump_Range_container{
         padding: 5px;
     }
-    .Dom_V4_FTS_Pump_Range_Container_one{
+    .Domestic_Dewatering_Pump_Range_Container_one{
         margin-top: 20px;
     }
-    .Dom_V4_FTS_Pump_text_conatiner p{
+    .Domestic_Dewatering_Pump_text_conatiner p{
         font-size: 14px;
         letter-spacing: 0.2px;
     }
-    .Dom_V4_FTS_Pump_text_conatiner h3{
+    .Domestic_Dewatering_Pump_text_conatiner h3{
         font-size: 18px;
     }
 
-    /* Pump_Details_ Section */
-
-    .Pump_Range_Heading{
-        font-size: 14px;
-    }
-    .Pump_Range_container{
-        padding: 5px;
-    }
-    .Dom_V4_FTS_Pump_Range_Container_one{
-        margin-top: 20px;
-    }
-    .Dom_V4_FTS_Pump_text_conatiner p{
-        font-size: 14px;
-        letter-spacing: 0.2px;
-    }
-    .Dom_V4_FTS_Pump_text_conatiner h3{
-        font-size: 18px;
-    }
-
-    /* Pump_Category_Image_ Section */
-
-    .Dom_V4_FTS_Pump_Model_Image{
-        width: 35%;
-        padding: 10px 0px;
-    }
-
-    .Dom_V4_FTS_Pump_Inner_content p,
-    .Dom_V4_FTS_Pump_Inner_contents p{
-        font-size: 14px;
-    }
+    
 
     /* Pump_Form_ Section */
     
@@ -496,15 +378,13 @@ input::placeholder{
     .Pump_Form_Contact h3{
         font-size: 18px;
     }
-    .Dom_V4_FTS_Pump_Submit{
+    .Domestic_Dewatering_Pump_Submit{
         font-size: 15px;
-    }
+    } 
 
     /* Related_Pump_ Section */
 
-   .Dom_V4_FTS_Pump_Form_section{
-        gap: 20px;
-   }
+   
     .Related_Pump_Section h4{
         font-size: 20px;
         margin-top: 20px;
@@ -520,53 +400,23 @@ input::placeholder{
 
     /* Banner_ Section */
 
-    .Dom_V4_FTS_Pump_Banner_container {
+    .Domestic_Dewatering_Pump_Banner_container {
         height: 65vh;
     }
-    .Dom_V4_FTS_Pump_Banner_image {
+    .Domestic_Dewatering_Pump_Banner_image {
         width: 25%; 
     } 
-    .Dom_V4_FTS_Pump_Banner_Content h2 {
+    .Domestic_Dewatering_Pump_Banner_Content h2 {
         font-size: 20px;
     }
-    .Dom_V4_FTS_Pump_Banner_Content h3 {
+    .Domestic_Dewatering_Pump_Banner_Content h3 {
         font-size: 18px;
     }
-    .Dom_V4_FTS_Pump_Banner_Content p {
+    .Domestic_Dewatering_Pump_Banner_Content p {
         font-size: 15px;
     }
 
-    /* Pump_Details_ Section */
-
-    .Pump_Range_Heading{
-        font-size: 14px;
-    }
-    .Pump_Range_container{
-        padding: 5px;
-    }
-    .Dom_V4_FTS_Pump_Range_Container_one{
-        margin-top: 20px;
-    }
-    .Dom_V4_FTS_Pump_text_conatiner p{
-        font-size: 14px;
-        letter-spacing: 0.2px;
-    }
-    .Dom_V4_FTS_Pump_text_conatiner h3{
-        font-size: 18px;
-    }
-
-    /* Pump_Category_Image_ Section */
-
-    .Dom_V4_FTS_Pump_Model_Image{
-        width: 35%;
-        padding: 10px 0px;
-    }
-
-    .Dom_V4_FTS_Pump_Inner_content p,
-    .Dom_V4_FTS_Pump_Inner_contents p{
-        font-size: 14px;
-    }
-
+    
     /* Pump_Form_ Section */
     
     .Pump_Form_Section{
@@ -584,15 +434,13 @@ input::placeholder{
     .Pump_Form_Contact h3{
         font-size: 18px;
     }
-    .Dom_V4_FTS_Pump_Submit{
+    .Domestic_Dewatering_Pump_Submit{
         font-size: 15px;
-    }
+    } 
 
     /* Related_Pump_ Section */
 
-   .Dom_V4_FTS_Pump_Form_section{
-        gap: 20px;
-   }
+   
     .Related_Pump_Section h4{
         font-size: 20px;
         margin-top: 20px;
@@ -607,43 +455,23 @@ input::placeholder{
 
     /* Banner_ Section */
 
-    .Dom_V4_FTS_Pump_Banner_container {
+    .Domestic_Dewatering_Pump_Banner_container {
         height: 80vh;
     }
-    .Dom_V4_FTS_Pump_Banner_image {
+    .Domestic_Dewatering_Pump_Banner_image {
         width: 15%; 
     }
-    .Dom_V4_FTS_Pump_Banner_Content h2 {
+    .Domestic_Dewatering_Pump_Banner_Content h2 {
         font-size: 25px;
     }
-    .Dom_V4_FTS_Pump_Banner_Content h3 {
+    .Domestic_Dewatering_Pump_Banner_Content h3 {
         font-size: 22px;
     }
-    .Dom_V4_FTS_Pump_Banner_Content p {
+    .Domestic_Dewatering_Pump_Banner_Content p {
         font-size: 16px;
     }
 
-    /* Pump_Details_ Section */
-
-    .Dom_V4_FTS_Pump_text_conatiner p{
-        font-size: 15px;
-        letter-spacing: 0.2px;
-    }
-    .Dom_V4_FTS_Pump_text_conatiner h3{
-        font-size: 20px;
-    }
-
-    /* Pump_Category_Image_ Section */
-
-    .Dom_V4_FTS_Pump_Model_Image{
-        width: 35%;
-        padding: 10px 0px;
-    }
-
-    .Dom_V4_FTS_Pump_Inner_content p,
-    .Dom_V4_FTS_Pump_Inner_contents p{
-        font-size: 14px;
-    }
+    
 
     /* Pump_Form_ Section */
 
@@ -662,7 +490,7 @@ input::placeholder{
     .Pump_Form_Contact h3{
         font-size: 18px;
     }
-    .Dom_V4_FTS_Pump_Submit{
+    .Domestic_Dewatering_Pump_Submit{
         font-size: 15px;
     }
 
@@ -683,43 +511,33 @@ input::placeholder{
 
     /* Banner_ Section */
 
-    .Dom_V4_FTS_Pump_Banner_container {
+    .Domestic_Dewatering_Pump_Banner_container {
         height: 70vh;
     }
-    .Dom_V4_FTS_Pump_Banner_image {
+    .Domestic_Dewatering_Pump_Banner_image {
         width: 15%; 
     }
-    .Dom_V4_FTS_Pump_Banner_Content h2 {
+    .Domestic_Dewatering_Pump_Banner_Content h2 {
         font-size: 35px;
     }
-    .Dom_V4_FTS_Pump_Banner_Content h3 {
+    .Domestic_Dewatering_Pump_Banner_Content h3 {
         font-size: 25px;
     }
-    .Dom_V4_FTS_Pump_Banner_Content p {
+    .Domestic_Dewatering_Pump_Banner_Content p {
         font-size: 16px;
     }
 
     /* Pump_Details_ Section */
 
-    .Dom_V4_FTS_Pump_text_conatiner p{
+    .Domestic_Dewatering_Pump_text_conatiner p{
         font-size: 15px;
         letter-spacing: 0.2px;
     }
-    .Dom_V4_FTS_Pump_text_conatiner h3{
+    .Domestic_Dewatering_Pump_text_conatiner h3{
         font-size: 20px;
     }
 
-    /* Pump_Category_Image_ Section */
-
-    .Dom_V4_FTS_Pump_Model_Image{
-        width: 35%;
-        padding: 10px 0px;
-    }
-
-    .Dom_V4_FTS_Pump_Inner_content p,
-    .Dom_V4_FTS_Pump_Inner_contents p{
-        font-size: 14px;
-    }
+    
 
     /* Pump_Form_ Section */
 
@@ -742,7 +560,7 @@ input::placeholder{
         font-weight: 500;
         text-align: center;
     }
-    .Dom_V4_FTS_Pump_Submit{
+    .Domestic_Dewatering_Pump_Submit{
         font-size: 15px;
     }
 
@@ -763,32 +581,21 @@ input::placeholder{
 
     /* Banner_ Section */
 
-    .Dom_V4_FTS_Pump_Banner_container {
+    .Domestic_Dewatering_Pump_Banner_container {
         height: 75vh;
     }
-    .Dom_V4_FTS_Pump_Banner_image {
+    .Domestic_Dewatering_Pump_Banner_image {
         width: 9%; 
     }
    
-    .Dom_V4_FTS_Pump_Banner_Content h2 {
+    .Domestic_Dewatering_Pump_Banner_Content h2 {
         font-size: 40px;
     }
-    .Dom_V4_FTS_Pump_Banner_Content h3 {
+    .Domestic_Dewatering_Pump_Banner_Content h3 {
         font-size: 30px;
     }
-    .Dom_V4_FTS_Pump_Banner_Content p {
+    .Domestic_Dewatering_Pump_Banner_Content p {
         font-size: 18px;
-    }
-    .Dom_V4_FTS_Pump_Model_Image{
-        width: 40%;
     }
     
 }
-
-
-
-
-
-
-
-
