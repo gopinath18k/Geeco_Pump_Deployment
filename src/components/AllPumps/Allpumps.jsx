@@ -16,7 +16,7 @@ export const Allpumps = () => {
             <h2><Link to="/domestic-pump-categories" onClick={() => window.scrollTo(0, 0)} className='pump_category_heading'>Domestic Pumps</Link></h2>
           </div>
           <div className="container_industrial ">
-            <h2><Link to="/"  className='pump_category_heading'>Industrial Pumps</Link></h2>
+            <h2><Link to="/industrial-pump-categories" onClick={() => window.scrollTo(0, 0)}  className='pump_category_heading'>Industrial Pumps</Link></h2>
           </div>
           <div className="container_commercial ">
             <h2><Link to="/commercial-pump-categories" onClick={() => window.scrollTo(0, 0)}  className='pump_category_heading'>Commercial Pumps</Link></h2>

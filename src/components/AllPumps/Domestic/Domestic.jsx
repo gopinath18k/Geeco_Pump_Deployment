@@ -115,7 +115,7 @@ export const Domestic = () => {
           
         },
       },
-       "CONTROL PANELS": {
+    "CONTROL PANELS": {
       sizes: {
         "SINGLE PHASE PANELS": [
           { name: "MCB Panel", img: Pump_Image_Need, link: "/domestic-pump/control-panels/single-phase-panels/mcb-panel" },

@@ -1,0 +1,314 @@
+.industrial-container {
+  margin: 0;
+  padding: 0;
+}
+
+/* ---------- Banner Section ---------- */
+.industrial-banner-container {
+  background-image: url("../../../assets/agri.webp");
+  height: 60vh;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+  padding: 20px;
+}
+
+.industrial-banner-content {
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  padding-left: 80px;
+}
+
+.industrial-banner-content p {
+  font-size: 16px;
+  font-family: var(--second-font);
+  font-weight: 300;
+  color: var(--banner-text-color);
+}
+
+.industrial-banner-content h2 {
+  font-size: 40px;
+  font-family: var(--main-font);
+  font-weight: 500;
+  color: var(--banner-text-color);
+}
+
+.industrial-banner-image {
+  width: 50%;
+  display: flex;
+  justify-content: center;
+}
+
+.industrial-image {
+  width: 55%;
+  max-width: 400px;
+}
+
+/* ---------- Content Section ---------- */
+.industrial-content {
+  display: flex;
+  gap: 20px;
+  padding: 20px 80px;
+  flex-wrap: wrap;
+}
+
+.industrial-main-heading {
+  font-family: var(--main-font);
+  font-size: 30px;
+  color: #515151;
+  width: 100%;
+  text-align: start;
+  margin-bottom: 20px;
+}
+
+/* ---------- Category Section ---------- */
+.industrial-categories {
+  width: 300px;
+  border: 1px solid #ccc;
+  flex-shrink: 0;
+}
+
+.industrial-category-item {
+  font-family: var(--second-font);
+  font-size: 14px;
+  color: #515151;
+  font-weight: 700;
+  letter-spacing: 0.4px;
+  padding: 10px 0;
+  cursor: pointer;
+  text-align: center;
+  border-bottom: 1px solid #ccc;
+  transition: all 0.3s ease;
+}
+
+.industrial-category-item:hover {
+  background: #ffeaea;
+}
+
+.industrial-category-item.active {
+  background: #ff0000;
+  color: #f0f0f0;
+}
+
+/* ---------- Pump Details ---------- */
+.industrial-pump-details {
+  flex: 1;
+  min-width: 250px;
+}
+
+.industrial-size-tabs {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin-bottom: 15px;
+  gap: 0px;
+}
+
+.industrial-size-tab {
+  padding: 10px 25px;
+  border: 1px solid #ccc;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  font-family: var(--second-font);
+  font-size: 14px;
+  font-weight: 600;
+}
+
+.industrial-size-tab.active {
+  background: red;
+  color: white;
+}
+
+/* ---------- Pump Cards ---------- */
+.industrial-pump-images {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px;
+}
+
+.industrial-pump-card {
+  border: 1px solid #ddd;
+  text-align: center;
+  padding: 0;
+  width: 200px;
+  background: #fff;
+  border-radius: 8px;
+  overflow: hidden;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.industrial-pump-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+}
+
+.industrial-pump-card img {
+  width: 100%;
+  height: 220px;
+  object-fit: contain;
+  background-color: #f8f8f8;
+}
+
+.industrial-pump-content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: start;
+  gap: 10px;
+  padding: 10px;
+  border-top: 1px solid #ddd;
+}
+
+.industrial-pump-card-link {
+  text-decoration: none;
+  color: inherit;
+}
+
+.industrial-pump-name,
+small {
+  font-family: var(--second-font);
+  font-weight: 600;
+  font-size: 15px;
+  text-decoration: none;
+  color: #515151;
+  margin-bottom: 0;
+}
+
+/* ---------- Responsive Design ---------- */
+@media (max-width: 1024px) {
+  .industrial-banner-container {
+    flex-direction: column;
+    text-align: center;
+    height: auto;
+    padding: 40px 20px;
+  }
+
+  .industrial-banner-content {
+    width: 100%;
+    padding-left: 0;
+    align-items: center;
+  }
+
+  .industrial-banner-image {
+    width: 100%;
+    justify-content: center;
+  }
+
+  .industrial-image {
+    width: 70%;
+    max-width: 300px;
+  }
+
+  .industrial-content {
+    flex-direction: column;
+    padding: 20px 40px;
+  }
+
+  .industrial-categories {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
+  .industrial-category-item {
+    flex: 1 1 45%;
+    border: 1px solid #ccc;
+    margin: 5px;
+  }
+
+  .industrial-pump-card img {
+    height: 160px;
+  }
+}
+
+@media (max-width: 767px) {
+  .industrial-banner-container {
+    flex-direction: column;
+    height: auto;
+    padding: 30px 15px;
+  }
+
+  .industrial-banner-content h2 {
+    font-size: 28px;
+  }
+
+  .industrial-banner-content p {
+    font-size: 14px;
+  }
+
+  .industrial-image {
+    width: 85%;
+  }
+
+  .industrial-content {
+    flex-direction: column;
+    padding: 20px;
+  }
+
+  .industrial-categories {
+    width: 100%;
+    border: none;
+  }
+
+  .industrial-category-item {
+    font-size: 13px;
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+    margin: 4px;
+  }
+
+  .industrial-size-tabs {
+    flex-wrap: wrap;
+    gap: 5px;
+  }
+
+  .industrial-size-tab {
+    padding: 8px 15px;
+    font-size: 13px;
+  }
+
+  .industrial-pump-card {
+    width: 90%;
+    max-width: 280px;
+  }
+
+  .industrial-pump-card img {
+    height: 150px;
+  }
+
+  .industrial-main-heading {
+    font-size: 24px;
+  }
+}
+
+@media (max-width: 400px) {
+  .industrial-banner-content h2 {
+    font-size: 22px;
+  }
+
+  .industrial-category-item {
+    font-size: 12px;
+  }
+
+  .industrial-size-tab {
+    padding: 6px 10px;
+    font-size: 12px;
+  }
+
+  .industrial-pump-card {
+    width: 100%;
+  }
+
+  .industrial-pump-card img {
+    height: 130px;
+  }
+}
