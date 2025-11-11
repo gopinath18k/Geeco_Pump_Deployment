@@ -79,9 +79,9 @@ export const AgricultureZOWOpenwellPump = () => {
                     </div>  
                     <div className="Related_Pump_Section col-12 col-md-6  col-md-6 col-lg-6 col-xl-6">
                         <h4>Related Pumps</h4>
-                        <Link to="/agriculture-pump/Agriculture-SS&MS-Horizontal-Openwell-Pump" onClick={() => window.scrollTo(0, 0)}><p>1.SS & MS Horizontal Openwell Pumps</p></Link>
-                        <Link to="/agriculture-pump/Agriculture-Dolphin&Beluga-Horizontal-Openwell-Pump" onClick={() => window.scrollTo(0, 0)}><p>2.Dolphin & Beluga Horizontal Openwell Pumps</p></Link>
-                        <Link to="/agriculture-pump/Agriculture-Jumbo-Horizontal-Openwell-Pump" onClick={() => window.scrollTo(0, 0)}><p>3.Jumbo Horizontal Openwell Pump</p></Link>
+                        <Link to="/agriculture-pump/agriculture-ss&ms-horizontal-openwell-pump" onClick={() => window.scrollTo(0, 0)}><p>1.SS & MS Horizontal Openwell Pumps</p></Link>
+                        <Link to="/agriculture-pump/agriculture-dolphin&beluga-horizontal-openwell-pump" onClick={() => window.scrollTo(0, 0)}><p>2.Dolphin & Beluga Horizontal Openwell Pumps</p></Link>
+                        <Link to="/agriculture-pump/agriculture-jumbo-horizontal-openwell-pump" onClick={() => window.scrollTo(0, 0)}><p>3.Jumbo Horizontal Openwell Pump</p></Link>
                     </div>
                 </div>
                 

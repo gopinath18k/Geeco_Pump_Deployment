@@ -120,6 +120,30 @@ import { Industrial } from "./components/AllPumps/Industrial/Industrial";
 import { IndTuffBulletPump } from "./components/AllPumps/Industrial/Borewell_Pump/V4_Tuff_Bullet_Pumps/Ind_V4_Tuff_Bullet_Pumps";
 import { IndV4TuffPump } from "./components/AllPumps/Industrial/Borewell_Pump/V4_Tuff_Bullet_Pumps/Ind_V4_Tuff_Pump/Ind_V4_Tuff_Pump";
 import { IndV4BulletPump } from "./components/AllPumps/Industrial/Borewell_Pump/V4_Tuff_Bullet_Pumps/Ind_V4_Bullet_Pump/Ind_V4_Bullet_Pump";
+import { IndSsMsOpenwellPumps } from "./components/AllPumps/Industrial/Openwell_Pump/Horizontal_Pump/SS&MS_Openwell_Pump/Ind_SS_MS_Openwell_Pump";
+import { IndSsOpenwellPumps } from "./components/AllPumps/Industrial/Openwell_Pump/Horizontal_Pump/SS&MS_Openwell_Pump/SS_Horizontal_Openwell_Pump/Ind_SS_Horizontal_Openwell_Pump";
+import { IndMsOpenwellPumps } from "./components/AllPumps/Industrial/Openwell_Pump/Horizontal_Pump/SS&MS_Openwell_Pump/MS_Horizontal_Openwell_Pump/Ind_MS_Horizontal_Openwell_Pump";
+import { IndSsMsVerticalPumps } from "./components/AllPumps/Industrial/Openwell_Pump/Vertical_Pump/SS&MS_Vertical_Openwell_Pump/Ind_SSMS_Vertical_Pump";
+import { IndMsOpenwellVerticalPumps } from "./components/AllPumps/Industrial/Openwell_Pump/Vertical_Pump/SS&MS_Vertical_Openwell_Pump/MS_Vertical_Openwell_Pump/Ind_MS_Vertical_Openwell_Pump";
+import { IndSsOpenwellVerticalPumps } from "./components/AllPumps/Industrial/Openwell_Pump/Vertical_Pump/SS&MS_Vertical_Openwell_Pump/SS_Vertical_Openwell_Pump/Ind_SS_Vertical_Openwell_Pump";
+import { IndJumboVerticalOpenwellPumps } from "./components/AllPumps/Industrial/Openwell_Pump/Vertical_Pump/Jumbo_Vertical_Openwell_Pump/Ind_Jumbo_Vertical_Openwell_Pump";
+import { IndDewateringPump } from "./components/AllPumps/Industrial/Waste_Water_Pump/Ind_Dewatering_Pump/Ind_Dewatering_Pump";
+import { IndSewagePump } from "./components/AllPumps/Industrial/Waste_Water_Pump/Ind_Sewage_Pump/Ind_Sewage_Pump";
+import { IndCutterPump } from "./components/AllPumps/Industrial/Waste_Water_Pump/Ind_Cutter_Pump/Ind_Cutter_Pump";
+import { IndHorizontalMultistagePump } from "./components/AllPumps/Industrial/High_Pressure_Pump/Horizontal_Multistage_Pump/Ind_Horizontal_Multistage_Pump";
+import { IndVerticalMultistagePump } from "./components/AllPumps/Industrial/High_Pressure_Pump/Vertical_Multistage_Pump/Ind_Vertical_Multistage_Pump";
+import { IndVerticalInlinePump } from "./components/AllPumps/Industrial/High_Pressure_Pump/Vertical_Inline_Pump/Ind_Vertical_Inline_Pump";
+import { IndCarwashPump } from "./components/AllPumps/Industrial/High_Pressure_Pump/High_Pressure_Carwash_Pump/Ind_High_Pressure_Carwash_Pump";
+import { IndGTCSPump } from "./components/AllPumps/Industrial/Tank_Compressor/Ind_GTCS_Pump/Ind_GTCS_Pump";
+import { IndGTCDPump } from "./components/AllPumps/Industrial/Tank_Compressor/Ind_GTCD_Pump/Ind_GTCD_Pump";
+import { IndGTCDHPump } from "./components/AllPumps/Industrial/Tank_Compressor/Ind_GTCDH_Pump/Ind_GTCDH_Pump";
+import { IndMCBPanel } from "./components/AllPumps/Industrial/Control_Panels/Single_Phase_Panels/Ind_MCB_Panel/Ind_MCB_Panel";
+import { IndSWIFTPanel } from "./components/AllPumps/Industrial/Control_Panels/Single_Phase_Panels/Ind_SWIFT_Panel/Ind_SWIFT_Panel";
+import { IndELHPanel } from "./components/AllPumps/Industrial/Control_Panels/Single_Phase_Panels/Ind_ELH_Panel/Ind_ELH_Panel";
+import { IndELHAutoPanel } from "./components/AllPumps/Industrial/Control_Panels/Single_Phase_Panels/Ind_ELH_Auto_Panel/Ind_ELH_Auto_Panel";
+import { IndELHFullAutoPanel } from "./components/AllPumps/Industrial/Control_Panels/Single_Phase_Panels/Ind_ELH_Full_Auto_Panel/Ind_ELH_Full_Auto_Panel";
+import { IndGNC1Panel } from "./components/AllPumps/Industrial/Control_Panels/Three_Phase_Panel/Ind_Three_GNC1_Panel";
+import { IndGNC2Panel } from "./components/AllPumps/Industrial/Control_Panels/Three_Phase_Panel/Ind_Three_GNC2_Panel";
 
 
 
@@ -142,36 +166,36 @@ function App() {
         <Route path='/agriculture-pump/borewell-v4-pumps' element={<BorewellV4Pumps/>}></Route>
         <Route path='/agriculture-pump/borewell-v4-pumps/v4-tuff-pump' element={<V4TuffPump/>}></Route>
         <Route path='/agriculture-pump/borewell-v4-pumps/v4-bullet-pump' element={<V4BulletPump/>}></Route>
-        <Route path='/agriculture-pump/V4-Envy-Pump' element={<V4EnvyPump/>}></Route>
-        <Route path='/agriculture-pump/V6-Premium-Pump' element={<V6PremiumPump/>}></Route>
-        <Route path='/agriculture-pump/V6-Vinc-Pump' element={<V6VincPump/>}></Route>
-        <Route path='/agriculture-pump/V6-Active-Pump' element={<V6ActivePump/>}></Route>
-        <Route path='/agriculture-pump/Agriculture-ZOW-Horizontal-Openwell-Pump' element={<AgricultureZOWOpenwellPump/>}></Route>
-        <Route path='/agriculture-pump/Agriculture-SS&MS-Horizontal-Openwell-Pump' element={<AgriSsMsOpenwellPumps/>}></Route>
-        <Route path='/agriculture-pump/Agriculture-SS&MS-Horizontal-Openwell-Pump/SS-Horizontal-Openwell-Pump' element={<AgriSsOpenwellPumps/>}></Route>
-        <Route path='/agriculture-pump/Agriculture-SS&MS-Horizontal-Openwell-Pump/MS-Horizontal-Openwell-Pump' element={<AgriMsOpenwellPumps/>}></Route>
-        <Route path='/agriculture-pump/Agriculture-Dolphin&Beluga-Horizontal-Openwell-Pump' element={<AgriDolpinBelugaOpenwellPumps/>}></Route>
-        <Route path='/agriculture-pump/Agriculture-Dolphin&Beluga-Horizontal-Openwell-Pump/Agriculture-Dolphin-Horizontal-Openwell-Pump' element={<AgriDolpinOpenwellPumps/>}></Route>
-        <Route path='/agriculture-pump/Agriculture-Dolphin&Beluga-Horizontal-Openwell-Pump/Agriculture-Beluga-Horizontal-Openwell-Pump' element={<AgriBelugaOpenwellPumps/>}></Route>
-        <Route path='/agriculture-pump/Agriculture-Jumbo-Horizontal-Openwell-Pump' element={<AgriJumboOpenwellPumps/>}></Route>
-        <Route path='/agriculture-pump/Agriculture-SS&MS-Vertical-Openwell-Pump' element={<AgriSsMsVerticalPumps/>}></Route>
-        <Route path='/agriculture-pump/Agriculture-SS&MS-Vertical-Openwell-Pump/Agriculture-SS-Vertical-Openwell-Pump' element={<AgriSsOpenwellVerticalPumps/>}></Route>
-        <Route path='/agriculture-pump/Agriculture-SS&MS-Vertical-Openwell-Pump/Agriculture-MS-Vertical-Openwell-Pump' element={<AgriMsOpenwellVerticalPumps/>}></Route>
-        <Route path='/agriculture-pump/Agriculture-Jumbo-Vertical-Openwell-Pump' element={<AgriJumboVerticalOpenwellPumps/>}></Route>
-        <Route path='/agriculture-pump/Agriculture-SS&MS-Amphibian-Pump' element={<AgriSSMSAmphibianPumps/>}></Route>
-        <Route path='/agriculture-pump/Agriculture-SS&MS-Amphibian-Pump/Agriculture-SS-Amphibian-Pump' element={<AgriSSAmphibianPumps/>}></Route>
-        <Route path='/agriculture-pump/Agriculture-SS&MS-Amphibian-Pump/Agriculture-MS-Amphibian-Pump' element={<AgriMSAmphibianPumps/>}></Route>
-        <Route path='/agriculture-pump/Agriculture-Jumbo-Horizontal-Amphibian-Pump' element={<AgriJumboAmphibianPumps/>}></Route>
-        <Route path='/agriculture-pump/Agriculture-Self-Priming-Monoblock-Mini-Monoblocks-Pump' element={<AgriMiniMonoblockPumps/>}></Route>
-        <Route path='/agriculture-pump/Agriculture-Self-Priming-Monoblock-GMS-Pump' element={<AgriGMSPumps/>}></Route>
-        <Route path='/agriculture-pump/Agriculture-Self-Priming-Monoblock-GMH-Pump' element={<AgriGMHPumps/>}></Route>
-        <Route path='/agriculture-pump/Agriculture-High-Pressure-Vertical-Multistage-Pump' element={<AgriHighPressureMultistagePumps/>}></Route>
-        <Route path='/agriculture-pump/Agriculture-Mono-Compressor-Pump' element={<AgriMonoCompressorPumps/>}></Route>
-        <Route path='/agriculture-pump/Agriculture-Double-Cylinder-Compressor-Pump' element={<AgriDoubleCylinderCompressorPumps/>}></Route>
-        <Route path='/agriculture-pump/Agriculture-Single-Cylinder-Compressor-Pump' element={<AgriSingleCylinderCompressorPumps/>}></Route>
-        <Route path='/agriculture-pump/Agriculture-Single-Phase-ELH' element={<AgriSinglePhaseELH/>}></Route>
-        <Route path='/agriculture-pump/Agriculture-Three-Phase-GNC-Panel-One' element={<AgriThreePhaseGNCOne/>}></Route>
-        <Route path='/agriculture-pump/Agriculture-Three-Phase-GNC-Panel-Two' element={<AgriThreePhaseGNCTwo/>}></Route>
+        <Route path='/agriculture-pump/v4-envy-pump' element={<V4EnvyPump/>}></Route>
+        <Route path='/agriculture-pump/v6-premium-pump' element={<V6PremiumPump/>}></Route>
+        <Route path='/agriculture-pump/v6-vinc-pump' element={<V6VincPump/>}></Route>
+        <Route path='/agriculture-pump/v6-active-pump' element={<V6ActivePump/>}></Route>
+        <Route path='/agriculture-pump/agriculture-zow-horizontal-openwell-pump' element={<AgricultureZOWOpenwellPump/>}></Route>
+        <Route path='/agriculture-pump/agriculture-ss&ms-horizontal-openwell-pump' element={<AgriSsMsOpenwellPumps/>}></Route>
+        <Route path='/agriculture-pump/agriculture-ss&ms-horizontal-openwell-pump/ss-horizontal-openwell-pump' element={<AgriSsOpenwellPumps/>}></Route>
+        <Route path='/agriculture-pump/agriculture-ss&ms-horizontal-openwell-pump/ms-horizontal-openwell-pump' element={<AgriMsOpenwellPumps/>}></Route>
+        <Route path='/agriculture-pump/agriculture-dolphin&beluga-horizontal-openwell-pump' element={<AgriDolpinBelugaOpenwellPumps/>}></Route>
+        <Route path='/agriculture-pump/agriculture-dolphin&beluga-horizontal-openwell-pump/agriculture-dolphin-horizontal-openwell-pump' element={<AgriDolpinOpenwellPumps/>}></Route>
+        <Route path='/agriculture-pump/agriculture-dolphin&beluga-horizontal-openwell-pump/agriculture-beluga-horizontal-openwell-pump' element={<AgriBelugaOpenwellPumps/>}></Route>
+        <Route path='/agriculture-pump/agriculture-jumbo-horizontal-openwell-pump' element={<AgriJumboOpenwellPumps/>}></Route>
+        <Route path='/agriculture-pump/agriculture-ss&ms-vertical-openwell-pump' element={<AgriSsMsVerticalPumps/>}></Route>
+        <Route path='/agriculture-pump/agriculture-ss&ms-vertical-openwell-pump/agriculture-ss-vertical-openwell-pump' element={<AgriSsOpenwellVerticalPumps/>}></Route>
+        <Route path='/agriculture-pump/agriculture-ss&ms-vertical-openwell-pump/agriculture-ms-vertical-openwell-pump' element={<AgriMsOpenwellVerticalPumps/>}></Route>
+        <Route path='/agriculture-pump/agriculture-jumbo-vertical-openwell-pump' element={<AgriJumboVerticalOpenwellPumps/>}></Route>
+        <Route path='/agriculture-pump/agriculture-ss&ms-amphibian-pump' element={<AgriSSMSAmphibianPumps/>}></Route>
+        <Route path='/agriculture-pump/agriculture-ss&ms-amphibian-pump/agriculture-ss-amphibian-pump' element={<AgriSSAmphibianPumps/>}></Route>
+        <Route path='/agriculture-pump/agriculture-ss&ms-amphibian-pump/agriculture-ms-amphibian-pump' element={<AgriMSAmphibianPumps/>}></Route>
+        <Route path='/agriculture-pump/agriculture-jumbo-horizontal-amphibian-pump' element={<AgriJumboAmphibianPumps/>}></Route>
+        <Route path='/agriculture-pump/agriculture-self-priming-monoblock-mini-monoblocks-pump' element={<AgriMiniMonoblockPumps/>}></Route>
+        <Route path='/agriculture-pump/agriculture-self-priming-monoblock-gms-pump' element={<AgriGMSPumps/>}></Route>
+        <Route path='/agriculture-pump/agriculture-self-priming-monoblock-gmh-pump' element={<AgriGMHPumps/>}></Route>
+        <Route path='/agriculture-pump/agriculture-high-pressure-vertical-multistage-pump' element={<AgriHighPressureMultistagePumps/>}></Route>
+        <Route path='/agriculture-pump/agriculture-mono-compressor-pump' element={<AgriMonoCompressorPumps/>}></Route>
+        <Route path='/agriculture-pump/agriculture-double-cylinder-compressor-pump' element={<AgriDoubleCylinderCompressorPumps/>}></Route>
+        <Route path='/agriculture-pump/agriculture-single-cylinder-compressor-pump' element={<AgriSingleCylinderCompressorPumps/>}></Route>
+        <Route path='/agriculture-pump/agriculture-single-phase-elh' element={<AgriSinglePhaseELH/>}></Route>
+        <Route path='/agriculture-pump/agriculture-three-phase-gnc-panel-one' element={<AgriThreePhaseGNCOne/>}></Route>
+        <Route path='/agriculture-pump/agriculture-three-phase-gnc-panel-two' element={<AgriThreePhaseGNCTwo/>}></Route>
 
         {/* DOMESTIC CATEGORY SECTION */}
 
@@ -259,6 +283,30 @@ function App() {
         <Route path='/industrial-pump/borewell-submersible/v4-tuff-bullet-pumps' element={<IndTuffBulletPump/>}></Route>
         <Route path='/industrial-pump/borewell-submersible/v4-tuff-bullet-pumps/v4-tuff-pump' element={<IndV4TuffPump/>}></Route>
         <Route path='/industrial-pump/borewell-submersible/v4-tuff-bullet-pumps/v4-bullet-pump' element={<IndV4BulletPump/>}></Route>
+        <Route path='/industrial-pump/industrial-ss-ms-horizontal-openwell-pump' element={<IndSsMsOpenwellPumps/>}></Route>
+        <Route path='/industrial-pump/industrial-ss-ms-horizontal-openwell-pump/ss-horizontal-openwell-pump' element={<IndSsOpenwellPumps/>}></Route>
+        <Route path='/industrial-pump/industrial-ss-ms-horizontal-openwell-pump/ms-horizontal-openwell-pump' element={<IndMsOpenwellPumps/>}></Route>
+        <Route path='/industrial-pump/ss-ms-vertical-openwell-pump' element={<IndSsMsVerticalPumps/>}></Route>
+        <Route path='/industrial-pump/ss-ms-vertical-openwell-pump/ss-vertical-openwell-pump' element={<IndSsOpenwellVerticalPumps/>}></Route>
+        <Route path='/industrial-pump/ss-ms-vertical-openwell-pump/ms-vertical-openwell-pump' element={<IndMsOpenwellVerticalPumps/>}></Route>
+        <Route path='/industrial-pump/jumbo-vertical-openwell-pump' element={<IndJumboVerticalOpenwellPumps/>}></Route>
+        <Route path='/industrial-pump/waste-water-pump/dewatering-pump' element={<IndDewateringPump/>}></Route>
+        <Route path='/industrial-pump/waste-water-pump/sewage-pump' element={<IndSewagePump/>}></Route>
+        <Route path='/industrial-pump/waste-water-pump/cutter-pump' element={<IndCutterPump/>}></Route>
+        <Route path='/industrial-pump/high-pressure-pumps/horizontal-multistage-pump' element={<IndHorizontalMultistagePump/>}></Route>
+        <Route path='/industrial-pump/high-pressure-pumps/vertical-multistage-pump' element={<IndVerticalMultistagePump/>}></Route>
+        <Route path='/industrial-pump/high-pressure-pumps/vertical-inline-pump' element={<IndVerticalInlinePump/>}></Route>
+        <Route path='/industrial-pump/high-pressure-pumps/high-pressure-car-wash-pump' element={<IndCarwashPump/>}></Route>
+        <Route path='/industrial-pump/tank-compressor-pumps/gtcs-pump' element={<IndGTCSPump/>}></Route>
+        <Route path='/industrial-pump/tank-compressor-pumps/gtcd-pump' element={<IndGTCDPump/>}></Route>
+        <Route path='/industrial-pump/tank-compressor-pumps/gtcdh-pump' element={<IndGTCDHPump/>  }></Route>
+        <Route path='/industrial-pump/control-panels/single-phase-panels/mcb-panel' element={<IndMCBPanel/>}></Route>
+        <Route path='/industrial-pump/control-panels/single-phase-panels/swift-panel' element={<IndSWIFTPanel/>}></Route>
+        <Route path='/industrial-pump/control-panels/single-phase-panels/elh-panel' element={<IndELHPanel/>}></Route>
+        <Route path='/industrial-pump/control-panels/single-phase-panels/elh-auto-panel' element={<IndELHAutoPanel/>}></Route>
+        <Route path='/industrial-pump/control-panels/single-phase-panels/elh-full-auto-panel' element={<IndELHFullAutoPanel/>}></Route>
+        <Route path='/industrial-pump/control-panels/three-phase-panel/gnc-panel-1' element={<IndGNC1Panel/>}></Route>
+        <Route path='/industrial-pump/control-panels/three-phase-panel/gnc-panel-2' element={<IndGNC2Panel/>}></Route>
 
       </Routes>
       <Footer/>

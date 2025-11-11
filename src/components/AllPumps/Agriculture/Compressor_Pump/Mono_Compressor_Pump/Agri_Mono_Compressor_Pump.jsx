@@ -79,8 +79,8 @@ export const AgriMonoCompressorPumps = () => {
                     </div>  
                     <div className="Related_Pump_Section col-12 col-md-6  col-md-6 col-lg-6 col-xl-6">
                         <h4>Related Pumps</h4>
-                        <Link to="/agriculture-pump/Agriculture-Single-Cylinder-Compressor-Pump" onClick={() => window.scrollTo(0, 0)}><p>1.Single Cylinder Compressor Pump</p></Link>
-                        <Link to="/agriculture-pump/Agriculture-Double-Cylinder-Compressor-Pump" onClick={() => window.scrollTo(0, 0)}><p>2.Double Cylinder Compressor Pump</p></Link>
+                        <Link to="/agriculture-pump/agriculture-single-cylinder-compressor-pump" onClick={() => window.scrollTo(0, 0)}><p>1.Single Cylinder Compressor Pump</p></Link>
+                        <Link to="/agriculture-pump/agriculture-double-cylinder-compressor-pump" onClick={() => window.scrollTo(0, 0)}><p>2.Double Cylinder Compressor Pump</p></Link>
                     </div>
                 </div>
                 

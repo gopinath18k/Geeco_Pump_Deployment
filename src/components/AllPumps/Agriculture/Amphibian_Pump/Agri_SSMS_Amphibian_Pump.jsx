@@ -65,7 +65,7 @@ export const AgriSSMSAmphibianPumps = () => {
                 <h3>SS & MS Amphibian Pumps</h3>
 
                 <div className="Agri_SSMS_Amphibian_Pump_Category_Container">
-                    <Link to="/agriculture-pump/Agriculture-SS&MS-Amphibian-Pump/Agriculture-SS-Amphibian-Pump" className="Agri_SSMS_Amphibian_Pump_Inner_Container col-12 col-sm-5 col-md-5 col-lg-4 col-xl-3" onClick={() => window.scrollTo(0, 0)}>
+                    <Link to="/agriculture-pump/agriculture-ss&ms-amphibian-pump/agriculture-ss-amphibian-pump" className="Agri_SSMS_Amphibian_Pump_Inner_Container col-12 col-sm-5 col-md-5 col-lg-4 col-xl-3" onClick={() => window.scrollTo(0, 0)}>
                          
                             <img src={Pump_Image_Need} alt="Agri_SSMS_Amphibian_Pump Model One" className='Agri_SSMS_Amphibian_Pump_Model_Image'/>
                             <div className="Agri_SSMS_Amphibian_Pump_Model_Content">
@@ -147,7 +147,7 @@ export const AgriSSMSAmphibianPumps = () => {
                                 </div>
                             </div>
                     </Link>
-                    <Link to="/agriculture-pump/Agriculture-SS&MS-Amphibian-Pump/Agriculture-MS-Amphibian-Pump" className="Agri_SSMS_Amphibian_Pump_Inner_Container col-12 col-sm-5 col-md-5 col-lg-4 col-xl-3" onClick={() => window.scrollTo(0, 0)}>
+                    <Link to="/agriculture-pump/agriculture-ss&ms-amphibian-pump/agriculture-ms-amphibian-pump" className="Agri_SSMS_Amphibian_Pump_Inner_Container col-12 col-sm-5 col-md-5 col-lg-4 col-xl-3" onClick={() => window.scrollTo(0, 0)}>
                         <img src={Pump_Image_Need} alt="Agri_SSMS_Amphibian_Pump Model One" className='Agri_SSMS_Amphibian_Pump_Model_Image'/>
                         <div className="Agri_SSMS_Amphibian_Pump_Model_Content">
                             <div className="Agri_SSMS_Amphibian_Pump_Title_container Agri_SSMS_Amphibian_Pump_border">
@@ -229,88 +229,7 @@ export const AgriSSMSAmphibianPumps = () => {
                             
                         </div>
                     </Link>
-                    {/* <Link to="/agriculture-pump/Agri_SSMS_Amphibian_Pumps/v4_tuff_pump" className="Agri_SSMS_Amphibian_Pump_Inner_Container col-12 col-sm-5 col-md-5 col-lg-4 col-xl-3" onClick={() => window.scrollTo(0, 0)}>
-                        <img src={Borewell_V4_Tuff_Bullet} alt="Agri_SSMS_Amphibian_Pump Model One" className='Agri_SSMS_Amphibian_Pump_Model_Image'/>
-                        <div className="Agri_SSMS_Amphibian_Pump_Model_Content">
-                            <div className="Agri_SSMS_Amphibian_Pump_Title_container Agri_SSMS_Amphibian_Pump_border">
-                                <p>Geeeco Little Sub</p>
-                                <img src={GeecoLogo} alt="GeecoLogo" className='GeecoLogo_image'/>
-                            </div>
-                            <div className="Agri_SSMS_Amphibian_Pump_Title_container Agri_SSMS_Amphibian_Pump_border_One">
-                                <div className="Agri_SSMS_Amphibian_Pump_Inner_content col-6">
-                                    <p>Motor power</p>
-                                </div>
-                                <div className="Agri_SSMS_Amphibian_Pump_Inner_contents col-6">
-                                    <p>3hp to 20hp</p>
-                                </div>
-                            </div>
-                            <div className="Agri_SSMS_Amphibian_Pump_Title_container Agri_SSMS_Amphibian_Pump_border_two">
-                                <div className="Agri_SSMS_Amphibian_Pump_Inner_content col-6">
-                                    <p>Speed</p>
-                                </div>
-                                <div className="Agri_SSMS_Amphibian_Pump_Inner_contents col-6">
-                                    <p>2900 RPM</p>
-                                </div>
-                            </div>
-                            <div className="Agri_SSMS_Amphibian_Pump_Title_container Agri_SSMS_Amphibian_Pump_border_three">
-                                <div className="Agri_SSMS_Amphibian_Pump_Inner_content col-6">
-                                    <p>Power source</p>
-                                </div>
-                                <div className="Agri_SSMS_Amphibian_Pump_Inner_contents col-6">
-                                    <p>415 Volts</p>
-                                </div>
-                            </div>
-                            <div className="Agri_SSMS_Amphibian_Pump_Title_container Agri_SSMS_Amphibian_Pump_border_two">
-                                <div className="Agri_SSMS_Amphibian_Pump_Inner_content col-6">
-                                    <p>Maximum outer dia</p>
-                                </div>
-                                <div className="Agri_SSMS_Amphibian_Pump_Inner_contents col-6">
-                                    <p>142mm</p>
-                                </div>
-                            </div>
-                            <div className="Agri_SSMS_Amphibian_Pump_Title_container Agri_SSMS_Amphibian_Pump_border_four">
-                                <div className="Agri_SSMS_Amphibian_Pump_Inner_content col-6">
-                                    <p>Type of duty</p>
-                                </div>
-                                <div className="Agri_SSMS_Amphibian_Pump_Inner_contents col-6">
-                                    <p>142mm</p>
-                                </div>
-                            </div>
-                            <div className="Agri_SSMS_Amphibian_Pump_Title_container Agri_SSMS_Amphibian_Pump_border_five">
-                                <div className="Agri_SSMS_Amphibian_Pump_Inner_content col-6">
-                                    <p>Winding type</p>
-                                </div>
-                                <div className="Agri_SSMS_Amphibian_Pump_Inner_contents col-6">
-                                    <p>142mm</p>
-                                </div>
-                            </div>
-                            <div className="Agri_SSMS_Amphibian_Pump_Title_container Agri_SSMS_Amphibian_Pump_border_six">
-                                <div className="Agri_SSMS_Amphibian_Pump_Inner_content col-6">
-                                    <p>Pump Type</p>
-                                </div>
-                                <div className="Agri_SSMS_Amphibian_Pump_Inner_contents col-6">
-                                    <p>142mm</p>
-                                </div>
-                            </div>
-                            <div className="Agri_SSMS_Amphibian_Pump_Title_container Agri_SSMS_Amphibian_Pump_border_seven">
-                                <div className="Agri_SSMS_Amphibian_Pump_Inner_content col-6">
-                                    <p>Maximum Head</p>
-                                </div>
-                                <div className="Agri_SSMS_Amphibian_Pump_Inner_contents col-6">
-                                    <p>142mm</p>
-                                </div>
-                            </div>
-                            <div className="Agri_SSMS_Amphibian_Pump_Title_container Agri_SSMS_Amphibian_Pump_border_seven">
-                                <div className="Agri_SSMS_Amphibian_Pump_Inner_content col-6">
-                                    <p>Maximum Discharge</p>
-                                </div>
-                                <div className="Agri_SSMS_Amphibian_Pump_Inner_contents col-6">
-                                    <p>142mm</p>
-                                </div>
-                            </div>
-                            
-                        </div>
-                    </Link> */}
+                    
                 </div>
 
 
@@ -332,7 +251,7 @@ export const AgriSSMSAmphibianPumps = () => {
                     <div className="Related_Pump_Section col-12 col-md-6  col-md-6 col-lg-6 col-xl-6">
                         <h4>Related Pumps</h4>
            
-                        <Link to="/agriculture-pump/Agriculture-Jumbo-Horizontal-Amphibian-Pump" onClick={() => window.scrollTo(0, 0)}><p>1.Jumbo Horizontal Amphibian Pump</p></Link>
+                        <Link to="/agriculture-pump/agriculture-jumbo-horizontal-amphibian-pump" onClick={() => window.scrollTo(0, 0)}><p>1.Jumbo Horizontal Amphibian Pump</p></Link>
                     </div>
                 </div>
                 

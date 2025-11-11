@@ -1,0 +1,90 @@
+import React from 'react'
+import "./Ind_Three_GNC2_Panel.css"
+import commercial_GNC2_Pump from "../../../../../assets/Agriculture/Three-Phase-GNC-2.webp"
+import { Link } from "react-router-dom";
+
+export const IndGNC2Panel = () => {
+  return (
+    <div className='Ind_GNC2_Panel_Main_Conatiner'>
+        <div className="Ind_GNC2_Panel_Banner_container">
+            <div className="Ind_GNC2_Panel_Banner_image">
+                <img src={commercial_GNC2_Pump} alt="Ind_GNC2_Panel Banner" className="Ind_GNC2_Panel_images"/>
+            </div>
+            <div className="Ind_GNC2_Panel_Banner_Content">
+                <h3>Three Phase Panel</h3>
+                <h2>GNC Panel 2</h2> 
+                <p>Control Panels</p>
+            </div>
+        </div>
+        <div className="Ind_GNC2_Panel_Range_Container_one">
+            <div className="Pump_Range_container col-3">
+                <p className='Pump_Range_Heading'>HP Range</p>
+            </div>
+            <div className="Pump_Range_container col-3">
+                <p className='Pump_Range_Heading'>HP Range</p>
+            </div>
+            <div className="Pump_Range_container col-3">
+                <p className='Pump_Range_Heading'>HP Range</p>
+            </div>
+            <div className="Pump_Range_container col-3">
+                <p className='Pump_Range_Heading'>HP Range</p>
+            </div>
+        </div>
+        <div className="Ind_GNC2_Panel_Range_Container_Two">
+            <div className="Pump_Range_container col-3">
+                <p className='Pump_Range_Heading'>0.5 - 1 HP</p>
+            </div>
+            <div className="Pump_Range_container col-3">
+                <p className='Pump_Range_Heading'>0.5 - 1 HP</p>
+            </div>
+            <div className="Pump_Range_container col-3">
+                <p className='Pump_Range_Heading'>0.5 - 1 HP</p>
+            </div>
+            <div className="Pump_Range_container col-3">
+                <p className='Pump_Range_Heading'>0.5 - 1 HP</p>
+            </div>
+        </div>
+        <div className="Ind_GNC2_Panel_Descriptions">
+            <div className="Ind_GNC2_Panel_text_conatiner">
+                <p>A borewell submersible pump is a specialized water pump designed to operate while fully submerged in water. It is primarily used for extracting water from deep borewells, wells, or underground reservoirs where the water table is significantly below the surface. These pumps are efficient, compact, and built to withstand harsh conditions, often made of corrosion-resistant materials like stainless steel. They deliver high performance with minimal noise, making them ideal for residential, agricultural, and industrial applications.</p>
+                <h3>Perfomance Features </h3>
+                <p> ➤ Suitable for pumping water up to a head of 93 m<br></br>
+                    ➤ Discharge capacity up to 3900 lpm<br></br>
+                    ➤ Designed for wide voltage operation – 180 to 240 Volts for single phase, 350 to 440 Volts for three phase<br></br>
+                    ➤ Shielded ball bearings that withstand temperatures up to 155 deg C<br></br>
+                    ➤ Good suction lift characteristics
+                </p>
+                <h3>Key Purposes</h3>
+                <p> ➤ Domestic Water Supply<br></br>
+                    ➤ Agricultural Irrigation<br></br>
+                    ➤ Industrial Water Supply<br></br>
+                    ➤ Gardens and Mining
+                </p>
+
+
+                <div className="Ind_GNC2_Panel_Form_section">
+                    <div className="Pump_Form_Section col-12 col-md-6 col-md-6 col-lg-6 col-xl-6">
+                        <div className="Pump_Form_Contact">
+                            <h3>Contact Us For More Queries</h3>
+                            <form action="" className='Ind_GNC2_Panel_Contact_Form'>
+                                <input type="text" id="name" placeholder="Name" />
+
+                                <input type="number" id="number" placeholder="Number" />
+
+                                <input type="text" id="message" placeholder="Message" />
+
+                                <button className='Ind_GNC2_Panel_Submit'>Send</button>
+                            </form>
+                        </div>
+                    </div>
+                    <div className="Related_Pump_Section col-12 col-md-6  col-md-6 col-lg-6 col-xl-6">
+                        <h4>Related Pumps</h4>
+                        <Link to="/industrial-pump/control-panels/three-phase-panel/gnc-panel-1" onClick={() => window.scrollTo(0, 0)}><p>1. GNC Control Panel 1</p></Link>
+                    </div>
+                </div>
+                
+            </div>
+        </div>
+    </div>
+  )
+}

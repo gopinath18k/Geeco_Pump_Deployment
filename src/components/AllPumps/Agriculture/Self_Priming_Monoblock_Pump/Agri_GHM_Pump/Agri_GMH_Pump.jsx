@@ -79,8 +79,8 @@ export const AgriGMHPumps = () => {
                     </div>  
                     <div className="Related_Pump_Section col-12 col-md-6  col-md-6 col-lg-6 col-xl-6">
                         <h4>Related Pumps</h4>
-                        <Link to="/agriculture-pump/Agriculture-Self-Priming-Monoblock-Mini-Monoblocks-Pump" onClick={() => window.scrollTo(0, 0)}><p>1.Mini Monoblocks Pump</p></Link>
-                        <Link to="/agriculture-pump/Agriculture-Self-Priming-Monoblock-GMH-Pump" onClick={() => window.scrollTo(0, 0)}><p>2.GMH Pump</p></Link>
+                        <Link to="/agriculture-pump/agriculture-self-priming-monoblock-mini-monoblocks-pump" onClick={() => window.scrollTo(0, 0)}><p>1.Mini Monoblocks Pump</p></Link>
+                        <Link to="/agriculture-pump/agriculture-self-priming-monoblock-gms-pump" onClick={() => window.scrollTo(0, 0)}><p>2.GMS Pump</p></Link>
                     </div>
                 </div>
                 

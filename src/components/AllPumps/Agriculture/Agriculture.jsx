@@ -43,35 +43,35 @@ export const Agriculture = () => {
           sizes: {
             "4' (100MM)": [
               { name: "V4 Tuff,Bullet Pumps", img: Sub_V4_Tuff_Bullet, link: "/agriculture-pump/borewell-v4-pumps" },
-              { name: "V4 Envy Pump", img: V4_Envy_Pump, link: "/agriculture-pump/V4-Envy-Pump" }
+              { name: "V4 Envy Pump", img: V4_Envy_Pump, link: "/agriculture-pump/v4-envy-pump" }
             ],
             "6' (150MM)": [
-              { name: "V6 Premium Pump", img: V6_Premium_Pump, link: "/agriculture-pump/V6-Premium-Pump" },
-              { name: "V6 Vinc Pump", img: V6_Premium_Pump, link: "/agriculture-pump/V6-Vinc-Pump" },
-              { name: "V6 Active Pump", img: V6_Premium_Pump, link: "/agriculture-pump/V6-Active-Pump" },
+              { name: "V6 Premium Pump", img: V6_Premium_Pump, link: "/agriculture-pump/v6-premium-pump" },
+              { name: "V6 Vinc Pump", img: V6_Premium_Pump, link: "/agriculture-pump/v6-vinc-pump" },
+              { name: "V6 Active Pump", img: V6_Premium_Pump, link: "/agriculture-pump/v6-active-pump" },
             ],
           },
         },
         "OPENWELL SUBMERSIBLE PUMPS": {
           sizes: {
             "HORIZONTAL OPENWELL": [
-              { name: "ZOW Openwell Pump", img: Agri_ZOW_Pump, link: "/agriculture-pump/Agriculture-ZOW-Horizontal-Openwell-Pump" },
-              { name: "SS & MS Openwell Pumps", img: Agri_SSMS_Openwell_Pump, link: "/agriculture-pump/Agriculture-SS&MS-Horizontal-Openwell-Pump" },
-              { name: "Dolphin & Beluga Openwell Pumps", img: Agri_DolphinBeluga_Pump, link: "/agriculture-pump/Agriculture-Dolphin&Beluga-Horizontal-Openwell-Pump" },
-              { name: "Jumbo Horizontal Openwell Pump", img: Agri_Jumbo_Horizontal_Pump, link: "/agriculture-pump/Agriculture-Jumbo-Horizontal-Openwell-Pump" },
+              { name: "ZOW Openwell Pump", img: Agri_ZOW_Pump, link: "/agriculture-pump/agriculture-zow-horizontal-openwell-pump" },
+              { name: "SS & MS Openwell Pumps", img: Agri_SSMS_Openwell_Pump, link: "/agriculture-pump/agriculture-ss&ms-horizontal-openwell-pump" },
+              { name: "Dolphin & Beluga Openwell Pumps", img: Agri_DolphinBeluga_Pump, link: "/agriculture-pump/agriculture-dolphin&beluga-horizontal-openwell-pump" },
+              { name: "Jumbo Horizontal Openwell Pump", img: Agri_Jumbo_Horizontal_Pump, link: "/agriculture-pump/agriculture-jumbo-horizontal-openwell-pump" },
               
             ],
             "VERTICAL OPENWELL": [
-              { name: "SS & MS Vertical Openwell Pumps", img: Agri_SSMS_Vertical_Pump, link: "/agriculture-pump/Agriculture-SS&MS-Vertical-Openwell-Pump" },
-              { name: "Jumbo Vertical Openwell Pump", img: Agri_Jumbo_Vertical_Pump, link: "/agriculture-pump/Agriculture-Jumbo-Vertical-Openwell-Pump" },
+              { name: "SS & MS Vertical Openwell Pumps", img: Agri_SSMS_Vertical_Pump, link: "/agriculture-pump/agriculture-ss&ms-vertical-openwell-pump" },
+              { name: "Jumbo Vertical Openwell Pump", img: Agri_Jumbo_Vertical_Pump, link: "/agriculture-pump/agriculture-jumbo-vertical-openwell-pump" },
             ],
           },
         },
         "AMPHIBIEN PUMPS": {
           sizes: {
             "HORIZONTAL AMPHIBIEN PUMPS": [
-              { name: "SS & MS Amphibian Pumps", img: Pump_Image_Need, link: "/agriculture-pump/Agriculture-SS&MS-Amphibian-Pump" },
-              { name: "Jumbo Horizontal Amphibian Pump", img: Pump_Image_Need, link: "/agriculture-pump/Agriculture-Jumbo-Horizontal-Amphibian-Pump" },
+              { name: "SS & MS Amphibian Pumps", img: Pump_Image_Need, link: "/agriculture-pump/agriculture-ss&ms-amphibian-pump" },
+              { name: "Jumbo Horizontal Amphibian Pump", img: Pump_Image_Need, link: "/agriculture-pump/agriculture-jumbo-horizontal-amphibian-pump" },
             ],
             
           },
@@ -79,9 +79,9 @@ export const Agriculture = () => {
         "SELF PRIMING MONO BLOCK PUMPS": {
           sizes: {
             "SELF PRIMING MONOBLOCK PUMPS": [
-              { name: "Mini Monoblocks Pump", img: Pump_Image_Need, link: "/agriculture-pump/Agriculture-Self-Priming-Monoblock-Mini-Monoblocks-Pump" },
-              { name: "GMH Pump", img: Agri_GHM_Pump, link: "/agriculture-pump/Agriculture-Self-Priming-Monoblock-GMH-Pump" },
-              { name: "GMS Pump", img: Agri_GMS_Pump, link: "/agriculture-pump/Agriculture-Self-Priming-Monoblock-GMS-Pump" },
+              { name: "Mini Monoblocks Pump", img: Pump_Image_Need, link: "/agriculture-pump/agriculture-self-priming-monoblock-mini-monoblocks-pump" },
+              { name: "GMH Pump", img: Agri_GHM_Pump, link: "/agriculture-pump/agriculture-self-priming-monoblock-gmh-pump" },
+              { name: "GMS Pump", img: Agri_GMS_Pump, link: "/agriculture-pump/agriculture-self-priming-monoblock-gms-pump" },
             ],
             
           },
@@ -89,7 +89,7 @@ export const Agriculture = () => {
         "HIGH PRESSURE PUMP": {
           sizes: {
             "HIGH PRESSURE PUMP": [
-              { name: "Vertical Multistage Pump", img: Pump_Image_Need, link: "/agriculture-pump/Agriculture-High-Pressure-Vertical-Multistage-Pump" },
+              { name: "Vertical Multistage Pump", img: Pump_Image_Need, link: "/agriculture-pump/agriculture-high-pressure-vertical-multistage-pump" },
             ],
             
           },
@@ -97,11 +97,11 @@ export const Agriculture = () => {
         "COMPRESSOR PUMPS": {
           sizes: {
             "MONO COMPRESSOR PUMPS": [
-              { name: "Mono Compressor", img: Agri_Mono_Compressor_Pump, link: "/agriculture-pump/Agriculture-Mono-Compressor-Pump" },
+              { name: "Mono Compressor", img: Agri_Mono_Compressor_Pump, link: "/agriculture-pump/agriculture-mono-compressor-pump" },
             ],
             "BELT COMPRESSOR PUMPS": [
-              { name: "Single Cylinder Compressor Pump", img: Agri_Single_Cylinder_Compressor_Pump, link: "/agriculture-pump/Agriculture-Single-Cylinder-Compressor-Pump" },
-              { name: "Double Cylinder Compressor Pump", img: Agri_Double_Cylinder_Compressor_Pump, link: "/agriculture-pump/Agriculture-Double-Cylinder-Compressor-Pump" },
+              { name: "Single Cylinder Compressor Pump", img: Agri_Single_Cylinder_Compressor_Pump, link: "/agriculture-pump/agriculture-single-cylinder-compressor-pump" },
+              { name: "Double Cylinder Compressor Pump", img: Agri_Double_Cylinder_Compressor_Pump, link: "/agriculture-pump/agriculture-double-cylinder-compressor-pump" },
             ],
             
           },
@@ -109,11 +109,11 @@ export const Agriculture = () => {
         "CONTROL PANELS": {
           sizes: {
             "SINGLE PHASE PANEL": [
-              { name: "ELH Panel", img: Agri_Single_Phase_ELH, link: "/agriculture-pump/Agriculture-Single-Phase-ELH" },
+              { name: "ELH Panel", img: Agri_Single_Phase_ELH, link: "/agriculture-pump/agriculture-single-phase-elh" },
             ],
             "THREE PHASE PANEL": [
-              { name: "GNC Control Panel 1", img: Agri_Three_Phase_GNC_One, link: "/agriculture-pump/Agriculture-Three-Phase-GNC-Panel-One" },
-              { name: "GNC Control Panel 2", img: Agri_Three_Phase_GNC_Two, link: "/agriculture-pump/Agriculture-Three-Phase-GNC-Panel-Two" },
+              { name: "GNC Control Panel 1", img: Agri_Three_Phase_GNC_One, link: "/agriculture-pump/agriculture-three-phase-gnc-panel-one" },
+              { name: "GNC Control Panel 2", img: Agri_Three_Phase_GNC_Two, link: "/agriculture-pump/agriculture-three-phase-gnc-panel-two" },
             ],
             
           },

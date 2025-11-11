@@ -80,7 +80,7 @@ export const V4EnvyPump = () => {
                     <div className="Related_Pump_Section col-12 col-md-6  col-md-6 col-lg-6 col-xl-6">
                         <h4>Related Pumps</h4>
                         <Link to="/agriculture-pump/borewell-v4-pumps" onClick={() => window.scrollTo(0, 0)}><p>1.V4 Tuff,Bullet Pumps</p></Link>
-                        <Link to="/agriculture-pump/V6-Premium-Pump" onClick={() => window.scrollTo(0, 0)}><p>2.6" Pumps</p></Link>
+                        <Link to="/agriculture-pump/v6-premium-pump" onClick={() => window.scrollTo(0, 0)}><p>2.6" Pumps</p></Link>
                     </div>
                 </div>
                 

@@ -79,7 +79,7 @@ export const AgriThreePhaseGNCTwo = () => {
                     </div>  
                     <div className="Related_Pump_Section col-12 col-md-6  col-md-6 col-lg-6 col-xl-6">
                         <h4>Related Pumps</h4>
-                        <Link to="/agriculture-pump/Agriculture-Three-Phase-GNC-Panel-One" onClick={() => window.scrollTo(0, 0)}><p>1.GNC Control Panel 1</p></Link>
+                        <Link to="/agriculture-pump/agriculture-three-phase-gnc-panel-one" onClick={() => window.scrollTo(0, 0)}><p>1.GNC Control Panel 1</p></Link>
                     </div>
                 </div>
                 

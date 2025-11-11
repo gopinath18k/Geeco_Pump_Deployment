@@ -79,8 +79,8 @@ export const V6VincPump = () => {
                     </div>
                     <div className="Related_Pump_Section col-12 col-md-6  col-md-6 col-lg-6 col-xl-6">
                         <h4>Related Pumps</h4>
-                        <Link to="/agriculture-pump/V6-Premium-Pump" onClick={() => window.scrollTo(0, 0)}><p>1.V6 Premium Pump</p></Link>
-                        <Link to="/agriculture-pump/V6-Active-Pump" onClick={() => window.scrollTo(0, 0)}><p>2.V6 Active Pump</p></Link>
+                        <Link to="/agriculture-pump/v6-premium-pump" onClick={() => window.scrollTo(0, 0)}><p>1.V6 Premium Pump</p></Link>
+                        <Link to="/agriculture-pump/v6-active-pump" onClick={() => window.scrollTo(0, 0)}><p>2.V6 Active Pump</p></Link>
                     </div>
                 </div>
                 

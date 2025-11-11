@@ -332,7 +332,8 @@ export const BorewellV4Pumps = () => {
                     </div>
                     <div className="Related_Pump_Section col-12 col-md-6  col-md-6 col-lg-6 col-xl-6">
                         <h4>Related Pumps</h4>
-                        <p>1.6" (150mm) Pumps</p>
+                        <Link to="/agriculture-pump/v6-premium-pump" onClick={() => window.scrollTo(0, 0)}><p>1.6" (150mm) Pumps</p></Link>
+                        
                         {/* <p>2.6’ (100mm) Pumps</p> */}
                     </div>
                 </div>
