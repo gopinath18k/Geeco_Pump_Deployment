@@ -1,24 +1,184 @@
+/* ===== Product List Section ===== */
+.product-list {
+  margin-top: 60px;
+  font-family: var(--second-font);
+  padding: 0 40px;
+  background: #f9f9f9;
+}
+
+/* ===== Grid Layout ===== */
+.pumps-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 30px;
+  margin-top: 40px;
+  padding-bottom: 60px;
+  justify-items: center;
+}
+
+/* ===== Pump Cards ===== */
+.pump-cards {
+  position: relative;
+  background: #fff;
+  border-radius: 16px;
+  overflow: hidden;
+  text-align: left;
+  width: 100%;
+  max-width: 360px;
+  box-shadow: 0 4px 14px rgba(0, 0, 0, 0.08);
+  transform: translateY(0);
+  transition: all 0.35s ease;
+  font-family: var(--second-font);
+  animation: fadeInUp 0.7s ease forwards;
+  opacity: 0;
+  padding: 20px 22px 25px;
+}
+
+/* Entry Animation */
+@keyframes fadeInUp {
+  0% {
+    transform: translateY(40px);
+    opacity: 0;
+  }
+  100% {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+
+.pump-cards:hover {
+  transform: translateY(-10px) scale(1.02);
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.15);
+}
+
+/* ===== Pump Image ===== */
+.pump-cards img {
+  width: 100%;
+  height: 220px;
+  object-fit: contain;
+  background-color: #f2f6ff;
+  border-radius: 10px;
+  margin-bottom: 15px;
+  transition: transform 0.4s ease;
+}
+
+.pump-cards:hover img {
+  transform: scale(1.06);
+}
+
+/* ===== Pump Details ===== */
+.pump-cards h3 {
+  color: #007bff;
+  font-family: var(--main-font);
+  font-size: 1.3rem;
+  font-weight: 600;
+  margin: 5px 0 10px;
+  text-transform: capitalize;
+  line-height: 1.3;
+}
+
+.pump-cards p {
+  font-size: 0.96rem;
+  color: #555;
+  margin-bottom: 16px;
+  line-height: 1.6;
+}
+
+/* ===== Specifications List ===== */
+.specs-list {
+  list-style: none;
+  padding: 10px 0 0;
+  margin: 0;
+  font-size: 0.9rem;
+  color: #333;
+  border-top: 1px solid #eee;
+}
+
+.specs-list li {
+  margin-bottom: 8px;
+  display: flex;
+  justify-content: space-between;
+  line-height: 1.4;
+}
+
+.specs-list strong {
+  color: #222;
+  font-weight: 600;
+}
+
+/* ===== View Details Button ===== */
 .view-details-button {
   display: inline-block;
-  margin-top: 12px;
-  padding: 10px 18px;
-  background-color: #007bff;
+  margin-top: 18px;
+  padding: 5px 22px;
+  background: linear-gradient(135deg, #007bff, #00c6ff);
   color: #fff;
   border: none;
-  border-radius: 8px;
+  border-radius: 5px;
   font-size: 1rem;
+  font-weight: 500;
   text-decoration: none;
-  transition: all 0.3s ease;
   cursor: pointer;
+  transition: all 0.3s ease;
+  box-shadow: 0 3px 8px rgba(0, 123, 255, 0.3);
 }
 
 .view-details-button:hover {
-  background-color: #0056b3;
-  transform: scale(1.05);
+  background: linear-gradient(135deg, #0056b3, #0080ff);
+  transform: translateY(-3px) scale(1.05);
+  box-shadow: 0 6px 14px rgba(0, 123, 255, 0.4);
 }
 
-.view-details-button.disabled {
-  background-color: #ccc;
-  cursor: not-allowed;
-  transform: none;
+/* ===== Empty State ===== */
+.no-pumps-message {
+  text-align: center;
+  margin-top: 80px;
+  font-size: 1.1rem;
+  color: #666;
+  animation: fadeIn 0.6s ease-in;
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(10px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+/* ===== Responsive Design ===== */
+@media (max-width: 768px) {
+  .product-list {
+    padding: 0 25px;
+  }
+
+  .pumps-grid {
+    gap: 25px;
+  }
+
+  .pump-cards {
+    padding: 18px;
+    max-width: 100%;
+  }
+
+  .pump-cards img {
+    height: 190px;
+  }
+}
+
+@media (max-width: 500px) {
+  .pump-cards img {
+    height: 160px;
+  }
+
+  .pump-cards {
+    padding: 15px;
+  }
+
+  .pump-cards h3 {
+    font-size: 1.1rem;
+  }
+
+  .view-details-button {
+    width: 100%;
+    text-align: center;
+    font-size: 0.95rem;
+  }
 }

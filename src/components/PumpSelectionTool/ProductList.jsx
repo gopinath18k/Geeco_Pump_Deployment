@@ -1,5 +1,6 @@
 // src/components/ProductList.jsx
 import React from 'react';
+import "./ProductList.css";
 
 function ProductList({ pumps }) {
   if (!pumps || pumps.length === 0) {
@@ -13,7 +14,7 @@ function ProductList({ pumps }) {
   return (
     <div className="pumps-grid">
       {pumps.map(pump => (
-        <div key={pump.id} className="pump-card">
+        <div key={pump.id} className="pump-cards" >
           <img src={pump.imageUrl} alt={pump.name} />
           <h3>{pump.name}</h3>
           <p>{pump.description}</p>
