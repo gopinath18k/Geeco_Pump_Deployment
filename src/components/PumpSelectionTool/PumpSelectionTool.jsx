@@ -283,7 +283,148 @@ function PumpSelectionTool() {
         pump => dischargeValue >= pump.dischargeMin && dischargeValue <= pump.dischargeMax
       );
     }
+
+
+    // -------------- Commercial / Industrial Pump Question ---------------- //
+
+    // Commercial / Industrial Question SumpTank submerged//
+
+
+    if (answers.commercialUse_mainPurpose) {
+      tempPumps = tempPumps.filter(pump => pump.mainPurpose === answers.commercialUse_mainPurpose);
+    }
+    if (answers.commercialUse_waterSource) {
+      tempPumps = tempPumps.filter(pump => pump.waterSource === answers.commercialUse_waterSource);
+    }
+    if (answers.commercialUse_sumpTank_installLocation) {
+      tempPumps = tempPumps.filter(
+        pump => pump.installLocation === answers.commercialUse_sumpTank_installLocation
+      );
+    }
+    if (answers.commercialUse_sumpTank_surface_head) {
+      const headValue = parseInt(answers.commercialUse_sumpTank_surface_head);
+      tempPumps = tempPumps.filter(pump => headValue >= pump.headMin && headValue <= pump.headMax);
+    }
+    if (answers.commercialUse_sumpTank_surface_discharge) {
+      const dischargeValue = parseInt(answers.commercialUse_sumpTank_surface_discharge);
+      tempPumps = tempPumps.filter(pump => dischargeValue >= pump.dischargeMin && dischargeValue <= pump.dischargeMax);
+    }
+    if (answers.commercialUse_sumpTank_surface_deliverySize) {
+      tempPumps = tempPumps.filter(pump => pump.deliverySize.includes(answers.commercialUse_sumpTank_surface_deliverySize));
+    }
+
+
+    // Commercial / Industrial Question SumpTank submerged//
+
+    if (answers.commercialUse_sumpTank_submerged_head) {
+      const headValue = parseInt(answers.commercialUse_sumpTank_submerged_head);
+      tempPumps = tempPumps.filter(pump => headValue >= pump.headMin && headValue <= pump.headMax);
+    }
+    if (answers.commercialUse_sumpTank_submerged_discharge) {
+      const dischargeValue = parseInt(answers.commercialUse_sumpTank_submerged_discharge);
+      tempPumps = tempPumps.filter(pump => dischargeValue >= pump.dischargeMin && dischargeValue <= pump.dischargeMax);
+    }
+    if (answers.commercialUse_sumpTank_submerged_deliverySize) {
+      tempPumps = tempPumps.filter(pump => pump.deliverySize.includes(answers.commercialUse_sumpTank_submerged_deliverySize));
+    }
+
+
+      // Commercial / Industrial Question Openwell surface //
+
+    if (answers.commercialUse_openwell_installLocation) {
+      tempPumps = tempPumps.filter(
+        pump => pump.installLocation === answers.commercialUse_openwell_installLocation
+      );
+    }
+    if (answers.commercialUse_openwell_surface_head) {
+      const headValue = parseInt(answers.commercialUse_openwell_surface_head);
+      tempPumps = tempPumps.filter(pump => headValue >= pump.headMin && headValue <= pump.headMax);
+    }
+    if (answers.commercialUse_openwell_surface_discharge) {
+      const dischargeValue = parseInt(answers.commercialUse_openwell_surface_discharge);
+      tempPumps = tempPumps.filter(pump => dischargeValue >= pump.dischargeMin && dischargeValue <= pump.dischargeMax);
+    }
+    if (answers.commercialUse_openwell_surface_deliverySize) {
+      tempPumps = tempPumps.filter(pump => pump.deliverySize.includes(answers.commercialUse_openwell_surface_deliverySize));
+    }
+
+
+    // Commercial / Industrial Question Openwell submerged//
+
+    if (answers.commercialUse_openwell_submerged_head) {
+      const headValue = parseInt(answers.commercialUse_openwell_submerged_head);
+      tempPumps = tempPumps.filter(pump => headValue >= pump.headMin && headValue <= pump.headMax);
+    }
+    if (answers.commercialUse_openwell_submerged_discharge) {
+      const dischargeValue = parseInt(answers.commercialUse_openwell_submerged_discharge);
+      tempPumps = tempPumps.filter(pump => dischargeValue >= pump.dischargeMin && dischargeValue <= pump.dischargeMax);
+    }
+    if (answers.commercialUse_openwell_submerged_deliverySize) {
+      tempPumps = tempPumps.filter(pump => pump.deliverySize.includes(answers.commercialUse_openwell_submerged_deliverySize));
+    }
+
+
+    // Commercial / Industrial Question Borewell surface //
+
+    if (answers.commercialUse_borewell_installLocation) {
+      tempPumps = tempPumps.filter(
+        pump => pump.installLocation === answers.commercialUse_borewell_installLocation
+      );
+    }
+    if (answers.commercialUse_borewell_surface_phase) {
+      tempPumps = tempPumps.filter(
+        pump => pump.phase === answers.commercialUse_borewell_surface_phase
+      );
+    }
+
+    if (answers.commercialUse_borewell_surface_depth) {
+      const depthValue = parseFloat(answers.commercialUse_borewell_surface_depth);
+      tempPumps = tempPumps.filter(
+        pump => depthValue >= pump.depthMin && depthValue <= pump.depthMax
+      );
+    }
+     
+    if (answers.commercialUse_borewell_surface_head) {
+      const headValue = parseFloat(answers.commercialUse_borewell_surface_head);
+      tempPumps = tempPumps.filter(
+        pump => headValue >= pump.headMin && headValue <= pump.headMax
+      );
+    }
+
+    if (answers.commercialUse_borewell_surface_discharge) {
+      const dischargeValue = parseFloat(answers.commercialUse_borewell_surface_discharge);
+      tempPumps = tempPumps.filter(
+        pump => dischargeValue >= pump.lpmMin && dischargeValue <= pump.lpmMax
+      );
+    }
+
+
+    // --- Domestic Question Borewell Submersible --- //
+
     
+
+    if (answers.commercialUse_borewell_submersible_borewellSize) {
+      tempPumps = tempPumps.filter(
+        pump => pump.borewellSize.includes(answers.commercialUse_borewell_submersible_borewellSize)
+      );
+    }
+   
+    if (answers.commercialUse_borewell_submersible_head) {
+      const headValue = parseFloat(answers.commercialUse_borewell_submersible_head);
+      tempPumps = tempPumps.filter(
+        pump => headValue >= pump.totalHeadMin && headValue <= pump.totalHeadMax
+      );
+    }
+
+    if (answers.commercialUse_borewell_submersible_discharge) {
+      const dischargeValue = parseFloat(answers.commercialUse_borewell_submersible_discharge);
+      tempPumps = tempPumps.filter(
+        pump => dischargeValue >= pump.lpmMin && dischargeValue <= pump.lpmMax
+      );
+    }
+
+    
+
     
 
      setFilteredPumps(tempPumps);

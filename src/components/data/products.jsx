@@ -259,4 +259,123 @@ export const pumps = [
 
 
 
+  // ------- Commercial / Industrial Products -----------//
+
+  // Sump/Tank -> Surface Pumps
+
+  {
+    id: 'COM_IND_OP_SUR_0011',
+    name: 'Com/Ind Submersible  C/I"',
+    application: 'commercial',
+    mainPurpose: 'General Water Pumping',
+    waterSource: 'sumpTank',
+    installLocation: 'surface_sumpTank',
+    headMin: 10, 
+    headMax: 30,
+    dischargeMin: 100, 
+    dischargeMax: 250,
+    deliverySize: ['1.5inch', '2inch'],
+    imageUrl: Pump,
+    description: 'Submersible borewell pump for agricultural irrigation.',
+  },
+
+  
+  // Sump/Tank -> Submerged Pumps
+  {
+    id: 'COM_IND_OP_SUR_0012',
+    name: 'Com/Ind Submersible  CO/IN"',
+    application: 'commercial',
+    mainPurpose: 'General Water Pumping',
+    waterSource: 'sumpTank',
+    installLocation: 'submerged_sumpTank',
+    headMin: 1, 
+    headMax: 15,
+    dischargeMin: 20, 
+    dischargeMax: 100,
+    deliverySize: ['1inch_sub'],
+    imageUrl: Pump,
+    description: 'Small, efficient submersible pump for clean water sumps and tanks.',
+  },
+
+  // Openwell -> Surface Pumps
+
+  {
+    id: 'COM_IND_OP_SUR_0011',
+    name: 'Com/Ind Openwell  C/I"',
+    application: 'commercial',
+    mainPurpose: 'General Water Pumping',
+    waterSource: 'openwell',
+    installLocation: 'surface_openwell',
+    headMin: 10, 
+    headMax: 30,
+    dischargeMin: 100, 
+    dischargeMax: 250,
+    deliverySize: ['1.5inch_op', '2inch_op'],
+    imageUrl: Pump,
+    description: 'Submersible borewell pump for agricultural irrigation.',
+  },
+
+  
+  // Openwell -> Submerged Pumps
+  {
+    id: 'COM_IND_OP_SUR_0012',
+    name: 'Com/Ind Openwell  CO/IN"',
+    application: 'commercial',
+    mainPurpose: 'General Water Pumping',
+    waterSource: 'openwell',
+    installLocation: 'submerged_openwell',
+    headMin: 1, 
+    headMax: 15,
+    dischargeMin: 20, 
+    dischargeMax: 100,
+    deliverySize: ['1inch_op'],
+    imageUrl: Pump,
+    description: 'Small, efficient submersible pump for clean water sumps and tanks.',
+  },
+
+
+    // Borewell -> Surface Pumps
+  {
+    id: 'DOM_BW_S_001',
+    name: 'Geeco BoreMaster 1 Phase Surface',
+    application: 'commercial',
+    mainPurpose: 'General Water Pumping',
+    waterSource: 'borewell',
+    installLocation: 'surface_borewell',
+    phase: '1phase_bw_sur',
+    depthMin: 10, depthMax: 50,
+    headMin: 20, headMax: 60,
+    lpmMin: 50, lpmMax: 200,
+    imageUrl: Pump,
+    description: 'Single phase surface borewell pump for moderate depths.',
+  },
+  {
+    id: 'DOM_BW_S_002',
+    name: 'Geeco BoreMaster 3 Phase Surface',
+    application: 'commercial',
+    mainPurpose: 'General Water Pumping',
+    waterSource: 'borewell',
+    installLocation: 'surface_borewell',
+    phase: '3phase_bw_sur', 
+    depthMin: 20, depthMax: 100,
+    headMin: 40, headMax: 120,
+    lpmMin: 100, lpmMax: 350,
+    imageUrl: Pump,
+    description: 'Three phase surface borewell pump for deeper borewells and higher flow.',
+  },
+  // Borewell -> Submersible Pumps
+  {
+    id: 'DOM_BW_SUB_001',
+    name: 'Geeco BoreMaster Submersible',
+    application: 'commercial',
+    mainPurpose: 'General Water Pumping',
+    waterSource: 'borewell',
+    installLocation: 'Submersible_Borewell',
+    borewellSize: '4inch_b_sub',
+    totalHeadMin: 30, totalHeadMax: 100, 
+    lpmMin: 40, lpmMax: 150,
+    imageUrl: Pump,
+    description: '4-inch 1 Phase submersible pump for domestic borewell applications.',
+  },
+
 ];

@@ -62,7 +62,7 @@ export const pumpSelectionQuestions = [
       { id: '2.5inch', label: '2.5"' },
     ],
   },
-  // --- Submerged installation for Sump/Tank (similar structure) ---
+  // --- Submerged installation for Sump/Tank (similar structure) --- //
   {
     id: 'domesticUse_sumpTank_submerged_head',
     question: 'HEAD- how high you will need to pump water? (In MTS) (1m-50m)',
@@ -567,6 +567,311 @@ export const pumpSelectionQuestions = [
       min: 1,
       max: 450,
     },
+
+
+    //------------- Commercial/Industrial ----------------//
+
+    {
+    id: 'commercialUse_mainPurpose',
+    question: 'What are the main purposes and applications of using pumps in various commercial and industrial sectors?',
+    section: 'commercialUse', 
+    options: [
+      { id: 'General Water Pumping', label: 'General water pumping & Utility Water transfer Application', nextSection: 'commercialUse_General water pumping' },
+      { id: 'Pressure Boosting Application', label: 'Pressure Boosting Application', nextSection: 'commercialUse_Pressure Boosting Application' },
+      { id: 'Climate Control Application', label: 'Climate Control Application', nextSection: 'commercialUse_Climate Control Application' },
+      { id: 'High Pressure Washing', label: 'High Pressure Washing And Cleaning Application', nextSection: 'commercialUse_High Pressure Washing' },
+      { id: 'Other Industrial Application', label: 'Other Industrial Application', nextSection: 'commercialUse_Other Industrial' },
+    ],
+  },
+  {
+    id: 'commercialUse_waterSource',
+    question: 'What is the Water Source?',
+    section: 'commercialUse_General water pumping', 
+    options: [
+      { id: 'sumpTank', label: 'Sump/Tank', nextSection: 'commercialUse_sumpTank' },
+      { id: 'openwell', label: 'Openwell (Well)', nextSection: 'commercialUse_openwell' },
+      { id: 'borewell', label: 'Borewell', nextSection: 'commercialUse_borewell' },
+    ],
+  },
+
+  // --- Sump/Tank branch for commercialUse Use ---
+  {
+    id: 'commercialUse_sumpTank_installLocation',
+    question: 'Where do you want to install the pump?',
+    section: 'commercialUse_sumpTank',
+    options: [
+      { id: 'surface_sumpTank', label: 'Surface', nextSection: 'commercialUse_sumpTank_surface' },
+      { id: 'submerged_sumpTank', label: 'Submerged in water', nextSection: 'commercialUse_sumpTank_submerged' },
+    ],
+  },
+  // --- Surface installation for Sump/Tank ---
+  {
+    id: 'commercialUse_sumpTank_surface_head',
+    question: 'HEAD- how high you will need to pump water? (In MTS) (1m-50m)',
+    section: 'commercialUse_sumpTank_surface',
+    type: 'input', // Indicate this is an input field
+    unit: 'meters',
+    min: 1,
+    max: 70,
+  },
+  {
+    id: 'commercialUse_sumpTank_surface_discharge',
+    question: 'Discharge - how much flow you will need to pump? (1LPM-450LPM)',
+    section: 'commercialUse_sumpTank_surface',
+    type: 'input',
+    unit: 'LPM',
+    min: 1,
+    max: 450,
+  },
+  {
+    id: 'commercialUse_sumpTank_surface_deliverySize',
+    question: 'Delivery Size',
+    section: 'commercialUse_sumpTank_surface',
+    options: [
+      { id: '1inch', label: '1"' },
+      { id: '1.5inch', label: '1.5"' },
+      { id: '2inch', label: '2"' },
+      { id: '2.5inch', label: '2.5"' },
+    ],
+  },
+  // --- Submerged installation for Sump/Tank  --- //
+  {
+    id: 'commercialUse_sumpTank_submerged_head',
+    question: 'HEAD- how high you will need to pump water? (In MTS) (1m-50m)',
+    section: 'commercialUse_sumpTank_submerged',
+    type: 'input',
+    unit: 'meters',
+    min: 1,
+    max: 70,
+  },
+  {
+    id: 'commercialUse_sumpTank_submerged_discharge',
+    question: 'Discharge - how much flow you will need to pump? (1LPM-450LPM)',
+    section: 'commercialUse_sumpTank_submerged',
+    type: 'input',
+    unit: 'LPM',
+    min: 1,
+    max: 450,
+  },
+  {
+    id: 'commercialUse_sumpTank_submerged_deliverySize',
+    question: 'Delivery Size',
+    section: 'commercialUse_sumpTank_submerged',
+    options: [
+      { id: '1inch_sub', label: '1"' },
+      { id: '1.5inch_sub', label: '1.5"' },
+      { id: '2inch_sub', label: '2"' },
+      { id: '2.5inch_sub', label: '2.5"' },
+    ],
+  },
+
+
+
+  // ---Commercial/Industrial Open Well Section --- //
+
+  // --- Openwell branch for Commercial/Industrial ---
+  {
+    id: 'commercialUse_openwell_installLocation',
+    question: 'Where do you want to install the pump?',
+    section: 'commercialUse_openwell',
+    options: [
+      { id: 'surface_openwell', label: 'Surface', nextSection: 'commercialUse_openwell_surface' },
+      { id: 'submerged_openwell', label: 'Submerged in water', nextSection: 'commercialUse_openwell_submerged' },
+    ],
+  },
+
+  // --- Surface installation for openwell ---
+  {
+    id: 'commercialUse_openwell_surface_head',
+    question: 'HEAD- how high you will need to pump water? (In MTS) (1m-50m)',
+    section: 'commercialUse_openwell_surface',
+    type: 'input', 
+    unit: 'meters',
+    min: 1,
+    max: 50,
+  },
+  {
+    id: 'commercialUse_openwell_surface_discharge',
+    question: 'Discharge - how much flow you will need to pump? (1LPM-450LPM)',
+    section: 'commercialUse_openwell_surface',
+    type: 'input',
+    unit: 'LPM',
+    min: 1,
+    max: 450,
+  },
+  {
+    id: 'commercialUse_openwell_surface_deliverySize',
+    question: 'Delivery Size',
+    section: 'commercialUse_openwell_surface',
+    options: [
+      { id: '1inch_op', label: '1"' },
+      { id: '1.5inch_op', label: '1.5"' },
+      { id: '2inch_op', label: '2"' },
+      { id: '2.5inch_op', label: '2.5"' },
+    ],
+  },
+
+  // --- Submerged installation for openwell 
+  
+  {
+    id: 'commercialUse_openwell_submerged_head',
+    question: 'HEAD- how high you will need to pump water? (In MTS) (1m-50m)',
+    section: 'commercialUse_openwell_submerged',
+    type: 'input',
+    unit: 'meters',
+    min: 1,
+    max: 50,
+  },
+  {
+    id: 'commercialUse_openwell_submerged_discharge',
+    question: 'Discharge - how much flow you will need to pump? (1LPM-450LPM)',
+    section: 'commercialUse_openwell_submerged',
+    type: 'input',
+    unit: 'LPM',
+    min: 1,
+    max: 450,
+  },
+  {
+    id: 'commercialUse_openwell_submerged_deliverySize',
+    question: 'Delivery Size',
+    section: 'commercialUse_openwell_submerged',
+    options: [
+      { id: '1inch_op', label: '1"' },
+      { id: '1.5inch_op', label: '1.5"' },
+      { id: '2inch_op', label: '2"' },
+      { id: '2.5inch_op', label: '2.5"' },
+    ],
+  },
+
+
+
+  // ---Commercial/Industrial BoreWell Section --- //
+
+// --- Borewell installation location ---
+
+
+{
+  id: 'commercialUse_borewell_installLocation',
+  question: 'Where do you want to install the pump?',
+  section: 'commercialUse_borewell',
+  options: [
+    { id: 'surface_borewell', label: 'Surface', nextSection: 'commercialUse_borewell_surface' },
+    { id: 'Submersible_Borewell', label: 'Inside the borewell (Submersible)', nextSection: 'commercialUse_borewell_submersible' },
+  ],
+},
+
+// --- Commercial/Industrial Surface Borewell Questions ---
+
+{
+  id: 'commercialUse_borewell_surface_phase',
+  question: 'Do you need a 1 phase or 3 phase design? (Single phase recommended for Household and Domestic applications)',
+  section: 'commercialUse_borewell_surface',
+  options: [
+    { id: '1phase_bw_sur', label: '1 Phase', nextSection: 'commercialUse_borewell_surface_1phase' },
+    { id: '3phase_bw_sur', label: '3 Phase', nextSection: 'commercialUse_borewell_surface_3phase' },
+  ],
+},
+
+// --- Surface Borewell Single Phase Questions ---
+
+{
+  id: 'commercialUse_borewell_surface_depth',
+  question: 'What is the total depth you want to draw water from the borewell? (in meters)',
+  section: 'commercialUse_borewell_surface_1phase',
+  type: 'input',
+  unit: 'meters',
+  min: 1,
+  max: 50,
+},
+
+{
+  id: 'commercialUse_borewell_surface_head',
+  question: 'What is the total head you want to pump the water in meters?',
+  section: 'commercialUse_borewell_surface_1phase',
+  type: 'input',
+  unit: 'meters',
+  min: 1,
+  max: 50,
+},
+
+{
+  id: 'commercialUse_borewell_surface_discharge',
+  question: 'Any desired LPM? (in liters)',
+  section: 'commercialUse_borewell_surface_1phase',
+  type: 'input',
+  unit: 'LPM',
+  min: 1,
+  max: 450,
+},
+
+// --- Surface Borewell Three Phase Questions ---
+
+{
+  id: 'commercialUse_borewell_surface_depth',
+  question: 'What is the total depth you want to draw water from the borewell? (in meters)',
+  section: 'commercialUse_borewell_surface_3phase',
+  type: 'input',
+  unit: 'meters',
+  min: 1,
+  max: 50,
+},
+
+{
+  id: 'commercialUse_borewell_surface_head',
+  question: 'What is the total head you want to pump the water in meters?',
+  section: 'commercialUse_borewell_surface_3phase',
+  type: 'input',
+  unit: 'meters',
+  min: 1,
+  max: 50,
+},
+
+{
+  id: 'commercialUse_borewell_surface_discharge',
+  question: 'Any desired LPM? (in liters)',
+  section: 'commercialUse_borewell_surface_3phase',
+  type: 'input',
+  unit: 'LPM',
+  min: 1,
+  max: 450,
+},
+
+// --- Submersible Borewell Questions ---
+
+
+
+{
+    id: 'commercialUse_borewell_submersible_borewellSize',
+    question: 'What is the size of your bore well?',
+    section: 'commercialUse_borewell_submersible',
+    options: [
+      { id: '3inch_b_sub', label: '3"' },
+      { id: '4inch_b_sub', label: '4"' },
+      { id: '6inch_b_sub', label: '6"' },
+    ],
+  },
+
+{
+  id: 'commercialUse_borewell_submersible_head',
+  question: 'What is the total head you want to pump the water in meters? ( Total head= Depth of Bore pump installation + height of the over head tank)',
+  section: 'commercialUse_borewell_submersible',
+  type: 'input',
+  unit: 'meters',
+  min: 1,
+  max: 250,
+},
+
+{
+  id: 'commercialUse_borewell_submersible_discharge',
+  question: 'Any desired LPM? (in liters)',
+  section: 'commercialUse_borewell_submersible',
+  type: 'input',
+  unit: 'LPM',
+  min: 1,
+  max: 450,
+},
+
+
 
   
 
