@@ -423,6 +423,15 @@ function PumpSelectionTool() {
       );
     }
 
+    // ---Commercial/Industrial BoreWell Section --- //
+
+ // ---Commercial/Industrial Pressure Boosting Application Section --- //
+
+
+    if (answers.commercialUse_pressureboostingsystem) {
+      tempPumps = tempPumps.filter(pump => pump.mainPurpose === answers.commercialUse_pressureboostingsystem);
+    }
+
     
 
     

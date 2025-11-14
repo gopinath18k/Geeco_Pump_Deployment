@@ -872,7 +872,28 @@ export const pumpSelectionQuestions = [
 },
 
 
+ // ---Commercial/Industrial BoreWell Section --- //
 
+ // ---Commercial/Industrial Pressure Boosting Application Section --- //
   
+  
+  {
+    id: 'commercialUse_pressureboostingsystem',
+    question: 'Which type of pressure boosting system are you looking for?',
+    section: 'commercialUse_Pressure Boosting Application', 
+    options: [
+      { id: 'High Rise Building', label: 'High Rise Building', nextSection: 'commercialUse_HighRiseBuilding' },
+      { id: 'RO Application', label: 'RO Application', nextSection: 'commercialUse_ROApplication' },
+    ],
+  },
+  {
+    id: 'commercialUse_heightofthebuilding',
+    question: 'What is the height of the building?',
+    section: 'commercialUse_HighRiseBuilding', 
+    options: [
+      { id: 'High Rise Building', label: 'High Rise Building', nextSection: 'commercialUse_HighRiseBuilding' },
+      { id: 'RO Application', label: 'RO Application', nextSection: 'commercialUse_ROApplication' },
+    ],
+  },
 
 ];
