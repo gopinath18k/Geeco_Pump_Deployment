@@ -17,6 +17,7 @@ function PumpSelectionTool() {
   const [allAnswered, setAllAnswered] = useState(false);
   const questionRefs = useRef([]);
   const [visibleQuestions, setVisibleQuestions] = useState([0]);
+  const [progress, setProgress] = useState(0);
 
   const filterProducts = useCallback(() => {
     let tempPumps = [...pumps];
@@ -585,6 +586,16 @@ const handleAnswer = (questionId, answer, nextSectionId) => {
     exit: { opacity: 0, y: -20, transition: { duration: 0.5 } },
   };
 
+  // ------------- Progress Calculation Effect ---------------------- //
+  useEffect(() => {
+    const total = currentQuestionFlow.length;
+    const answered = currentQuestionFlow.filter(q => answers[q.id]).length;
+
+    const percent = total === 0 ? 0 : Math.round((answered / total) * 100);
+    setProgress(percent);
+  }, [answers, currentQuestionFlow]);
+
+
   // ---------------------- RENDER ----------------------
   return (
     <div className="Pump_Selction_Tool_Container">
@@ -592,6 +603,19 @@ const handleAnswer = (questionId, answer, nextSectionId) => {
       <button className="Pump_selection_Reset_Button" onClick={resetSelection}>
         Reset Selection
       </button>
+      {/* Vertical Progress Bar */}
+      <div className="progress-wrapper">
+        <div className="progress-vertical-container">
+          <motion.div
+            className="progress-vertical-fill"
+            initial={{ height: "0%" }}
+            animate={{ height: `${progress}%` }}
+            transition={{ duration: 0.3, ease: "easeInOut" }}
+          />
+        </div>
+      </div>
+
+
 
       {!allAnswered ? (
         <div

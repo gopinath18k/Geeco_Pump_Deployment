@@ -72,4 +72,27 @@ h1, h2, h3 {
 
 
 
+.progress-wrapper {
+  position: absolute;
+  right: 20px;   /* Place on right */
+  top: 70%;
+  transform: translateY(-50%);
+}
+
+.progress-vertical-container {
+  width: 6px; 
+  height: 70vh; 
+  background: #e0e0e0;
+  border-radius: 20px;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+}
+
+.progress-vertical-fill {
+  width: 100%;
+  background: linear-gradient(180deg, #ff7200, #ffb700);
+  border-radius: 20px;
+}
+
 
