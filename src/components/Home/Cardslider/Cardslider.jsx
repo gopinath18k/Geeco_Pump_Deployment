@@ -40,6 +40,26 @@ const Cardslider = () => {
           slidesToShow={3}
           slidesToScroll={1}
           infinite
+          responsive={[
+    {
+      breakpoint: 1024, // Tablets / small laptops
+      settings: {
+        slidesToShow: 2,
+      },
+    },
+    {
+      breakpoint: 768, // Large mobiles
+      settings: {
+        slidesToShow: 2,
+      },
+    },
+    {
+      breakpoint: 500, // Small mobiles
+      settings: {
+        slidesToShow: 1,
+      },
+    },
+  ]}
         >
           {multiData.map((item, index) => (
             <Card key={index} item={item} />

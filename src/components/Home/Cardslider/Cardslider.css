@@ -63,3 +63,43 @@
   font-size: 14px;
   font-weight: 400;
 }
+/* ====== Mobile ====== */
+@media (max-width: 500px) {
+  .multi__image {
+    height: 180px;
+  }
+  .slider_heading {
+    font-size: 14px;
+  }
+  .viewmore_heading {
+    font-size: 12px;
+  }
+  .BootstrapMulti .slick-arrow.slick-prev,
+  .BootstrapMulti .slick-arrow.slick-next {
+    width: 30px;
+    height: 25px;
+  }
+}
+
+/* ====== Tablet ====== */
+@media (max-width: 768px) {
+  .multi__image {
+    height: 200px;
+  }
+  .card_slider_inner_containers {
+    padding: 0px 5px;
+  }
+  .BootstrapMulti .slick-arrow.slick-prev {
+    left: 5px;
+  }
+  .BootstrapMulti .slick-arrow.slick-next {
+    right: 5px;
+  }
+}
+
+/* ====== Large Tablet / Small Laptop ====== */
+@media (max-width: 1024px) {
+  .multi__image {
+    height: 220px;
+  }
+}

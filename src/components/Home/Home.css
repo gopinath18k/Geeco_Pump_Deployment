@@ -307,3 +307,146 @@
     color: var(--title-red-color);
     font-weight: 600;
 }
+
+
+/* ============================================================
+   ===================  RESPONSIVE CSS  ========================
+   ============================================================ */
+
+/* ============= Mobile (max-width: 500px) ============= */
+@media (max-width: 500px) {
+
+  /* Banner */
+  .row {
+    flex-direction: row;
+  }
+
+  .home-landing-container {
+    height: auto;
+    padding: 40px 0;
+    background-position: center;
+  }
+
+  .home-banner-first-col h3 {
+    font-size: 16px;
+  }
+
+  .home-banner-first-col h1 {
+    font-size: 30px;
+  }
+
+  .home-banner-first-col p {
+    font-size: 14px;
+  }
+
+  .pumpbanner {
+    width: 100%;
+    margin-top: 20px;
+  }
+
+  /* Section Two */
+  .home-section-two-inner-container h2 {
+    font-size: 24px;
+  }
+  .home-section-two-inner-container p {
+    font-size: 14px;
+  }
+
+  /* Section Three */
+  .home-section-three-inner-container h2 {
+    font-size: 24px;
+  }
+
+  /* Video */
+  .video-container {
+    height: auto;
+    margin: 20px auto;
+  }
+  .video-player {
+    height: 250px;
+  }
+
+  /* Mission – Vision */
+  .home-section-six-firstinner-container {
+    flex-direction: column;
+    gap: 30px;
+  }
+
+  .Mission_Paragraph,
+  .vision_Paragraph {
+    width: 100%;
+    text-align: start;
+  }
+
+  .vision_container {
+    align-items: start;
+  }
+
+  /* Team */
+  .ourteam_container {
+    flex-wrap: wrap;
+  }
+  .ourteam_inner_image_container {
+    width: 48%;
+  }
+
+  /* Blog */
+  .home-section-nine-second-container {
+    flex-direction: column;
+  }
+
+  .Blog_Images {
+    height: 180px;
+  }
+}
+
+
+/* ============= Tablet (max-width: 768px) ============= */
+@media (max-width: 768px) {
+
+  .row {
+    flex-direction: row;
+  }
+
+  .pumpbanner {
+    width: 70%;
+    margin: 0 auto;
+  }
+
+  /* Mission + Vision */
+  .home-section-six-firstinner-container {
+    flex-direction: column;
+    gap: 40px;
+  }
+
+  /* Team */
+  .ourteam_container {
+    flex-wrap: wrap;
+  }
+  .ourteam_inner_image_container {
+    width: 48%;
+  }
+
+  /* Blog */
+  .home-section-nine-second-container {
+    flex-direction: column;
+  }
+}
+
+
+/* ============= Small Desktop (max-width: 1024px) ============= */
+@media (max-width: 1024px) {
+  
+  .pumpbanner {
+    width: 80%;
+  }
+
+  .video-player {
+    height: 350px;
+  }
+
+  .ourteam_inner_image_container {
+    width: 23%;
+  }
+}
+
